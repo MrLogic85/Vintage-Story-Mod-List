@@ -9,9 +9,19 @@
   new mods get added, changed versions get updated, and mods removed from
   MOD_DB.json get removed from your Mods folder too.
 
-  Only touches files this script itself installed (tracked in
-  .sync-state.json inside the Mods folder) — mods you added yourself are
-  left alone.
+  Before downloading anything, it reads the actual modinfo.json inside
+  every .zip already in your Mods folder (regardless of filename) to find
+  out what's really installed. This matters because a mod downloaded by
+  hand from mods.vintagestory.at rarely has the filename this script would
+  use (`<modid>_<version>.zip`) — without this check, a fresh run would
+  re-download every mod under a new name and leave the original file
+  behind too, duplicating everything. A mod already present at the right
+  version is left completely alone, whatever it's named; a mod present at
+  the wrong version gets that exact file replaced.
+
+  Only removes files this script itself installed or adopted (tracked in
+  .sync-state.json inside the Mods folder) — mods you added yourself and
+  never matched against MOD_DB.json are left alone.
 
   No mod files are stored in this repo; everything is fetched fresh from
   the official mod DB, so there's no redistribution concern.
@@ -42,6 +52,45 @@ if (-not (Test-Path $ModsDir)) {
     New-Item -ItemType Directory -Path $ModsDir -Force | Out-Null
 }
 
+Add-Type -AssemblyName System.IO.Compression.FileSystem
+
+function Get-ModInfoFromZip {
+    param([string]$ZipPath)
+    try {
+        $zip = [System.IO.Compression.ZipFile]::OpenRead($ZipPath)
+        try {
+            $entry = $zip.Entries | Where-Object { $_.Name -ieq 'modinfo.json' } | Select-Object -First 1
+            if (-not $entry) { return $null }
+            $reader = New-Object System.IO.StreamReader($entry.Open())
+            try {
+                $content = $reader.ReadToEnd()
+            } finally {
+                $reader.Close()
+            }
+            $info = $content | ConvertFrom-Json
+            # PowerShell property access is case-insensitive, so this handles
+            # modid/modID/ModID and version/Version however the mod wrote it.
+            if (-not $info.modid -or -not $info.version) { return $null }
+            return @{ modid = $info.modid; version = $info.version }
+        } finally {
+            $zip.Dispose()
+        }
+    } catch {
+        return $null
+    }
+}
+
+# Scan every zip already in the Mods folder, regardless of filename or
+# whether this script has ever seen it before, so an existing manually-
+# downloaded mod is recognized instead of duplicated.
+$existingByModid = @{}
+Get-ChildItem -Path $ModsDir -Filter '*.zip' -File -ErrorAction SilentlyContinue | ForEach-Object {
+    $info = Get-ModInfoFromZip -ZipPath $_.FullName
+    if ($info -and -not $existingByModid.ContainsKey($info.modid)) {
+        $existingByModid[$info.modid] = @{ filename = $_.Name; version = $info.version }
+    }
+}
+
 $modDb = Get-Content $modDbPath -Raw | ConvertFrom-Json
 $target = @{}
 foreach ($mod in $modDb.mods) {
@@ -54,20 +103,28 @@ $state = @{}
 if (Test-Path $stateFilePath) {
     $raw = Get-Content $stateFilePath -Raw | ConvertFrom-Json
     foreach ($prop in $raw.PSObject.Properties) {
-        $state[$prop.Name] = $prop.Value
+        # Support both the current format ({filename, version}) and the
+        # older format (a bare filename string) so existing state files
+        # from before this fix don't get discarded.
+        if ($prop.Value -is [string]) {
+            $state[$prop.Name] = @{ filename = $prop.Value; version = $null }
+        } else {
+            $state[$prop.Name] = @{ filename = $prop.Value.filename; version = $prop.Value.version }
+        }
     }
 }
 
 $installed = @()
 $updated = @()
 $skipped = @()
+$adopted = @()
 $removed = @()
 $failed = @()
 
 # Remove mods no longer in the target list
 foreach ($modid in @($state.Keys)) {
     if (-not $target.ContainsKey($modid)) {
-        $oldFile = Join-Path $ModsDir $state[$modid]
+        $oldFile = Join-Path $ModsDir $state[$modid].filename
         if (Test-Path $oldFile) { Remove-Item $oldFile -Force }
         $state.Remove($modid)
         $removed += $modid
@@ -79,9 +136,33 @@ foreach ($modid in $target.Keys) {
     $expectedFilename = "${modid}_${wantedVersion}.zip"
     $expectedPath = Join-Path $ModsDir $expectedFilename
 
-    if ($state.ContainsKey($modid) -and $state[$modid] -eq $expectedFilename -and (Test-Path $expectedPath)) {
+    # Already tracked by this script at the right version and the file is
+    # still there - nothing to do, no need to even open the zip again.
+    if ($state.ContainsKey($modid) -and $state[$modid].version -eq $wantedVersion -and (Test-Path (Join-Path $ModsDir $state[$modid].filename))) {
         $skipped += $modid
         continue
+    }
+
+    # Not tracked at the right version (or tracked file is missing) - check
+    # what's actually on disk under ANY filename before assuming it needs
+    # downloading.
+    if ($existingByModid.ContainsKey($modid)) {
+        $existing = $existingByModid[$modid]
+        if ($existing.version -eq $wantedVersion) {
+            # Correct version already present under its own filename - adopt
+            # it into the state file so future runs recognize it instantly,
+            # and don't touch the file itself.
+            $state[$modid] = @{ filename = $existing.filename; version = $existing.version }
+            $adopted += "$modid $wantedVersion ($($existing.filename))"
+            continue
+        }
+        # Wrong version - remove that exact file (whatever it's named) before
+        # downloading the correct one.
+        $existingPath = Join-Path $ModsDir $existing.filename
+        if (Test-Path $existingPath) { Remove-Item $existingPath -Force }
+    } elseif ($state.ContainsKey($modid)) {
+        # State pointed at a file that's gone missing - clean up the stale entry.
+        $state.Remove($modid)
     }
 
     try {
@@ -97,15 +178,10 @@ foreach ($modid in $target.Keys) {
             $downloadUrl = "https://moddbcdn.vintagestory.at/$downloadUrl"
         }
 
-        # remove old version of this mod if present
-        $wasInstalled = $state.ContainsKey($modid)
-        if ($wasInstalled) {
-            $oldFile = Join-Path $ModsDir $state[$modid]
-            if (Test-Path $oldFile) { Remove-Item $oldFile -Force }
-        }
+        $wasInstalled = $existingByModid.ContainsKey($modid)
 
         Invoke-WebRequest -Uri $downloadUrl -OutFile $expectedPath -TimeoutSec 60
-        $state[$modid] = $expectedFilename
+        $state[$modid] = @{ filename = $expectedFilename; version = $wantedVersion }
 
         if ($wasInstalled) { $updated += "$modid -> $wantedVersion" }
         else { $installed += "$modid $wantedVersion" }
@@ -121,6 +197,7 @@ Write-Host ""
 Write-Host "=== Mod sync complete ===" -ForegroundColor Cyan
 if ($installed.Count -gt 0) { Write-Host "Installed ($($installed.Count)):" -ForegroundColor Green; $installed | ForEach-Object { Write-Host "  + $_" } }
 if ($updated.Count -gt 0)   { Write-Host "Updated ($($updated.Count)):" -ForegroundColor Yellow; $updated | ForEach-Object { Write-Host "  ~ $_" } }
+if ($adopted.Count -gt 0)   { Write-Host "Recognized as already installed ($($adopted.Count)):" -ForegroundColor Cyan; $adopted | ForEach-Object { Write-Host "  = $_" } }
 if ($removed.Count -gt 0)   { Write-Host "Removed ($($removed.Count)):" -ForegroundColor Red; $removed | ForEach-Object { Write-Host "  - $_" } }
 if ($skipped.Count -gt 0)   { Write-Host "Already up to date: $($skipped.Count) mods" -ForegroundColor DarkGray }
 if ($failed.Count -gt 0)    { Write-Host "FAILED ($($failed.Count)) - fix manually:" -ForegroundColor Red; $failed | ForEach-Object { Write-Host "  ! $_" } }
