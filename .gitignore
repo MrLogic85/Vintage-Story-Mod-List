@@ -1,0 +1,25 @@
+# Mod files themselves - not ours to redistribute. sync-mods.ps1 fetches
+# these fresh from mods.vintagestory.at instead.
+/Mods/
+
+# Personal save data - large, and not relevant to the modlist.
+/Saves/
+/BackupSaves/
+/AgentBackupSaves/
+/RiverCache/
+/Backups/
+
+# Per-machine / possibly-sensitive config.
+/clientsettings.json
+/clientsettings.bkp
+/serverconfig.json
+/servermagicnumbers.json
+/waypoints-names.json
+/ModConfig/
+/ModData/
+/Playerdata/
+/Macros/
+/Maps/
+/WorldEdit/
+/Farseer/
+/Logs/

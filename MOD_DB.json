@@ -1,0 +1,951 @@
+{
+  "schema_version": 2,
+  "description": "Tracks every installed Vintage Story mod, plus the originals of forks we keep an eye on (installed:false). Structure defined in MOD_DB.schema.json. Dated action history (updates, decisions taken) belongs in AgentLogs/, not here.",
+  "mods": [
+    {
+      "modid": "aculinaryartillery",
+      "name": "A Culinary Artillery",
+      "installed": true,
+      "assetid": 4151,
+      "url": "https://mods.vintagestory.at/aculinaryartillery",
+      "version": "2.0.0-dev.22",
+      "author": "l33tmaan",
+      "checked": [
+        {
+          "version": "2.0.0-dev.22",
+          "date": "2026-09-01",
+          "downloads": 737913,
+          "known_incompatibilities": "none found; ships its own compat patches for Wildcraft Trees, Material Needs, More Animals",
+          "note": "Library/dependency, historically split off from Expanded Foods."
+        }
+      ]
+    },
+    {
+      "modid": "anvilperformanceoptimization",
+      "name": "Anvil Performance Optimization",
+      "installed": true,
+      "assetid": 50265,
+      "url": "https://mods.vintagestory.at/show/mod/50265",
+      "version": "1.0.0",
+      "author": "illustrious18",
+      "checked": [
+        {
+          "version": "1.0.0",
+          "date": "2026-09-01",
+          "downloads": 12403,
+          "note": "Prewarms the vanilla anvil interaction-help cache (fixes a cache miss in BlockAnvil.GetPlacedBlockInteractionHelp()) to stop the freeze on first viewing an anvil. Patches a vanilla engine bug, not another mod — no patch_for target. Release page only tags game 1.22.0-1.22.2 and hasn't updated since May 2026, but modinfo.json only requires game >=1.22.0 with no upper cap; installed anyway on game 1.22.7 per user decision (paired with smithingplusbugfix on the same author's recommendation). One comment reported a 1.22.3 crash but it was traced to a server-connect timeout, not this mod. Revisit if the underlying vanilla bug ever gets fixed upstream by the game itself."
+        }
+      ]
+    },
+    {
+      "modid": "egocaribautomapmarkers",
+      "name": "Auto Map Markers",
+      "installed": true,
+      "assetid": 797,
+      "url": "https://mods.vintagestory.at/automapmarkers",
+      "version": "5.0.3",
+      "author": "egocarib",
+      "checked": [
+        {
+          "version": "5.0.3",
+          "date": "2026-09-01",
+          "downloads": 309388,
+          "known_incompatibilities": "none found; ships its own compat patches for other mods' markers"
+        }
+      ]
+    },
+    {
+      "modid": "bedspawnv2",
+      "name": "BedSpawn",
+      "installed": true,
+      "assetid": 13060,
+      "url": "https://mods.vintagestory.at/bedspawn",
+      "version": "1.7.1",
+      "author": "ilan",
+      "checked": [
+        {
+          "version": "1.7.1",
+          "date": "2026-09-01",
+          "downloads": 303732
+        }
+      ]
+    },
+    {
+      "modid": "betterruins",
+      "name": "BetterRuins",
+      "installed": true,
+      "assetid": 3829,
+      "url": "https://mods.vintagestory.at/betterruins",
+      "version": "0.6.3",
+      "author": "NiclAss",
+      "checked": [
+        {
+          "version": "0.6.3",
+          "date": "2026-09-01",
+          "downloads": 1130991,
+          "known_incompatibilities": "RiverGen used alongside BetterRuins updates on an existing world risks terrain glitches/cliff chunk borders (upstream \"Rivers Mod\" has a fix, RiverGen does not) — only relevant if RiverGen is ever installed. Confirmed compatible with FieldsAndPlateaus, PlainsAndValleys (installed), Vanilla_PlusWorldGen, Worldgenfix(remix), Conquest Landform Overhaul, TerraPrety."
+        }
+      ]
+    },
+    {
+      "modid": "bettertraders",
+      "name": "BetterTraders",
+      "installed": true,
+      "assetid": 6160,
+      "url": "https://mods.vintagestory.at/bettertraders",
+      "version": "0.2.1",
+      "author": "NiclAss",
+      "checked": [
+        {
+          "version": "0.2.1",
+          "date": "2026-09-01",
+          "downloads": 213856,
+          "known_incompatibilities": "none found; has optional compat content for Bricklayers and Expanded Foods (installed)",
+          "note": "Server-side only."
+        }
+      ]
+    },
+    {
+      "modid": "bloodtrail",
+      "name": "BloodTrail",
+      "installed": true,
+      "assetid": 30331,
+      "url": "https://mods.vintagestory.at/bloodtrail",
+      "version": "1.2.5",
+      "author": "Aylor",
+      "checked": [
+        {
+          "version": "1.2.5",
+          "date": "2026-09-01",
+          "downloads": 289033,
+          "known_incompatibilities": "none found; maintains compat patches for 20+ animal mods"
+        }
+      ]
+    },
+    {
+      "modid": "butchering",
+      "name": "Butchering",
+      "installed": true,
+      "assetid": 7966,
+      "url": "https://mods.vintagestory.at/butchering",
+      "version": "1.14.3",
+      "author": "CaptainOats",
+      "checked": [
+        {
+          "version": "1.14.3",
+          "date": "2026-09-01",
+          "downloads": 612594,
+          "known_incompatibilities": "incompatible with \"Fishing 2\" (not installed — causes ghost items). Known crash: picking up a saddled/mounted animal with CarryOn (installed) before removing the saddle can crash the game — remove mounted items first.",
+          "note": "Confirmed compatible with Expanded Foods (installed)."
+        }
+      ]
+    },
+    {
+      "modid": "carryon",
+      "name": "Carry On",
+      "installed": true,
+      "assetid": 4405,
+      "url": "https://mods.vintagestory.at/carryon",
+      "version": "1.14.3",
+      "author": "NerdScurvy (current maintainer; original by copygirl)",
+      "fork_of": "carrycapacity",
+      "checked": [
+        {
+          "version": "1.14.3",
+          "date": "2026-09-01",
+          "downloads": 1033321,
+          "known_incompatibilities": "multi-block carryables not fully supported; integrates with Cartwright's Caravan, QP's Chisel Tools (installed), Upgradeable Storage, Sortable Storage",
+          "fork_decision": "Keep the fork. It is the actively maintained lineage (1,033,321 downloads, current game-version support); copygirl's original appears superseded, not a competing live alternative.",
+          "note": "A parallel 2.0.0-pre.x pre-release branch also exists."
+        }
+      ]
+    },
+    {
+      "modid": "carrycapacity",
+      "name": "CarryCapacity",
+      "installed": false,
+      "assetid": 38,
+      "url": "https://mods.vintagestory.at/carrycapacity",
+      "version": "0.6.5",
+      "author": "copygirl",
+      "forked_by": [
+        "carryon"
+      ],
+      "checked": [
+        {
+          "version": "0.6.5",
+          "date": "2026-09-01",
+          "downloads": 41772,
+          "note": "Not maintained for game 1.22.x — last release only targets 1.16.0-1.16.5, dated 2022-03-01. Carry On (carryon) is the actively maintained fork; keep watching this in case the original resumes."
+        }
+      ]
+    },
+    {
+      "modid": "nbcartographer",
+      "name": "Cartographer",
+      "installed": true,
+      "assetid": 10012,
+      "url": "https://mods.vintagestory.at/nbcartographer",
+      "version": "2.3.0",
+      "author": "Hedede",
+      "checked": [
+        {
+          "version": "2.3.0",
+          "date": "2026-09-01",
+          "downloads": 72370,
+          "known_incompatibilities": "**partial incompatibility with Pet Map Markers (installed)** — per Pet Map Markers' own page, \"you can run both mods together, but actually sharing your pet waypoints with others will do all sort of Weird Stuff.\" Fine to use if you don't share pet waypoints via Cartographer."
+        }
+      ]
+    },
+    {
+      "modid": "chiseltools",
+      "name": "chiseltools (QP's Chisel Tools)",
+      "installed": true,
+      "assetid": 2751,
+      "url": "https://mods.vintagestory.at/chiseltools",
+      "version": "1.17.6",
+      "author": "QPTech",
+      "checked": [
+        {
+          "version": "1.17.6",
+          "date": "2026-09-01",
+          "downloads": 786356,
+          "note": "Emergency patch for a Portfolio crash."
+        }
+      ]
+    },
+    {
+      "modid": "commonlib",
+      "name": "CommonLib",
+      "installed": true,
+      "assetid": 5457,
+      "url": "https://mods.vintagestory.at/commonlib",
+      "version": "2.8.0",
+      "author": "DArkHekRoMaNT",
+      "checked": [
+        {
+          "version": "2.8.0",
+          "date": "2026-09-01",
+          "downloads": 624912,
+          "known_incompatibilities": "none stated on page; no deprecation notice",
+          "fork_decision": "Keep both — see CommonLib-Forked entry above; confirmed that whatever mods require the original can't substitute the fork and vice versa.",
+          "note": "Stalled at game 1.21 support (last release only targets 1.21.0/1.21.1, dated 2025-09-13) while commonlibforked has moved to 1.22."
+        }
+      ],
+      "forked_by": [
+        "commonlibforked"
+      ]
+    },
+    {
+      "modid": "commonlibforked",
+      "name": "CommonLib-Forked",
+      "installed": true,
+      "assetid": 47267,
+      "url": "https://mods.vintagestory.at/commonlibforked",
+      "version": "2.8.1",
+      "author": "sknnr/jsknnr",
+      "fork_of": "commonlib",
+      "checked": [
+        {
+          "version": "2.8.1",
+          "date": "2026-09-01",
+          "downloads": 71017,
+          "known_incompatibilities": "description says this fork pairs specifically with the author's own fork of Player Corpse (we have `playercorpseforkedazu` installed, a *different* fork — relationship unconfirmed) and states it \"will not work with [DArkHekRoMaNT's] other mods.\"",
+          "fork_decision": "Keep both — decision: mods that depend on the original CommonLib need the original, mods that depend on the fork need the fork; they're not interchangeable, so both stay installed as separate dependencies.",
+          "note": "Both this and the original CommonLib are currently installed — see fork_decision. Targets game 1.22.0."
+        }
+      ]
+    },
+    {
+      "modid": "configlib",
+      "name": "Config lib",
+      "installed": true,
+      "assetid": 9551,
+      "url": "https://mods.vintagestory.at/configlib",
+      "version": "1.13.1",
+      "author": "Maltiez",
+      "checked": [
+        {
+          "version": "1.13.1",
+          "date": "2026-09-01",
+          "downloads": 655453,
+          "known_incompatibilities": "none found; historical YamlDotNet.dll conflict with BillyGalbreath's mods was already resolved upstream long ago",
+          "note": "Now requires vsimgui >=1.2.0 (updated vsimgui to 1.2.7 in the same pass to satisfy this). Updated 2026-09-01, current."
+        }
+      ]
+    },
+    {
+      "modid": "danatweaks",
+      "name": "Dana Tweaks",
+      "installed": true,
+      "assetid": 2531,
+      "url": "https://mods.vintagestory.at/danatweaks",
+      "version": "4.1.0",
+      "author": "DanaCraluminum",
+      "checked": [
+        {
+          "version": "4.1.0",
+          "date": "2026-09-01",
+          "downloads": 197086,
+          "known_incompatibilities": "its own docs suggest alternatives for some overlapping features (Salty's Radial Crafting instead of its crafting tweak, BetterEntityInteraction for butchering fixes) and recommends pairing with Config lib (installed) for settings management",
+          "note": "QoL/tweak compilation."
+        }
+      ]
+    },
+    {
+      "modid": "vsimgui",
+      "name": "Dear ImGui",
+      "installed": true,
+      "assetid": 9329,
+      "url": "https://mods.vintagestory.at/imgui",
+      "version": "1.2.7",
+      "author": "Maltiez",
+      "checked": [
+        {
+          "version": "1.2.7",
+          "date": "2026-09-01",
+          "downloads": 666905,
+          "note": "Required by Config lib (installed, now needs >=1.2.0 — satisfied). Updated 2026-09-01, current — includes an ARM64 Mac fix and a crash fix for missing language glyph ranges."
+        }
+      ]
+    },
+    {
+      "modid": "betterprospecting",
+      "name": "Durable Better Prospecting",
+      "installed": true,
+      "assetid": 16293,
+      "url": "https://mods.vintagestory.at/betterprospecting",
+      "version": "22.0.0-rc.1",
+      "author": "DetPikachu",
+      "checked": [
+        {
+          "version": "22.0.0-rc.1",
+          "date": "2026-09-01",
+          "downloads": 50944,
+          "known_incompatibilities": "**its own page warns it may conflict with any mod that modifies the prospecting pickaxe in any way** — see the ProspectTogether entry above for the cross-check (likely fine, not fully confirmed).",
+          "fork_decision": "Keep — this is effectively the actively maintained continuation published under the original mod ID with the original author's blessing, not a competing parallel fork.",
+          "note": "BetterProspecting by JohnVintageStory — page states it's \"identical to DurableBetterProspecting, but preserving the original mod ID betterprospecting\" (JohnVintageStory is credited as contributor/original creator and allowed reuse of the mod page/ID)."
+        }
+      ]
+    },
+    {
+      "modid": "expandedfoods",
+      "name": "Expanded Foods: Core",
+      "installed": true,
+      "assetid": 28,
+      "url": "https://mods.vintagestory.at/expandedfoods",
+      "version": "2.0.0-dev.14",
+      "author": "l33tmaan",
+      "checked": [
+        {
+          "version": "2.0.0-dev.14",
+          "date": "2026-09-01",
+          "downloads": 724440,
+          "known_incompatibilities": "incompatible with the unofficial \"Art of Cooking\" (not installed); needs a separate compat patch to run alongside Wildcraft: Fruits & Nuts (not installed). Companion to FoodShelves (installed) and Butchering (installed).",
+          "note": "Hard dependency on A Culinary Artillery (installed): mod explicitly says \"DO NOT USE THIS MOD WITHOUT A CULINARY ARTILLERY INSTALLED!!!\"  Currently being modularized into separate components upstream. Targets 1.22.3–1.22.7."
+        }
+      ]
+    },
+    {
+      "modid": "extrainfo",
+      "name": "Extra Info",
+      "installed": true,
+      "assetid": 7214,
+      "url": "https://mods.vintagestory.at/extrainfo",
+      "version": "2.2.1",
+      "author": "DanaCraluminum",
+      "checked": [
+        {
+          "version": "2.2.1",
+          "date": "2026-09-01",
+          "downloads": 179642,
+          "known_incompatibilities": "none found; recommends pairing with Config lib (installed) for configuration options",
+          "note": "Client-side, safe to add/remove from existing worlds. Targets 1.22.0–1.22.2."
+        }
+      ]
+    },
+    {
+      "modid": "extraoverlaysm4",
+      "name": "Extra Overlays",
+      "installed": true,
+      "assetid": 48190,
+      "url": "https://mods.vintagestory.at/48190 (no urlalias set)",
+      "version": "1.8.1",
+      "author": "Mintir4",
+      "checked": [
+        {
+          "version": "1.8.1",
+          "date": "2026-09-01",
+          "downloads": 4204,
+          "known_incompatibilities": "none found; as of v1.8.1 no longer hard-requires Config lib/Dear ImGui (both installed) — works standalone, but the in-game settings panel needs them when present.",
+          "note": "Client-side. Targets 1.22.5."
+        }
+      ]
+    },
+    {
+      "modid": "farseer",
+      "name": "Farseer",
+      "installed": true,
+      "assetid": 22371,
+      "url": "https://mods.vintagestory.at/farseer",
+      "version": "1.4.0",
+      "author": "badgerson",
+      "checked": [
+        {
+          "version": "1.4.0",
+          "date": "2026-09-01",
+          "downloads": 221104,
+          "known_incompatibilities": "none confirmed; own docs note the chunk-heightmap technique \"has potential to cause issues with some mods (none confirmed so far).\" Pairs well with Algernon's Terrain Sampler Lib (not installed) for performance."
+        }
+      ]
+    },
+    {
+      "modid": "foodshelves",
+      "name": "FoodShelves",
+      "installed": true,
+      "assetid": 13865,
+      "url": "https://mods.vintagestory.at/foodshelves",
+      "version": "3.0.5",
+      "author": "SONZ-INA",
+      "checked": [
+        {
+          "version": "3.0.5",
+          "date": "2026-09-01",
+          "downloads": 598279,
+          "known_incompatibilities": "none found; explicitly compatible with Expanded Foods (installed), CarryOn (installed), Chisel Tools (installed), Butchering (installed), Wildcraft: Fruits and Nuts, and Long-Term Food. v3.0.0 was a breaking change requiring a mod-content wipe on existing worlds — already past that point at the installed 3.0.5.",
+          "note": "Confirmed companion mod for Expanded Foods (installed), matching AGENTS.md's expected relationship."
+        }
+      ]
+    },
+    {
+      "modid": "hudclockpatch",
+      "name": "HUD Clock",
+      "installed": true,
+      "assetid": 16132,
+      "url": "https://mods.vintagestory.at/hudclock",
+      "version": "4.4.1",
+      "author": "Elocrypt",
+      "checked": [
+        {
+          "version": "4.4.1",
+          "date": "2026-09-01",
+          "downloads": 146226,
+          "known_incompatibilities": "none found; confirmed compatible with Status HUD Continued and Extended HUD Info (neither installed).",
+          "fork_decision": "Keep — it's the actively maintained continuation; the original is defunct.",
+          "note": "Client-side only. Targets 1.22.0–1.22.3. Originated as a community patch of \"Simple HUD Clock\" by Rhonen after that mod stopped receiving updates; author later did a full rewrite for VS 1.22 (v4.0) and now maintains it as its own project under modid `hudclockpatch`."
+        }
+      ]
+    },
+    {
+      "modid": "improvedhandbookrecipes",
+      "name": "Improved Handbook Recipes",
+      "installed": false,
+      "assetid": 14885,
+      "url": "https://mods.vintagestory.at/improvedhandbookrecipes",
+      "version": "1.1.3",
+      "author": "Kathanon",
+      "forked_by": [
+        "improvedhandbookrecipesfork"
+      ],
+      "checked": [
+        {
+          "version": "1.1.3",
+          "date": "2026-09-01",
+          "downloads": 17242,
+          "note": "Not maintained for game 1.22.x — last release only targets 1.20.4-1.20.10, dated 2025-03-02. Improved Handbook Recipes (Fork) (improvedhandbookrecipesfork) is the actively maintained continuation, which also absorbed two other now-unmaintained predecessors: DArkHekRoMaNT's 'Recipe Selector' and Gabone's 'Improved Handbook Recipes Continued' (neither tracked here separately)."
+        }
+      ]
+    },
+    {
+      "modid": "improvedhandbookrecipesfork",
+      "name": "Improved Handbook Recipes (Fork)",
+      "installed": true,
+      "assetid": 47215,
+      "url": "https://mods.vintagestory.at/improvedhandbookrecipesfork (urlalias not resolved on API; page reachable via search)",
+      "version": "1227.0.5",
+      "author": "Bannta",
+      "fork_of": "improvedhandbookrecipes",
+      "checked": [
+        {
+          "version": "1227.0.5",
+          "date": "2026-09-01",
+          "downloads": 5305,
+          "fork_decision": "Keep the fork — author Bannta did \"a huge rewrite\" because the predecessors' code was \"obsolete for net10 and 1.22\"; neither predecessor appears updated for the current game version.",
+          "note": "Low download count, but the mod is young — first releases in 2026."
+        }
+      ]
+    },
+    {
+      "modid": "knapster",
+      "name": "Knapster",
+      "installed": true,
+      "assetid": 4046,
+      "url": "https://mods.vintagestory.at/knapster",
+      "version": "4.0.0",
+      "author": "Apache (ApacheTech Solutions)",
+      "checked": [
+        {
+          "version": "4.0.0",
+          "date": "2026-09-01",
+          "downloads": 278705,
+          "known_incompatibilities": "none found; confirmed compatible with SmithingPlus (installed) and Anvil Metal Recovery (not installed); optional integration with A Culinary Artillery (installed) for an Easy Mixing feature.",
+          "note": "Author only releases for stable game builds, not pre-releases/RCs. Targets 1.22.0."
+        }
+      ]
+    },
+    {
+      "modid": "apelanterns",
+      "name": "More Lanterns",
+      "installed": true,
+      "assetid": 14471,
+      "url": "https://mods.vintagestory.at/apelanterns",
+      "version": "1.4.3",
+      "author": "xXx_Ape_xXx",
+      "checked": [
+        {
+          "version": "1.4.3",
+          "date": "2026-09-01",
+          "downloads": 127206,
+          "known_incompatibilities": "none currently — earlier versions (pre-1.4.1) had a remap file that could conflict with village generation, since fixed. Pairs well with \"Japanese Architecture\" (not installed).",
+          "note": "Targets 1.22.0-pre.1–1.22.6."
+        }
+      ]
+    },
+    {
+      "modid": "morehudbars",
+      "name": "MoreHudBars",
+      "installed": true,
+      "assetid": 43536,
+      "url": "https://mods.vintagestory.at/morehudbars",
+      "version": "1.2.0",
+      "author": "TheInsanityGod",
+      "checked": [
+        {
+          "version": "1.2.0",
+          "date": "2026-09-01",
+          "downloads": 3237,
+          "known_incompatibilities": "none found; complements Toolsmith durability/sharpness bars (not confirmed installed); fully configurable per-bar"
+        }
+      ]
+    },
+    {
+      "modid": "petai",
+      "name": "Pet AI",
+      "installed": true,
+      "assetid": 1618,
+      "url": "https://mods.vintagestory.at/petai",
+      "version": "5.1.1",
+      "author": "G3rste (Gerste)",
+      "checked": [
+        {
+          "version": "5.1.1",
+          "date": "2026-09-01",
+          "downloads": 497220,
+          "known_incompatibilities": "none found; own docs state \"most mods should peacefully coexist with it.\" Required by Wolf taming (installed) and Pet Map Markers (installed).",
+          "note": "Foundational library mod."
+        }
+      ]
+    },
+    {
+      "modid": "petmapmarkers",
+      "name": "Pet Map Markers",
+      "installed": true,
+      "assetid": 52002,
+      "url": "https://mods.vintagestory.at/petmapmarkers",
+      "version": "0.1.0",
+      "author": "Artalus",
+      "checked": [
+        {
+          "version": "0.1.0",
+          "date": "2026-09-01",
+          "downloads": 2538,
+          "known_incompatibilities": "**partial incompatibility with Cartographer (installed)** — see Cartographer's entry above. Soft/cosmetic-only incompatibility with Mobs Radar (not installed). Full, tested support for Pet AI (installed) and Wolf taming (installed), plus Animal Cages (not confirmed installed).",
+          "note": "Small mod — low download count reflects niche scope, not a stability concern. Only one release exists so far."
+        }
+      ]
+    },
+    {
+      "modid": "placeonslabs",
+      "name": "Place on slabs",
+      "installed": true,
+      "assetid": 38090,
+      "url": "https://mods.vintagestory.at/placeonslabs (urlalias not resolved on API; page reachable via search)",
+      "version": "1.2.0",
+      "author": "BeloMaximka",
+      "checked": [
+        {
+          "version": "1.2.0",
+          "date": "2026-09-01",
+          "downloads": 88724,
+          "known_incompatibilities": "blacklists mannequins and cabinets (face-culling issues); some user-reported crashes attributed to interactions with other mods rather than this mod directly. Confirmed compatible with Custom Flowerpots, Containers Bundle, Primitive Survival.",
+          "note": "Required by Terrain Slabs (installed, min version 1.1.3 — satisfied)."
+        }
+      ]
+    },
+    {
+      "modid": "plainsandvalleys",
+      "name": "Plains and Valleys",
+      "installed": true,
+      "assetid": 4522,
+      "url": "https://mods.vintagestory.at/plainsandvalleys",
+      "version": "1.0.13",
+      "author": "Tenth Architect",
+      "checked": [
+        {
+          "version": "1.0.13",
+          "date": "2026-09-01",
+          "downloads": 174064,
+          "known_incompatibilities": "potential conflict with any other landform-patching worldgen mod; author recommends running only one such mod per world. Confirmed compatible with BetterRuins (installed) worldgen.",
+          "note": "Targets 1.22.0-pre.1–1.22.7."
+        }
+      ]
+    },
+    {
+      "modid": "playercorpseforkedazu",
+      "name": "Player Corpse",
+      "installed": true,
+      "assetid": 53420,
+      "url": "https://mods.vintagestory.at/playercorpseforkedazu",
+      "version": "1.15.1",
+      "author": "azurempress",
+      "fork_of": "playercorpse",
+      "checked": [
+        {
+          "version": "1.15.1",
+          "date": "2026-09-01",
+          "downloads": 38889,
+          "fork_decision": "Keep the fork — it has confirmed active 1.22.x releases through August 2026; the original's status is unconfirmed from available data."
+        }
+      ]
+    },
+    {
+      "modid": "playercorpse",
+      "name": "PlayerCorpse",
+      "installed": false,
+      "assetid": 115,
+      "url": "https://mods.vintagestory.at/playercorpse",
+      "version": "1.12.0",
+      "author": "DArkHekRoMaNT",
+      "forked_by": [
+        "playercorpseforkedazu"
+      ],
+      "checked": [
+        {
+          "version": "1.12.0",
+          "date": "2026-09-01",
+          "downloads": 471601,
+          "note": "Not maintained for game 1.22.x — last release only targets 1.21.0-1.21.1, dated 2025-09-13. Same author as CommonLib (commonlib) and Stone Quarry (stonequarry), both also stalled on 1.21.x. Player Corpse fork (playercorpseforkedazu) is the actively maintained fork, created specifically for 1.22+ support."
+        }
+      ]
+    },
+    {
+      "modid": "prospectorinfo",
+      "name": "ProspectorInfo",
+      "installed": false,
+      "assetid": 1235,
+      "url": "https://mods.vintagestory.at/show/mod/1235",
+      "version": "4.3.0",
+      "author": "P3t3rix",
+      "forked_by": [
+        "prospecttogether"
+      ],
+      "checked": [
+        {
+          "version": "4.3.0",
+          "date": "2026-09-01",
+          "downloads": 54281,
+          "note": "Not maintained for game 1.22.x — last release only targets 1.18.2-1.18.3, dated 2023-05-13. ProspectTogether (prospecttogether) is the actively maintained fork; P3t3rix is credited there as a contributor."
+        }
+      ]
+    },
+    {
+      "modid": "prospecttogether",
+      "name": "ProspectTogether",
+      "installed": true,
+      "assetid": 6932,
+      "url": "https://mods.vintagestory.at/prospecttogether",
+      "version": "2.2.1",
+      "author": "Wooza",
+      "fork_of": "prospectorinfo",
+      "checked": [
+        {
+          "version": "2.2.1",
+          "date": "2026-09-01",
+          "downloads": 388024,
+          "known_incompatibilities": "Watch-item: also installed alongside Durable Better Prospecting, which warns about mods that modify the prospecting pickaxe — see open_flags.",
+          "fork_decision": "Keep the fork; it supersedes ProspectorInfo with added player-to-player data sharing, and the original author (P3t3rix) is credited as a contributor here rather than maintaining a competing 1.22 release.",
+          "note": "Targets 1.22.0–1.22.6."
+        }
+      ]
+    },
+    {
+      "modid": "realsmoke",
+      "name": "Real Smoke",
+      "installed": true,
+      "assetid": 27288,
+      "url": "https://mods.vintagestory.at/realsmoke",
+      "version": "1.3.1",
+      "author": "XyrVexus",
+      "checked": [
+        {
+          "version": "1.3.1",
+          "date": "2026-09-01",
+          "downloads": 222010,
+          "known_incompatibilities": "none found; ships compat patches for Primitive Survival's Smoker, More Torch Holders, Stone Bake Oven (installed), and Medieval Expansion. Requires running `/realsmoke disable` before removing it from an existing world."
+        }
+      ]
+    },
+    {
+      "modid": "shipwright",
+      "name": "Shipwright: Vessels of Distant Shores",
+      "installed": true,
+      "assetid": 46047,
+      "url": "https://mods.vintagestory.at/shipwright",
+      "version": "1.4.1",
+      "author": "Freakyuser396, Pal_5000, Rivvion, Shintharo12",
+      "checked": [
+        {
+          "version": "1.4.1",
+          "date": "2026-09-01",
+          "downloads": 101622,
+          "known_incompatibilities": "None found. Integrates with Config lib (installed, customizes boat speed/handling) and Carry On (installed, lets items attach to vessels). Optional integrations with PhysicsLib (not installed, enables standing on boats), Heraldry Banners and Draconis (neither installed, cosmetic-only: banners as drakkar flags, dragonhorns on prows). Minor known issues: some multiplayer dismount desync, a non-critical sail-emblem warning message.",
+          "note": "Adds 8 vessels: smaller than vanilla's Raft (Kayak, Coracle, Caballito de totora — inventory-slot-sized), mid-range (Punter, Reed longboat, Papyrus sailer, Catboat), and larger than vanilla's Sailboat (Drakkar, seats ~12). Release page tags only cover 1.22.0-1.22.3, but modinfo.json only requires game >=1.22.0 with no upper cap — installed on 1.22.7 following the same pattern as smithingplusbugfix/anvilperformanceoptimization."
+        }
+      ]
+    },
+    {
+      "modid": "smithingplus",
+      "name": "SmithingPlus",
+      "installed": true,
+      "assetid": 15312,
+      "url": "https://mods.vintagestory.at/smithingplus",
+      "version": "1.9.0-rc.1",
+      "author": "jayu",
+      "checked": [
+        {
+          "version": "1.9.0-rc.1",
+          "date": "2026-09-01",
+          "downloads": 337697,
+          "known_incompatibilities": "redundant with \"Thrifty Smithing\" (incompatible after v1.6.7, not installed) and with Anvil Metal Recovery (tool/bits-recovery overlap, not installed — also flagged as a lag source on Knapster's page). Recommends disabling XSkills bits-recovery for balance if XSkills is installed (not installed here). Compatible with Toolsmith and Salty's Manual Tool Crafting (neither confirmed installed)."
+        },
+        {
+          "version": "1.9.0-rc.1",
+          "date": "2026-09-01",
+          "note": "This RC has a known bug causing lag spikes/crashes when looking at an anvil, plus a chisel-drag delay and iron bloom stutter. Installed smithingplusbugfix as a hotfix patch for these (see that entry's patch_for). Revisit once SmithingPlus ships a stable release that absorbs the fix — the patch should then be removable per AGENTS.md line 4."
+        }
+      ]
+    },
+    {
+      "modid": "smithingplusbugfix",
+      "name": "SmithingPlus Bug Fix",
+      "installed": true,
+      "assetid": 55511,
+      "url": "https://mods.vintagestory.at/show/mod/55511",
+      "version": "2.0.1",
+      "author": "Jimlarck",
+      "patch_for": "smithingplus",
+      "checked": [
+        {
+          "version": "2.0.1",
+          "date": "2026-09-01",
+          "downloads": 5415,
+          "known_incompatibilities": "Requires smithingplus 1.9.0-rc.1 exactly (dependency pin in modinfo.json) — installed SmithingPlus matches. Release page tags only cover game 1.22.1-1.22.3 (self-flagged \"potentially outdated\"), but modinfo.json only requires game >=1.22.0 with no upper cap; installed anyway on game 1.22.7 per user decision (author explicitly recommends pairing with Anvil Performance Optimization, also installed) since no compatibility problems have been reported either way.",
+          "note": "Fixes: anvil lag spike/crash on first view, chisel-drag-hold delay, iron bloom heating stutter. Recommended by its own author to be paired with Anvil Performance Optimization for the anvil fix specifically. Remove once SmithingPlus itself ships a stable release absorbing these fixes."
+        }
+      ]
+    },
+    {
+      "modid": "specializedbags-18slot",
+      "name": "SpecializedBags",
+      "installed": false,
+      "assetid": 356,
+      "url": "https://mods.vintagestory.at/show/mod/356",
+      "version": "0.4.2",
+      "author": "Deviator",
+      "forked_by": [
+        "specialexpandedbags"
+      ],
+      "checked": [
+        {
+          "version": "0.4.2",
+          "date": "2026-09-01",
+          "downloads": 9705,
+          "note": "Not maintained for game 1.22.x — last release targets 1.16.0-1.17.0 (users report it also works on 1.17.2+), dated 2022-05-03. A separate specializedbags-10Slot variant also exists upstream. SpecializedBags Revived (specialexpandedbags) is the actively maintained fork."
+        }
+      ]
+    },
+    {
+      "modid": "specialexpandedbags",
+      "name": "SpecializedBags Revived",
+      "installed": true,
+      "assetid": 17114,
+      "url": "https://mods.vintagestory.at/specializedbagsrevived",
+      "version": "2.0.0",
+      "author": "SpeciallyCrafted",
+      "fork_of": "specializedbags-18slot",
+      "checked": [
+        {
+          "version": "2.0.0",
+          "date": "2026-09-01",
+          "downloads": 23149,
+          "known_incompatibilities": "conflicts with \"Wildcraft: Trees and Shrubs\" (not installed) — both mods modify the same game files; author says a fix is in progress. Confirmed compatible with BetterRuins (installed).",
+          "fork_decision": "Keep the revived version — actively maintained through 2026; could not confirm from either page whether the original has since been reclaimed or updated by its original author.",
+          "note": "Targets 1.22.2."
+        }
+      ]
+    },
+    {
+      "modid": "stonebakeoven",
+      "name": "Stone Bake Oven",
+      "installed": true,
+      "assetid": 6038,
+      "url": "https://mods.vintagestory.at/stonebakeoven",
+      "version": "1.3.8",
+      "author": "CaptainOats & G3rste",
+      "checked": [
+        {
+          "version": "1.3.8",
+          "date": "2026-09-01",
+          "downloads": 411153,
+          "known_incompatibilities": "none found; integrates with Real Smoke (installed) for visual effects; partial XSkills support (Baking Space only, XSkills not installed)"
+        }
+      ]
+    },
+    {
+      "modid": "stonequarry",
+      "name": "Stone Quarry",
+      "installed": false,
+      "assetid": 1592,
+      "url": "https://mods.vintagestory.at/stonequarry",
+      "version": "3.5.1",
+      "author": "DArkHekRoMaNT",
+      "forked_by": [
+        "stonequarryrepckfipil"
+      ],
+      "checked": [
+        {
+          "version": "3.5.1",
+          "date": "2026-09-01",
+          "downloads": 452080,
+          "note": "Not maintained for game 1.22.x — last release only targets 1.21.0-1.21.1, dated 2025-09-13. Same author as CommonLib (commonlib) and PlayerCorpse (playercorpse), both also currently stalled on 1.21.x. Stone Quarry Standalone Repack (stonequarryrepckfipil) is the actively maintained fork, chosen specifically because it dropped the CommonLib dependency."
+        }
+      ]
+    },
+    {
+      "modid": "stonequarryrepckfipil",
+      "name": "Stone Quarry (Standalone Repack)",
+      "installed": true,
+      "assetid": 47526,
+      "url": "https://mods.vintagestory.at/stonequarystandalonerepack",
+      "version": "3.6.3",
+      "author": "fipil",
+      "fork_of": "stonequarry",
+      "checked": [
+        {
+          "version": "3.6.3",
+          "date": "2026-09-01",
+          "downloads": 96367,
+          "known_incompatibilities": "none found — not affected by the CommonLib vs CommonLib-Forked conflict, since it has no CommonLib dependency at all.",
+          "fork_decision": "Keep the repack — original author \"currently doesn't have the time or motivation to update his mods for VS 1.22\"; repack was chosen specifically to avoid the CommonLib version conflict already flagged in this file, and preserves save compatibility.",
+          "note": "Targets 1.22.0–1.22.3."
+        }
+      ]
+    },
+    {
+      "modid": "temporalsreformed",
+      "name": "Temporals Reformed - An Enemy Behavior Overhaul",
+      "installed": true,
+      "assetid": 28176,
+      "url": "https://mods.vintagestory.at/show/mod/28176",
+      "version": "0.2.0",
+      "author": "Darthzz",
+      "checked": [
+        {
+          "version": "0.2.0",
+          "date": "2026-09-01",
+          "downloads": 13906,
+          "known_incompatibilities": "Not recommended alongside Combat Overhaul (not installed, not tracked here) — main version changes mob health/damage in ways that clash with CO's combat rebalance; console warnings appear if both run. A separate 'Temporals Lite' mod (modid temporalslite, not installed) exists specifically for CO pairing (behavior-only, no stat changes) if that's ever revisited. Potential conflict with xskills (not installed) around temporal mob AI during storms. Compatible with Dana Tweaks (installed); works with Rust Creatures Can Destroy Obstacles and Creature Footsteps (config adjustments recommended, neither installed).",
+          "note": "Self-described as \"very experimental and prone to drastic changes.\" Recent releases show active bugfixing (fixed a bell-spawning bug, improved Shiver hitboxes in v0.1.9/v0.2.0). Only touches vanilla entity JSON (health/damage/spawn rate/behavior) via assets/survival/entities/lore, no worldgen or custom persistent data — should be safe to add/remove from an existing save, though the author gives no explicit guarantee and no comments confirm it either way. Backed up the save to AgentBackupSaves/2026-09-01/ before installing as a precaution."
+        }
+      ]
+    },
+    {
+      "modid": "terrainslabs",
+      "name": "Terrain Slabs",
+      "installed": true,
+      "assetid": 34025,
+      "url": "https://mods.vintagestory.at/terrainslabs",
+      "version": "1.0.17",
+      "author": "BeloMaximka",
+      "checked": [
+        {
+          "version": "1.0.17",
+          "date": "2026-09-01",
+          "downloads": 68153,
+          "known_incompatibilities": "connected textures don't work with Conquest VS Edition slabs (not confirmed installed); bamboo/redwood saplings don't replace slabs when growing; Footprints and Trail Mod need separate patches (neither installed). **Hard dependency on Place on slabs >=1.1.3 (installed version 1.2.0 satisfies this).**",
+          "note": "Confirmed compatible with BetterRuins (installed)."
+        }
+      ]
+    },
+    {
+      "modid": "wolftaming",
+      "name": "Wolf taming",
+      "installed": true,
+      "assetid": 1520,
+      "url": "https://mods.vintagestory.at/wolftaming",
+      "version": "5.0.1",
+      "author": "G3rste (Gerste)",
+      "checked": [
+        {
+          "version": "5.0.1",
+          "date": "2026-09-01",
+          "downloads": 368108,
+          "known_incompatibilities": "none found; requires Pet AI (installed). Ships patches for other creature mods (bowtorns, shivers — not confirmed installed).",
+          "note": "Confirmed full support from Pet Map Markers (installed)."
+        }
+      ]
+    },
+    {
+      "modid": "xinvtweaks",
+      "name": "Xandu's Inventory Tweaks",
+      "installed": false,
+      "assetid": 367,
+      "url": "https://mods.vintagestory.at/show/mod/367",
+      "version": "1.8.1",
+      "author": "Xandu",
+      "forked_by": [
+        "xinvtweaksfork"
+      ],
+      "checked": [
+        {
+          "version": "1.8.1",
+          "date": "2026-09-01",
+          "downloads": 72978,
+          "note": "Not maintained for game 1.22.x — last release only targets 1.21.0, dated 2025-08-28, and is explicitly marked outdated on its own page. Xandus Inventory Tweaks Fork (xinvtweaksfork) fixes an item-duplication bug the author has an open PR for upstream; revisit if/when that merges."
+        }
+      ]
+    },
+    {
+      "modid": "xinvtweaksfork",
+      "name": "Xandus Inventory Tweaks Fork",
+      "installed": true,
+      "assetid": 45057,
+      "url": "https://mods.vintagestory.at/xinvtweaksfork",
+      "version": "1.9.1",
+      "author": "Zaedin",
+      "fork_of": "xinvtweaks",
+      "checked": [
+        {
+          "version": "1.9.1",
+          "date": "2026-09-01",
+          "downloads": 12839,
+          "fork_decision": "Keep the fork — the duplication-bug fix is the entire reason it exists, and there's no evidence the original has caught up."
+        }
+      ]
+    }
+  ],
+  "open_flags": [
+    "Cartographer vs. Pet Map Markers, both installed. Not a hard conflict — both mods explicitly say they can run together — but sharing pet waypoints *through* Cartographer is called out by Pet Map Markers' own page as causing \"Weird Stuff.\" No action taken; just avoid using Cartographer's sharing feature for pet waypoints if that matters to you.",
+    "Durable Better Prospecting vs. ProspectTogether, both installed. Durable Better Prospecting warns generically against any mod that alters the prospecting pickaxe; ProspectTogether's own description doesn't claim to touch the pickaxe (it shares/stores prospecting data instead), so they're likely compatible, but neither page explicitly confirms the pairing. Flagging so you're aware, no changes made."
+  ]
+}

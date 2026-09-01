@@ -1,0 +1,116 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://local/VintagestoryData/MOD_DB.schema.json",
+  "title": "Vintage Story Mod Database",
+  "description": "Current-state facts about mods we track — installed ones and the originals/predecessors of forks we're keeping an eye on. Dated change history does NOT belong here; see AGENTS.md and AgentLogs/. Omit any field below whose value would be null/empty rather than writing it as null.",
+  "type": "object",
+  "required": ["schema_version", "mods", "open_flags"],
+  "properties": {
+    "schema_version": {
+      "type": "integer",
+      "description": "Bump when this schema's shape changes."
+    },
+    "description": {
+      "type": "string",
+      "description": "Human-readable one-liner about this file's purpose, shown at the top of MOD_DB.json itself."
+    },
+    "mods": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/mod" }
+    },
+    "open_flags": {
+      "type": "array",
+      "description": "Unresolved cross-mod compatibility watch-items that don't belong to a single mod entry. Resolved flags get removed (and moved to a log entry), not kept here.",
+      "items": { "type": "string" }
+    }
+  },
+  "$defs": {
+    "mod": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["modid", "name", "installed", "assetid", "url", "version"],
+      "properties": {
+        "modid": {
+          "type": "string",
+          "description": "modid from the mod's modinfo.json / mods.vintagestory.at URL slug in the API (e.g. mods.vintagestory.at/api/mod/<modid>)."
+        },
+        "name": {
+          "type": "string",
+          "description": "Display name of the mod."
+        },
+        "installed": {
+          "type": "boolean",
+          "description": "true if currently installed in the Mods/ folder. false = tracked only because it's the original/predecessor of an installed fork, per AGENTS.md line 3."
+        },
+        "assetid": {
+          "type": "integer",
+          "description": "Numeric asset id on mods.vintagestory.at."
+        },
+        "url": {
+          "type": "string",
+          "format": "uri",
+          "description": "mods.vintagestory.at page for this mod."
+        },
+        "version": {
+          "type": "string",
+          "description": "If installed=true: the version currently installed. If installed=false: the latest version we've observed upstream."
+        },
+        "author": {
+          "type": "string",
+          "description": "Omit if unknown."
+        },
+        "fork_of": {
+          "type": "string",
+          "description": "modid of the original mod this one forks, if applicable. Omit if this isn't a fork. For a fork of multiple predecessors, use the primary/most direct one here and mention the others in checked.note."
+        },
+        "forked_by": {
+          "type": "array",
+          "items": { "type": "string" },
+          "minItems": 1,
+          "description": "modids of installed/tracked forks of this mod. Omit if none. Inverse of fork_of on the forking entry."
+        },
+        "patch_for": {
+          "type": "string",
+          "description": "modid of the mod this one exists solely to patch/fix, per AGENTS.md line 4. Omit if not a patch mod. Remove this whole mod entry once the patch is no longer needed (i.e. the original fixes the bug)."
+        },
+        "checked": {
+          "type": "array",
+          "description": "Point-in-time snapshots of what we verified on the mod's page, newest first. Append a new entry when a recheck turns up something substantive — a fork/keep decision, a newly found incompatibility, a meaningful observation ('we forked this years ago and it's still the right call' is worth keeping). Do NOT append routine version-bump noise like 'updated x to y' with nothing else to say — that belongs in AgentLogs/, not here. The array is the history; only add to it when there's something worth knowing later.",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["version", "date"],
+            "properties": {
+              "version": {
+                "type": "string",
+                "description": "The mod version this entry's facts (known_incompatibilities, fork_decision, downloads, note) were true as of."
+              },
+              "date": {
+                "type": "string",
+                "format": "date",
+                "description": "YYYY-MM-DD this snapshot was taken."
+              },
+              "downloads": {
+                "type": "integer",
+                "description": "Download count as of this snapshot. Omit if unknown."
+              },
+              "known_incompatibilities": {
+                "type": "string",
+                "description": "Omit if none found as of this snapshot."
+              },
+              "fork_decision": {
+                "type": "string",
+                "description": "Why we're keeping/dropping this fork vs. its original, per AGENTS.md line 3 (per-mod decision, not automatic). Omit if fork_of isn't set, or if unchanged since the previous entry."
+              },
+              "note": {
+                "type": "string",
+                "description": "Any other free-text observation worth keeping. Omit if none."
+              }
+            }
+          },
+          "minItems": 1
+        }
+      }
+    }
+  }
+}
