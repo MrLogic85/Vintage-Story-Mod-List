@@ -11,7 +11,7 @@ This repo only contains the modlist itself (`MOD_DB.json`) — not the mod files
    ```
    powershell -NoExit -Command "cd $env:APPDATA\VintagestoryData"
    ```
-3. In the window that opens, paste the block below and press Enter. **First check the last line** — if Vintage Story isn't installed at `C:\Program Files\Vintagestory`, change that path to wherever `Vintagestory.exe` actually is on your PC before pasting (this also installs Git automatically if you don't already have it):
+3. In the window that opens, paste the block below and press Enter. The last line assumes Vintage Story is installed at the standalone-installer default (`%APPDATA%\Vintagestory`) — if yours is installed somewhere else (e.g. a system-wide install under `C:\Program Files\Vintagestory`), change that path before pasting (this also installs Git automatically if you don't already have it):
    ```powershell
    $gitOk = $true
    if (-not (Get-Command git -ErrorAction SilentlyContinue)) {
@@ -30,7 +30,7 @@ This repo only contains the modlist itself (`MOD_DB.json`) — not the mod files
        git remote add origin https://github.com/MrLogic85/Vintage-Story-Mod-List.git
        git fetch
        git checkout -t origin/main
-       .\setup.ps1 -Path "C:\Program Files\Vintagestory\Vintagestory.exe"
+       .\setup.ps1 -Path "$env:APPDATA\Vintagestory\Vintagestory.exe"
    }
    ```
 4. This creates a **"Vintage Story (Modded)"** shortcut on your desktop. Use that instead of your old shortcut from now on.
