@@ -61,16 +61,18 @@ This is vanilla-plus, not a total conversion: nothing here replaces Vintage Stor
 
 ## Categories
 
+Each category links to a page explaining what its mods add, how they interact with each other (and with mods in other categories), and how to actually use them.
+
 | Category | Mods |
 |---|---|
-| Cooking & Food | A Culinary Artillery, Expanded Foods, FoodShelves, Butchering, Stone Bake Oven, Real Smoke, SpecializedBags Revived, BetterTraders |
-| Smithing & Crafting | SmithingPlus (+ Bug Fix), Knapster, QP's Chisel Tools, Stone Quarry (Standalone Repack), Improved Handbook Recipes (Fork) |
-| Prospecting & Mining | Durable Better Prospecting, ProspectTogether |
-| Companions | Pet AI, Wolf taming, Pet Map Markers, BedSpawn |
-| Exploration & World | BetterRuins, Plains and Valleys, Farseer, More Lanterns, Shipwright, Auto Map Markers, Cartographer |
-| Danger & Wildlife | Temporals Reformed, BloodTrail |
-| Quality of Life | HUD Clock, MoreHudBars, Extra Info, Extra Overlays, Dana Tweaks, Xandu's Inventory Tweaks Fork, Carry On, Place on slabs, Terrain Slabs, Player Corpse |
-| Foundation (libraries) | CommonLib, CommonLib-Forked, Config lib, Dear ImGui, Anvil Performance Optimization |
+| [Cooking & Food](docs/cooking-and-food.md) | A Culinary Artillery, Expanded Foods, FoodShelves, Butchering, Stone Bake Oven, Real Smoke, SpecializedBags Revived, BetterTraders |
+| [Smithing & Crafting](docs/smithing-and-crafting.md) | SmithingPlus (+ Bug Fix), Knapster, QP's Chisel Tools, Stone Quarry (Standalone Repack), Improved Handbook Recipes (Fork) |
+| [Prospecting & Mining](docs/prospecting-and-mining.md) | Durable Better Prospecting, ProspectTogether |
+| [Companions](docs/companions.md) | Pet AI, Wolf taming, Pet Map Markers, BedSpawn |
+| [Exploration & World](docs/exploration-and-world.md) | BetterRuins, Plains and Valleys, Farseer, More Lanterns, Shipwright, Auto Map Markers, Cartographer |
+| [Danger & Wildlife](docs/danger-and-wildlife.md) | Temporals Reformed, BloodTrail |
+| [Quality of Life](docs/quality-of-life.md) | HUD Clock, MoreHudBars, Extra Info, Extra Overlays, Dana Tweaks, Xandu's Inventory Tweaks Fork, Carry On, Place on slabs, Terrain Slabs, Player Corpse |
+| [Foundation (libraries)](docs/foundation-libraries.md) | CommonLib, CommonLib-Forked, Config lib, Dear ImGui, Anvil Performance Optimization |
 
 Full mod details, versions, fork/patch reasoning, and known incompatibilities are tracked in [`MOD_DB.json`](MOD_DB.json) (schema in [`MOD_DB.schema.json`](MOD_DB.schema.json)). Change history lives in [`AgentLogs/`](AgentLogs/).
 
