@@ -43,6 +43,8 @@ All of them have speed, acceleration, and turning tunable via Config lib, and sa
 
 Works through both the map GUI and chat commands: `/waypoint share <id>` (shorthand `/wp share <id>`) shares one waypoint, `/waypoint shareall` (shorthand `/wp shareall`) shares every waypoint you have — but **only the ones that already exist at the moment you run it**, per the mod's own changelog. It's a one-time snapshot, not an ongoing auto-share: create a new waypoint after running `shareall` and it stays private until you share it too, individually or with another `shareall`. `/waypoint unshare <id>` and `/waypoint unshareall` reverse it. Shared waypoints go onto a dedicated "Shared Waypoints" map layer automatically for every player on the server — there's no acceptance step on the receiving end.
 
+**Don't run `share`/`shareall` on pet waypoints** created by Pet Map Markers (see [Companions](companions.md)) — sharing them is explicitly flagged as causing problems, since those waypoints are meant to keep moving with the pet while Cartographer shares a frozen snapshot. Regular waypoints don't have this issue.
+
 ## Putting it together
 
 Turn on Auto Map Markers before you start a real exploration push — it's off by default and easy to forget. Let Farseer and Plains and Valleys' smoother terrain do their thing passively while you travel. BetterRuins gives you actual destinations worth the trip; pick a Shipwright boat sized to how far you're going and whether you're bringing cargo or a group. Once you're playing with others, Cartographer's `/wp shareall` is the fast way to get everyone looking at the same map — just remember to re-run it after adding new waypoints, since it doesn't share automatically going forward.

@@ -14,6 +14,8 @@ Tame a dog or puppy with a **magic golden bone**, or just use the game's normal 
 
 Fully automatic, no setup: the moment a creature gets tamed (via Pet AI's tameable behavior), it gets a live-updating pawprint waypoint that moves with it. If the pet goes down, its marker turns red and stays pinned at that spot. Waypoints can be manually recolored or pinned like any other marker.
 
+**Don't share pet waypoints through Cartographer** (see [Exploration & World](exploration-and-world.md)) — the mod's own page warns it "will do all sort of Weird Stuff," with no further detail given. Likely cause: Pet Map Markers' waypoints are meant to keep moving with the pet, while Cartographer's `/waypoint share` hands out a frozen snapshot — sharing one probably leaves the shared copy stale while your own keeps tracking the pet, or the two systems end up fighting over the same waypoint. Not confirmed by either author, but general (non-pet) waypoints don't have this problem, so there's no reason to risk it.
+
 ## BedSpawn
 
 Sleep in a bed and your spawn point moves there — destroy that bed and you revert to the default world spawn. A few things affect whether it takes: there's a cooldown between spawn-resets (half an in-game day by default), it can be configured to require sneaking when you interact with the bed, to block setting spawn below sea level, or to require the bed be inside an enclosed room. Chat feedback tells you exactly why a given attempt didn't register if it fails.
