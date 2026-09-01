@@ -11,13 +11,27 @@ This repo only contains the modlist itself (`MOD_DB.json`) — not the mod files
    ```
    powershell -NoExit -Command "cd $env:APPDATA\VintagestoryData"
    ```
-3. In the window that opens, paste the block below and press Enter. **First check the last line** — if Vintage Story isn't installed at `C:\Program Files\Vintagestory`, change that path to wherever `Vintagestory.exe` actually is on your PC before pasting:
+3. In the window that opens, paste the block below and press Enter. **First check the last line** — if Vintage Story isn't installed at `C:\Program Files\Vintagestory`, change that path to wherever `Vintagestory.exe` actually is on your PC before pasting (this also installs Git automatically if you don't already have it):
    ```powershell
-   git init
-   git remote add origin https://github.com/MrLogic85/Vintage-Story-Mod-List.git
-   git fetch
-   git checkout -t origin/main
-   .\setup.ps1 -Path "C:\Program Files\Vintagestory\Vintagestory.exe"
+   $gitOk = $true
+   if (-not (Get-Command git -ErrorAction SilentlyContinue)) {
+       Write-Host "Git not found - installing..." -ForegroundColor Yellow
+       if (Get-Command winget -ErrorAction SilentlyContinue) {
+           winget install --id Git.Git -e --silent --accept-package-agreements --accept-source-agreements
+           $env:Path = [System.Environment]::GetEnvironmentVariable("Path","Machine") + ";" + [System.Environment]::GetEnvironmentVariable("Path","User")
+       }
+       if (-not (Get-Command git -ErrorAction SilentlyContinue)) {
+           Write-Host "Could not install Git automatically. Install it from https://git-scm.com/download/win, then close this window, redo step 2, and paste this block again." -ForegroundColor Red
+           $gitOk = $false
+       }
+   }
+   if ($gitOk) {
+       git init
+       git remote add origin https://github.com/MrLogic85/Vintage-Story-Mod-List.git
+       git fetch
+       git checkout -t origin/main
+       .\setup.ps1 -Path "C:\Program Files\Vintagestory\Vintagestory.exe"
+   }
    ```
 4. This creates a **"Vintage Story (Modded)"** shortcut on your desktop. Use that instead of your old shortcut from now on.
 
