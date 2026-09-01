@@ -8,6 +8,7 @@
 /AgentBackupSaves/
 /RiverCache/
 /Backups/
+/Cache/
 
 # Per-machine / possibly-sensitive config.
 /clientsettings.json
