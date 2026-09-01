@@ -2,20 +2,29 @@
 
 **Mods:** Durable Better Prospecting, ProspectTogether
 
-A small category, but worth understanding how the two interact, since they touch overlapping territory from different angles.
+## Durable Better Prospecting: read the pick your way
 
-## Durable Better Prospecting
+The prospecting pick now has six distinct reading modes instead of vanilla's one:
 
-Changes how the prospecting pickaxe itself behaves — the mechanics of *finding* ore. Its own page carries a blanket warning that it may conflict with **any** mod that modifies the prospecting pickaxe. This isn't a fork of a competing mod; it's the same lineage as the original "BetterProspecting," republished under the original mod ID with the original author's blessing after a naming dispute — so there's no separate "original" to worry about reverting to.
+- **Density** — vanilla-style sampling, with an option to simplify it to a single-block read instead of 3
+- **Node** — vanilla's node-detection mode (off by default)
+- **Rock** — shortest distance to each rock type in the area
+- **Column** — every ore present in one vertical column, from the mantle up to world height
+- **Distance** — shortest distance to each ore type, with short/medium/long range variants
+- **Quantity** — an enhanced version of node mode with more range, also in short/medium/long variants
 
-## ProspectTogether
+Readings can be sorted increasing or decreasing, long-range modes can auto-drop a map marker on a hit, and you can turn on directional labels alongside the numbers so you know which way to dig.
 
-A different mechanism entirely: it **stores and shares prospecting data** between players rather than touching the pickaxe. It's a fork of an older mod called ProspectorInfo, which it supersedes — ProspectorInfo's original author is credited here as a contributor rather than maintaining a competing release.
+## ProspectTogether: share what you find
 
-## Do they conflict with each other?
+Prospect normally with the pick in Density Search mode — your findings save locally to `prospectTogetherClient.json` as you go. From there you choose how to share:
 
-Not confirmed to conflict, and functionally they shouldn't — Durable Better Prospecting changes pickaxe behavior, ProspectTogether just records and shares what you find. But neither mod's own page explicitly confirms the pairing has been tested, so this is a "probably fine, watch for weirdness" situation rather than a guaranteed-safe combination.
+- **Manual**: the chat command `.pt sendall`, or the "Send All Now" button in the map dialog
+- **Automatic**: turn on `.pt autoshare true` (or the equivalent toggle in the map dialog) once, and every future find syncs automatically
+- **PvP servers**: pick a specific target group in the map dialog instead of broadcasting to everyone
 
-## How to actually use it
+Server admins can tune how often data syncs with `/pt setsaveintervalminutes [1-60]`.
 
-Prospect normally — Durable Better Prospecting is just doing its thing under the hood. The real payoff of ProspectTogether shows up in multiplayer: once someone on the server has prospected an area, everyone benefits from that data instead of everyone re-walking the same ground.
+## Putting it together
+
+Switch between Durable Better Prospecting's modes depending on what you're doing — Column mode to fully survey a promising vertical shaft, Distance mode when you know what you're after and just need a heading. Once you're prospecting with other players, turn on ProspectTogether's autoshare early — the value compounds the more people are feeding data into the shared map.

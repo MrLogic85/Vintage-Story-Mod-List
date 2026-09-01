@@ -2,22 +2,47 @@
 
 **Mods:** BetterRuins, Plains and Valleys, Farseer, More Lanterns, Shipwright, Auto Map Markers, Cartographer
 
-## World generation: BetterRuins + Plains and Valleys
+## BetterRuins: things worth finding
 
-**BetterRuins** adds a large variety of above- and below-ground structures to worldgen. **Plains and Valleys** changes terrain generation to favor open plains and valleys between hills and mountains. The two are confirmed compatible with each other. The one real rule with worldgen mods: **Plains and Valleys' own author recommends running only one landform-patching worldgen mod at a time** — don't add a second one (e.g. another terrain-overhaul mod) alongside it without checking compatibility first. BetterRuins is a structure mod, not a landform mod, so it doesn't count against that rule.
+Adds over 600 structures across several categories: small ruins and graves (including waystones), underground passages, dungeons, and mine excavations, full villages (multiple distinct tilesets, including Forest Village and Clay Villages), megastructures (castles, mansions, aqueducts, bathhouses), Forlorn Hope towers and their variants, named story locations (Huaca, The Panopticon, Coal Mine, University, Sunrift Experiment), surface and underground translocators, churches and religious sites, and trading posts.
 
-Both are worldgen mods in the strict sense — they shape terrain as chunks generate. Adding or removing them mid-save only affects newly-generated chunks, not ones you've already explored.
+What's in them: collectible blueprints that unlock crafting for otherwise-unobtainable items, treasure maps that lead to further locations, an expanded loot pool, custom lore items, building materials, and unique items including temporal artifacts.
 
-## Seeing and marking the world
+## Plains and Valleys: how the terrain itself changes
 
-**Farseer** draws silhouettes of terrain beyond your normal view distance, so distant mountains and coastlines are visible instead of fading into fog. **More Lanterns** adds a variety of decorative and functional lanterns for actually lighting the places you build.
+Not new content, a different shape to the world: flat lowlands, plains, and highlands dotted with lakes, hills, and mountains, with rough/jagged landforms made much rarer. Coastal flatlands, wetlands, and polar glaciers get their own treatment. Slopes between terrain types are smoothed instead of sheer cliffs, lake beds are smoother with fewer floating rock artifacts, and hills interfere less with the terrain around them, so you get fewer unnavigable pockets of land.
 
-**Auto Map Markers** automatically drops a map marker when you interact with certain objects — no manual waypoint-placing needed for the things it covers. **Cartographer** lets you share waypoints with other players on a server. The one interaction to know: Cartographer has a **partial incompatibility with Pet Map Markers** (see [Companions](companions.md)) specifically around sharing *pet* waypoints — general waypoint sharing is unaffected.
+## Farseer: see further without doing anything
 
-## Getting around: Shipwright
+Fully passive — nothing to craft or configure to get the benefit. Renders a simplified heightmap silhouette of terrain out to roughly 4,000 blocks as atmospheric fog: elevation only, no structures or vegetation shown at that range. Heightmaps build automatically as you explore and are cached server-side, so the first pass through unexplored terrain is slower than revisiting somewhere you've already been. Open its settings with **Ctrl+Shift+F** if you want to adjust view distance or visual preferences.
 
-Vintage Story already has a vanilla Raft and Sailboat — Shipwright doesn't replace them, it fills in the size range around them. It adds 8 boats: smaller than the vanilla Raft (Kayak, Coracle, Caballito de totora — small enough to carry in your inventory), several mid-range options (Punter, Reed longboat, Papyrus sailer, Catboat), and one larger than the vanilla Sailboat (the Drakkar, seating around a dozen). It also integrates with Config lib (for speed/handling tuning) and Carry On (items can attach to vessels).
+## More Lanterns
 
-## How to actually use it
+19 lanterns in total. Named Japanese stone lantern variants — Yukimi, Kodai Maru Yukimi, Oribe Ikekomi, Okunoin Daitsuki — craftable in any rock type, with pieces crafted separately and then assembled. Paper lanterns are dyeable with new cyan and brown dye recipes (dye a batch of parchments at once in a barrel), and floating paper lantern variants exist too. Metal medieval-style lanterns let you adjust their light level with Ctrl+right-click, and there are modern-style lanterns as well.
 
-Let BetterRuins and Plains and Valleys do their thing from world creation — there's no manual setup. Use Farseer passively; it just extends what you can see. Auto Map Markers will quietly build up your map as you explore — check it periodically rather than manually marking everything yourself. Once you're doing serious water travel, pick a Shipwright boat sized for the trip: a Kayak for scouting a river alone, a Drakkar for moving a group and cargo.
+## Shipwright: pick the right boat
+
+All 8 boats are built in-world with a construction item, not crafted at a workbench:
+
+- **Catboat** (sailed) — planks, boards, rope, hide; 4+ seats plus storage; single sail; can mount a jibsail, lantern, or name-plaque (jibsail and lantern share the same front slot, so pick one)
+- **Drakkar** (sailed) — a multi-stage build from planks, rope, and hides; seats around a dozen plus storage; cloth sail; a figurehead slot that accepts custom chiseled blocks, a sail emblem, a Heraldry Banners-compatible flag, or a Draconis dragonhorn mount
+- **Punter** (rowed) — pole-propelled, multiple seats, storage, and a lantern slot
+- **Coracle** (rowed) — small, round, hide-built — an early-game option
+- **Kayak** (rowed) — needs 4 prepared hides plus planks; small enough to carry in a regular inventory slot
+- **Caballito de Totora** (rowed) — built from cattail or papyrus reed, also inventory-carriable
+- **Reed Longboat** (rowed) — cattail or papyrus construction, medium size, early-game accessible
+- **Papyrus Sailer** (hybrid) — papyrus-only, combines sailing and rowing in one boat
+
+All of them have speed, acceleration, and turning tunable via Config lib, and sails can be recolored.
+
+## Auto Map Markers: turn it on first
+
+**Disabled by default** — enable it through the config menu (**Ctrl+Shift+M**), where you can also set the icon, color, and name per marker type. Once on, it auto-marks flora (resin, berries, mushrooms, flowers, fruit trees, wild crops, reeds), 14 surface ore types, 19 deep ore types, and miscellaneous finds (boats, beehives, translocators, colored clay, peat, high-fertility soil, meteoric iron, saltpeter), plus all 9 trader varieties. Choose how markers trigger: automatically on interact/harvest/break, by sneaking while looking at something, or via hotkey — up to 3 configurable marker hotkeys, plus a "delete nearest marker" hotkey.
+
+## Cartographer
+
+Works through both the map GUI and chat commands: `/waypoint share <id>` shares one waypoint, `/waypoint shareall` (or the shorthand `/wp share`) shares everything. Shared waypoints go onto a dedicated "Shared Waypoints" map layer automatically for every player on the server — there's no acceptance step on the receiving end.
+
+## Putting it together
+
+Turn on Auto Map Markers before you start a real exploration push — it's off by default and easy to forget. Let Farseer and Plains and Valleys' smoother terrain do their thing passively while you travel. BetterRuins gives you actual destinations worth the trip; pick a Shipwright boat sized to how far you're going and whether you're bringing cargo or a group. Once you're playing with others, Cartographer's `/wp shareall` is the fast way to get everyone looking at the same map.
