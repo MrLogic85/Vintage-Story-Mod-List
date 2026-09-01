@@ -217,7 +217,7 @@
     {
       "modid": "commonlib",
       "name": "CommonLib",
-      "installed": true,
+      "installed": false,
       "assetid": 5457,
       "url": "https://mods.vintagestory.at/commonlib",
       "version": "2.8.0",
@@ -235,6 +235,11 @@
           "version": "2.8.0",
           "date": "2026-09-01",
           "fork_decision": "Keep, though also currently unused. Same dependency scan found nothing installed requires this either — but kept as the safer of the two to retain against a future mod needing a CommonLib-family dependency, since commonlibforked's own page warns it doesn't work with some of the original author's other mods (narrower compatibility). commonlibforked was removed (see forked_by) since it had zero installed dependents and the narrower compatibility."
+        },
+        {
+          "version": "2.8.0",
+          "date": "2026-09-01",
+          "fork_decision": "Removed. User confirmed no installed mod uses CommonLib at all (matches the dependency scan finding from when commonlibforked was removed for the same reason) — both CommonLib variants are now uninstalled, kept only as tracked (installed: false) entries in case a future mod needs one specifically."
         }
       ],
       "forked_by": [
