@@ -72,7 +72,7 @@ Each category links to a page explaining what its mods add, how they interact wi
 | [Exploration & World](docs/exploration-and-world.md) | BetterRuins, Plains and Valleys, Farseer, More Lanterns, Shipwright, Auto Map Markers, Cartographer |
 | [Danger & Wildlife](docs/danger-and-wildlife.md) | Temporals Reformed, BloodTrail |
 | [Quality of Life](docs/quality-of-life.md) | HUD Clock, MoreHudBars, Extra Info, Extra Overlays, Dana Tweaks, Xandu's Inventory Tweaks Fork, Carry On, Place on slabs, Terrain Slabs, Player Corpse |
-| [Foundation (libraries)](docs/foundation-libraries.md) | CommonLib, CommonLib-Forked, Config lib, Dear ImGui, Anvil Performance Optimization |
+| [Foundation (libraries)](docs/foundation-libraries.md) | CommonLib, Config lib, Dear ImGui, Anvil Performance Optimization |
 
 Full mod details, versions, fork/patch reasoning, and known incompatibilities are tracked in [`MOD_DB.json`](MOD_DB.json) (schema in [`MOD_DB.schema.json`](MOD_DB.schema.json)). Change history lives in [`AgentLogs/`](AgentLogs/).
 
@@ -81,7 +81,7 @@ Full mod details, versions, fork/patch reasoning, and known incompatibilities ar
 Game version: **1.22.7**
 
 <details>
-<summary>Installed mods (44)</summary>
+<summary>Installed mods (43)</summary>
 
 | Mod ID | Version |
 |---|---|
@@ -97,7 +97,6 @@ Game version: **1.22.7**
 | carryon | 1.14.3 |
 | chiseltools | 1.17.6 |
 | commonlib | 2.8.0 |
-| commonlibforked | 2.8.1 |
 | configlib | 1.13.1 |
 | danatweaks | 4.1.0 |
 | egocaribautomapmarkers | 5.0.3 |
