@@ -230,6 +230,11 @@
           "known_incompatibilities": "none stated on page; no deprecation notice",
           "fork_decision": "Keep both — see CommonLib-Forked entry above; confirmed that whatever mods require the original can't substitute the fork and vice versa.",
           "note": "Stalled at game 1.21 support (last release only targets 1.21.0/1.21.1, dated 2025-09-13) while commonlibforked has moved to 1.22."
+        },
+        {
+          "version": "2.8.0",
+          "date": "2026-09-01",
+          "fork_decision": "Keep, though also currently unused. Same dependency scan found nothing installed requires this either — but kept as the safer of the two to retain against a future mod needing a CommonLib-family dependency, since commonlibforked's own page warns it doesn't work with some of the original author's other mods (narrower compatibility). commonlibforked was removed (see forked_by) since it had zero installed dependents and the narrower compatibility."
         }
       ],
       "forked_by": [
@@ -239,7 +244,7 @@
     {
       "modid": "commonlibforked",
       "name": "CommonLib-Forked",
-      "installed": true,
+      "installed": false,
       "assetid": 47267,
       "url": "https://mods.vintagestory.at/commonlibforked",
       "version": "2.8.1",
@@ -253,6 +258,11 @@
           "known_incompatibilities": "description says this fork pairs specifically with the author's own fork of Player Corpse (we have `playercorpseforkedazu` installed, a *different* fork — relationship unconfirmed) and states it \"will not work with [DArkHekRoMaNT's] other mods.\"",
           "fork_decision": "Keep both — decision: mods that depend on the original CommonLib need the original, mods that depend on the fork need the fork; they're not interchangeable, so both stay installed as separate dependencies.",
           "note": "Both this and the original CommonLib are currently installed — see fork_decision. Targets game 1.22.0."
+        },
+        {
+          "version": "2.8.1",
+          "date": "2026-09-01",
+          "fork_decision": "Removed. Scanned all 44 installed mods' modinfo.json dependencies directly and found none declare a dependency on commonlib or commonlibforked. The one mod this fork's own page says it's specifically paired with (playercorpseforkedazu) dropped its CommonLib dependency as of v1.14.0, a version older than the one installed here. Not used by anything currently installed; removed via sync-mods.ps1 by setting installed: false here."
         }
       ]
     },
