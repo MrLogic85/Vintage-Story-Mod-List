@@ -11,13 +11,11 @@
 
   Before downloading anything, it reads the actual modinfo.json inside
   every .zip already in your Mods folder (regardless of filename) to find
-  out what's really installed. This matters because a mod downloaded by
-  hand from mods.vintagestory.at rarely has the filename this script would
-  use (`<modid>_<version>.zip`) — without this check, a fresh run would
-  re-download every mod under a new name and leave the original file
-  behind too, duplicating everything. A mod already present at the right
-  version is left completely alone, whatever it's named; a mod present at
-  the wrong version gets that exact file replaced.
+  out what's really installed — a mod already present at the right version
+  is left completely alone, whatever it's named; a mod present at the wrong
+  version gets that exact file replaced. Fresh downloads are saved under
+  the same filename mods.vintagestory.at itself gives the release, so a
+  script-installed mod looks identical to one you downloaded by hand.
 
   Only removes files this script itself installed or adopted (tracked in
   .sync-state.json inside the Mods folder) — mods you added yourself and
@@ -133,8 +131,6 @@ foreach ($modid in @($state.Keys)) {
 
 foreach ($modid in $target.Keys) {
     $wantedVersion = $target[$modid]
-    $expectedFilename = "${modid}_${wantedVersion}.zip"
-    $expectedPath = Join-Path $ModsDir $expectedFilename
 
     # Already tracked by this script at the right version and the file is
     # still there - nothing to do, no need to even open the zip again.
@@ -178,10 +174,17 @@ foreach ($modid in $target.Keys) {
             $downloadUrl = "https://moddbcdn.vintagestory.at/$downloadUrl"
         }
 
+        # Use the same filename mods.vintagestory.at itself gives the file,
+        # so a script-installed mod looks identical to a manually-downloaded
+        # one instead of introducing its own naming convention.
+        $downloadFilename = $release.filename
+        if (-not $downloadFilename) { $downloadFilename = "${modid}_${wantedVersion}.zip" }
+        $downloadPath = Join-Path $ModsDir $downloadFilename
+
         $wasInstalled = $existingByModid.ContainsKey($modid)
 
-        Invoke-WebRequest -Uri $downloadUrl -OutFile $expectedPath -TimeoutSec 60
-        $state[$modid] = @{ filename = $expectedFilename; version = $wantedVersion }
+        Invoke-WebRequest -Uri $downloadUrl -OutFile $downloadPath -TimeoutSec 60
+        $state[$modid] = @{ filename = $downloadFilename; version = $wantedVersion }
 
         if ($wasInstalled) { $updated += "$modid -> $wantedVersion" }
         else { $installed += "$modid $wantedVersion" }
