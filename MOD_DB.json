@@ -362,6 +362,41 @@
       ]
     },
     {
+      "modid": "efmealsmodule",
+      "name": "Expanded Foods: Meals Module",
+      "installed": true,
+      "assetid": 53694,
+      "url": "https://mods.vintagestory.at/efmealsmodule",
+      "version": "1.0.0-dev.8",
+      "author": "l33tmaan",
+      "checked": [
+        {
+          "version": "1.0.0-dev.8",
+          "date": "2026-09-03",
+          "downloads": 64729,
+          "known_incompatibilities": "incompatible with the unofficial \"Art of Cooking\" (not installed); needs a separate compat patch to run alongside Wildcraft: Fruits & Nuts (not installed) — same watch-items as Core.",
+          "note": "Hard dependency on Expanded Foods: Core (installed): \"DO NOT USE THIS MOD WITHOUT EXPANDED FOODS: CORE INSTALLED!!!\" Adds 7 meal recipes scooped from cooking pots/mixing bowls (not craftable directly). Optional companion to Chef's Tricks (also installed) for extra ingredients (salt, lime, resin). Meals were fully removed from Core as of Core dev.9 (2026-06-02) and live only in this module now — this mod is what restores that functionality. Known bug: perish-timer issue on meals containing bone broth causes premature spoilage. Targets 1.22.3–1.22.7."
+        }
+      ]
+    },
+    {
+      "modid": "efchefstricks",
+      "name": "Expanded Foods: Chef's Tricks",
+      "installed": true,
+      "assetid": 55414,
+      "url": "https://mods.vintagestory.at/efchefstricks",
+      "version": "1.0.0-dev.4",
+      "author": "l33tmaan",
+      "checked": [
+        {
+          "version": "1.0.0-dev.4",
+          "date": "2026-09-03",
+          "downloads": 47981,
+          "note": "Hard dependency on Expanded Foods: Core (installed): \"DO NOT USE THIS MOD WITHOUT EXPANDED FOODS: CORE INSTALLED!!!\" Also relies on A Culinary Artillery (installed) for processing methods. Adds salt processing from saltwater, resin tapping, breadcrumb animal feed, eggshell-to-lime, and expanded oil uses — split out of Core as of Core dev.10 (2026-06-14). Confirmed compatible with More Animals (not installed). No known incompatibilities documented. Targets 1.22.3–1.22.7."
+        }
+      ]
+    },
+    {
       "modid": "extrainfo",
       "name": "Extra Info",
       "installed": true,
@@ -690,6 +725,23 @@
           "known_incompatibilities": "Watch-item: also installed alongside Durable Better Prospecting, which warns about mods that modify the prospecting pickaxe — see open_flags.",
           "fork_decision": "Keep the fork; it supersedes ProspectorInfo with added player-to-player data sharing, and the original author (P3t3rix) is credited as a contributor here rather than maintaining a competing 1.22 release.",
           "note": "Targets 1.22.0–1.22.6."
+        }
+      ]
+    },
+    {
+      "modid": "visibleore",
+      "name": "Visible Ore",
+      "installed": true,
+      "assetid": 1526,
+      "url": "https://mods.vintagestory.at/visibleore",
+      "version": "1.0.1",
+      "author": "Kaev",
+      "checked": [
+        {
+          "version": "1.0.1",
+          "date": "2026-09-03",
+          "downloads": 23804,
+          "note": "Client-side only cosmetic texture tweak that makes ore veins more visible inside rock blocks (sulfur/quartz untouched); no server component needed. Officially targets only 1.15.0-1.20.3 (last release 2021-11-12, unmaintained), but community comments confirm it still works fine on 1.21.x/1.22.x. No known conflicts reported; independent of Durable Better Prospecting / ProspectTogether since those affect the prospecting pickaxe/signal mechanic, not ore textures. User previously ran this mod and confirmed it worked well."
         }
       ]
     },

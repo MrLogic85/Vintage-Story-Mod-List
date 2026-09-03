@@ -1,6 +1,6 @@
 # Prospecting & Mining
 
-**Mods:** Durable Better Prospecting, ProspectTogether
+**Mods:** Durable Better Prospecting, ProspectTogether, Visible Ore
 
 ## Durable Better Prospecting: read the pick your way
 
@@ -25,6 +25,10 @@ Prospect normally with the pick in Density Search mode — your findings save lo
 
 Server admins can tune how often data syncs with `/pt setsaveintervalminutes [1-60]`.
 
+## Visible Ore: spot it once you're close
+
+A purely cosmetic, client-side texture tweak that makes ore veins stand out more clearly inside rock blocks (sulfur and quartz are left unchanged). No server-side install needed, so it works fine even if other players in a group don't have it. Unmaintained since 2021 and officially only lists support up to 1.20.3, but still confirmed working on 1.22.x.
+
 ## Putting it together
 
-Switch between Durable Better Prospecting's modes depending on what you're doing — Column mode to fully survey a promising vertical shaft, Distance mode when you know what you're after and just need a heading. Once you're prospecting with other players, turn on ProspectTogether's autoshare early — the value compounds the more people are feeding data into the shared map.
+Switch between Durable Better Prospecting's modes depending on what you're doing — Column mode to fully survey a promising vertical shaft, Distance mode when you know what you're after and just need a heading. Once you're prospecting with other players, turn on ProspectTogether's autoshare early — the value compounds the more people are feeding data into the shared map. Visible Ore then helps once you've actually dug into a promising spot, making the vein easier to trace visually instead of by feel.

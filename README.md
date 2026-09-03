@@ -65,9 +65,9 @@ Each category links to a page explaining what its mods add, how they interact wi
 
 | Category | Mods |
 |---|---|
-| [Cooking & Food](docs/cooking-and-food.md) | A Culinary Artillery, Expanded Foods, FoodShelves, Butchering, Stone Bake Oven, Real Smoke, SpecializedBags Revived, BetterTraders |
+| [Cooking & Food](docs/cooking-and-food.md) | A Culinary Artillery, Expanded Foods (Core, Meals Module, Chef's Tricks), FoodShelves, Butchering, Stone Bake Oven, Real Smoke, SpecializedBags Revived, BetterTraders |
 | [Smithing & Crafting](docs/smithing-and-crafting.md) | SmithingPlus (+ Bug Fix), Knapster, QP's Chisel Tools, Stone Quarry (Standalone Repack), Improved Handbook Recipes (Fork) |
-| [Prospecting & Mining](docs/prospecting-and-mining.md) | Durable Better Prospecting, ProspectTogether |
+| [Prospecting & Mining](docs/prospecting-and-mining.md) | Durable Better Prospecting, ProspectTogether, Visible Ore |
 | [Companions](docs/companions.md) | Pet AI, Wolf taming, Pet Map Markers, BedSpawn |
 | [Exploration & World](docs/exploration-and-world.md) | BetterRuins, Plains and Valleys, Farseer, More Lanterns, Shipwright, Auto Map Markers, Cartographer |
 | [Danger & Wildlife](docs/danger-and-wildlife.md) | Temporals Reformed, BloodTrail |
@@ -81,7 +81,7 @@ Full mod details, versions, fork/patch reasoning, and known incompatibilities ar
 Game version: **1.22.7**
 
 <details>
-<summary>Installed mods (42)</summary>
+<summary>Installed mods (45)</summary>
 
 | Mod ID | Version |
 |---|---|
@@ -98,6 +98,8 @@ Game version: **1.22.7**
 | chiseltools | 1.17.6 |
 | configlib | 1.13.1 |
 | danatweaks | 4.1.0 |
+| efchefstricks | 1.0.0-dev.4 |
+| efmealsmodule | 1.0.0-dev.8 |
 | egocaribautomapmarkers | 5.0.3 |
 | expandedfoods | 2.0.0-dev.14 |
 | extrainfo | 2.2.1 |
@@ -124,6 +126,7 @@ Game version: **1.22.7**
 | stonequarryrepckfipil | 3.6.3 |
 | temporalsreformed | 0.2.0 |
 | terrainslabs | 1.0.17 |
+| visibleore | 1.0.1 |
 | vsimgui | 1.2.7 |
 | wolftaming | 5.0.1 |
 | xinvtweaksfork | 1.9.1 |

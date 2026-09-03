@@ -1,6 +1,6 @@
 # Cooking & Food
 
-**Mods:** A Culinary Artillery, Expanded Foods, FoodShelves, Butchering, Stone Bake Oven, Real Smoke, SpecializedBags Revived, BetterTraders
+**Mods:** A Culinary Artillery, Expanded Foods (Core, Meals Module, Chef's Tricks), FoodShelves, Butchering, Stone Bake Oven, Real Smoke, SpecializedBags Revived, BetterTraders
 
 A full chain from killing/harvesting through processing, cooking, storing, and trading the surplus.
 
@@ -19,7 +19,11 @@ What you get out: red/bush/poultry meat, hides, bones, fat, blood, offal (needs 
 
 A Culinary Artillery is the toolset: bottles, saucepans, mini-cauldrons, mixing bowls (hand-cranked and powered), bottle racks, rolling pins, meat hooks/racks, spiles, clay molds, and shelf blocks. A few specific mechanics worth knowing: right-click an egg over a bowl or bucket to crack it (yolk and white separate, shells become animal feed); spiles tap trees seasonally for saps and liquids; mixing bowls combine a filling + topping + liquid (matched by ingredient type) to make pies.
 
-Expanded Foods is where the actual dishes live, built entirely on those tools: fruit leather, gozinaki, trail mix, pemmican, dumplings, fried balls, salads, cold pasta, fruit/herbal/berry breads, muffins, au gratin, pilaf, stuffed peppers, yogurt, cheese and cottage cheese, wine and cider (fermented juice), and vinegar (deliberately spoiled alcohol). Meat ages on meat hooks into dried, charred, or sausage forms; milk gets pasteurized then fermented into yogurt or pressed into cheese; nuts, seeds, and legumes get pressed for cooking oil. Cooking methods span boiling, simmering, frying, firepit-charring, clay-oven baking, and barrel fermentation/curing.
+Expanded Foods is where the actual dishes live, built entirely on those tools — but as of mid-2026 it's split across three mods, all required together: **Core** (base foods and preservation), **Meals Module** (the actual cooked dishes), and **Chef's Tricks** (extra processing). Core covers fruit leather, gozinaki, trail mix, pemmican, yogurt, cheese and cottage cheese, wine and cider (fermented juice), and vinegar (deliberately spoiled alcohol). Meat ages on meat hooks into dried, charred, or sausage forms; milk gets pasteurized then fermented into yogurt or pressed into cheese; nuts, seeds, and legumes get pressed for cooking oil.
+
+**Meals Module** adds the actual meal recipes — dumplings, fried balls, salads, cold pasta, fruit/herbal/berry breads, muffins, au gratin, pilaf, stuffed peppers, and more — all scooped from a cooking pot or mixing bowl rather than crafted directly. **Chef's Tricks** adds the supporting processing chain: salt from saltwater, resin tapping, breadcrumb animal feed from eggshells, eggshell-to-lime, and extra uses for cooking oil (including as a fuel/lubricant for machinery) — several of these feed ingredients back into Meals Module recipes. Cooking methods overall span boiling, simmering, frying, firepit-charring, clay-oven baking, and barrel fermentation/curing.
+
+One thing worth knowing: meals containing bone broth have a documented perish-timer bug that spoils them prematurely — not a big deal, just don't be surprised if one goes off faster than expected.
 
 ## Stone Bake Oven
 
