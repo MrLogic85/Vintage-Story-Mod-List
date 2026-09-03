@@ -990,6 +990,24 @@
       ]
     },
     {
+      "modid": "translocatorengineeringredux",
+      "name": "Translocator Engineering - Redux",
+      "installed": true,
+      "assetid": 3246,
+      "url": "https://mods.vintagestory.at/translocatorengineeringredux",
+      "version": "1.6.6",
+      "author": "SpearAndFang",
+      "checked": [
+        {
+          "version": "1.6.6",
+          "date": "2026-09-03",
+          "downloads": 186038,
+          "known_incompatibilities": "conflicts with Translocator Relocator [BETA] (not installed) — both installed together blocks translocator deconstruction. A past fix (1.6.2) addressed a compatibility issue with Immersive Mining (not installed).",
+          "note": "Adds what vanilla doesn't have: vanilla translocators (found pre-linked in ruins) can't be built, moved, or relinked. This mod adds a Pry Bar (smithed on an anvil from 1 steel ingot) to deconstruct existing translocators for parts, a craftable replacement translocator (3 steel, 2 gold, 1 rough diamond), and a Linker tool to connect any two translocators up to 8000 blocks apart, always bidirectional. Optional dependencies on Config lib and Dear ImGui (both installed) for an in-game config GUI. Not on Toolsmith's (installed) explicit compatibility list — the Pry Bar likely just behaves as a plain single-durability \"Smithed Tool\" there rather than getting Toolsmith's head/handle/binding breakdown; no reported issues either way. Targets 1.22.0-pre.1 through 1.22.7 (matches game version exactly, unusually current for this list)."
+        }
+      ]
+    },
+    {
       "modid": "wolftaming",
       "name": "Wolf taming",
       "installed": true,

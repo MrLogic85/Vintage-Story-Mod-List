@@ -1,6 +1,6 @@
 # Exploration & World
 
-**Mods:** BetterRuins, Plains and Valleys, Farseer, More Lanterns, Shipwright, Auto Map Markers, Cartographer
+**Mods:** BetterRuins, Plains and Valleys, Farseer, More Lanterns, Shipwright, Auto Map Markers, Cartographer, Translocator Engineering - Redux
 
 ## BetterRuins: things worth finding
 
@@ -45,6 +45,10 @@ Works through both the map GUI and chat commands: `/waypoint share <id>` (shorth
 
 **Don't run `share`/`shareall` on pet waypoints** created by Pet Map Markers (see [Companions](companions.md)) — sharing them is explicitly flagged as causing problems, since those waypoints are meant to keep moving with the pet while Cartographer shares a frozen snapshot. Regular waypoints don't have this issue.
 
+## Translocator Engineering - Redux: build your own network
+
+Vanilla translocators only exist pre-linked, in ruins — you can't build, move, or relink them. This mod changes that: smith a **Pry Bar** on an anvil (1 steel ingot) to deconstruct an existing translocator into salvageable parts (gate arrays, power cores, glass, coalescence crystal shards), craft a new one (3 steel, 2 gold, 1 rough diamond), and use a **Linker** tool to connect any two translocators up to 8,000 blocks apart — always two-way. Handy for turning a found ruin translocator into a deliberate shortcut instead of a one-off curiosity, or building a network between your own bases.
+
 ## Putting it together
 
-Turn on Auto Map Markers before you start a real exploration push — it's off by default and easy to forget. Let Farseer and Plains and Valleys' smoother terrain do their thing passively while you travel. BetterRuins gives you actual destinations worth the trip; pick a Shipwright boat sized to how far you're going and whether you're bringing cargo or a group. Once you're playing with others, Cartographer's `/wp shareall` is the fast way to get everyone looking at the same map — just remember to re-run it after adding new waypoints, since it doesn't share automatically going forward.
+Turn on Auto Map Markers before you start a real exploration push — it's off by default and easy to forget. Let Farseer and Plains and Valleys' smoother terrain do their thing passively while you travel. BetterRuins gives you actual destinations worth the trip; pick a Shipwright boat sized to how far you're going and whether you're bringing cargo or a group. Once you're playing with others, Cartographer's `/wp shareall` is the fast way to get everyone looking at the same map — just remember to re-run it after adding new waypoints, since it doesn't share automatically going forward. Found a ruin translocator somewhere useful? Pry it loose and relink it with Translocator Engineering - Redux instead of leaving it wired to wherever the game originally put it.

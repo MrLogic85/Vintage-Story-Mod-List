@@ -69,7 +69,7 @@ Each category links to a page explaining what its mods add, how they interact wi
 | [Smithing & Crafting](docs/smithing-and-crafting.md) | SmithingPlus (+ Bug Fix), Toolsmith, Knapster, QP's Chisel Tools, Stone Quarry (Standalone Repack), Improved Handbook Recipes (Fork) |
 | [Prospecting & Mining](docs/prospecting-and-mining.md) | Durable Better Prospecting, ProspectTogether, Visible Ore |
 | [Companions](docs/companions.md) | Pet AI, Wolf taming, Pet Map Markers, BedSpawn |
-| [Exploration & World](docs/exploration-and-world.md) | BetterRuins, Plains and Valleys, Farseer, More Lanterns, Shipwright, Auto Map Markers, Cartographer |
+| [Exploration & World](docs/exploration-and-world.md) | BetterRuins, Plains and Valleys, Farseer, More Lanterns, Shipwright, Auto Map Markers, Cartographer, Translocator Engineering - Redux |
 | [Danger & Wildlife](docs/danger-and-wildlife.md) | Temporals Reformed, BloodTrail |
 | [Quality of Life](docs/quality-of-life.md) | HUD Clock, MoreHudBars, Extra Info, Extra Overlays, Dana Tweaks, Xandu's Inventory Tweaks Fork, Carry On, Place on slabs, Terrain Slabs, Player Corpse, Purposeful Storage |
 | [Foundation (libraries)](docs/foundation-libraries.md) | Config lib, Dear ImGui, Anvil Performance Optimization |
@@ -81,7 +81,7 @@ Full mod details, versions, fork/patch reasoning, and known incompatibilities ar
 Game version: **1.22.7**
 
 <details>
-<summary>Installed mods (47)</summary>
+<summary>Installed mods (48)</summary>
 
 | Mod ID | Version |
 |---|---|
@@ -128,6 +128,7 @@ Game version: **1.22.7**
 | temporalsreformed | 0.2.0 |
 | terrainslabs | 1.0.17 |
 | toolsmith | 1.2.19 |
+| translocatorengineeringredux | 1.6.6 |
 | visibleore | 1.0.1 |
 | vsimgui | 1.2.7 |
 | wolftaming | 5.0.1 |
