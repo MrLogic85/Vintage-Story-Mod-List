@@ -21,6 +21,24 @@
       ]
     },
     {
+      "modid": "alchemy",
+      "name": "Alchemy",
+      "installed": true,
+      "assetid": 487,
+      "url": "https://mods.vintagestory.at/alchemy",
+      "version": "2.1.22",
+      "author": "llama3013",
+      "checked": [
+        {
+          "version": "2.1.22",
+          "date": "2026-09-03",
+          "downloads": 508102,
+          "known_incompatibilities": "incompatible with \"Simple Alchemy\" (not installed) per the mod's own page. No other conflicts documented.",
+          "note": "Three-tier potion brewing (mortar & pestle -> brewing cauldron -> glass stirring spoon/herb-dried ingredients) for player buffs — combat, gathering, mobility, and utility effects (water breathing, recall/teleport, growth/shrink, creative-only flight). Potions can be drunk, thrown as splash, or used as weapon coatings. No freshness/perishability mechanic and not classified as food, so no interaction with FoodShelves (installed) at all. Has its own compatibility patch for A Culinary Artillery (installed): lets potions be drunk straight from ACA's glass bottles when 'drink from any container' is enabled in config. Extremely actively maintained (hundreds of config values; this version released the same day as this check). Targets 1.22.0-1.22.7, exact match for game 1.22.7."
+        }
+      ]
+    },
+    {
       "modid": "anvilperformanceoptimization",
       "name": "Anvil Performance Optimization",
       "installed": true,

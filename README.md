@@ -57,6 +57,8 @@ This is vanilla-plus, not a total conversion: nothing here replaces Vintage Stor
 
 **The world rewards exploring it.** BetterRuins and Plains and Valleys change what you find and where, Farseer lets you actually see the terrain you're heading toward, More Lanterns keeps it lit, and Shipwright adds a full range of boats — from inventory-sized coracles to a twelve-seat Drakkar — for getting there by water. Auto Map Markers and Cartographer keep track of it all, solo or shared with a group.
 
+**Alchemy adds a consumable buff track, not a magic system takeover.** Brew potions from a mortar & pestle up through a full cauldron setup for combat, gathering, mobility, and utility effects — drunk, thrown, or used as weapon coatings. It's there to be dipped into for something demanding (a boss fight, a long expedition), not a parallel progression you're required to run.
+
 **Everything else stays out of your way.** HUD Clock, MoreHudBars, Extra Info, and Extra Overlays surface information vanilla hides; Carry On, Place on slabs, Terrain Slabs, and Xandu's Inventory Tweaks Fork remove friction from building and hauling; Player Corpse means death costs you a walk back, not your whole inventory.
 
 ## Categories
@@ -65,6 +67,7 @@ Each category links to a page explaining what its mods add, how they interact wi
 
 | Category | Mods |
 |---|---|
+| [Alchemy](docs/alchemy.md) | Alchemy |
 | [Cooking & Food](docs/cooking-and-food.md) | A Culinary Artillery, Expanded Foods (Core, Meals Module, Chef's Tricks), FoodShelves, Butchering, Stone Bake Oven, Real Smoke, SpecializedBags Revived, BetterTraders |
 | [Smithing & Crafting](docs/smithing-and-crafting.md) | SmithingPlus (+ Bug Fix), Toolsmith, Knapster, QP's Chisel Tools, Stone Quarry (Standalone Repack), Improved Handbook Recipes (Fork) |
 | [Prospecting & Mining](docs/prospecting-and-mining.md) | Durable Better Prospecting, ProspectTogether, Visible Ore |
@@ -81,11 +84,12 @@ Full mod details, versions, fork/patch reasoning, and known incompatibilities ar
 Game version: **1.22.7**
 
 <details>
-<summary>Installed mods (48)</summary>
+<summary>Installed mods (49)</summary>
 
 | Mod ID | Version |
 |---|---|
 | aculinaryartillery | 2.0.0-dev.22 |
+| alchemy | 2.1.22 |
 | anvilperformanceoptimization | 1.0.0 |
 | apelanterns | 1.4.3 |
 | bedspawnv2 | 1.7.1 |
