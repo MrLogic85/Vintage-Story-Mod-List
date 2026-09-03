@@ -1,12 +1,20 @@
 # Smithing & Crafting
 
-**Mods:** SmithingPlus (+ Bug Fix), Knapster, QP's Chisel Tools, Stone Quarry (Standalone Repack), Improved Handbook Recipes (Fork)
+**Mods:** SmithingPlus (+ Bug Fix), Toolsmith, Knapster, QP's Chisel Tools, Stone Quarry (Standalone Repack), Improved Handbook Recipes (Fork)
 
 ## SmithingPlus: nothing goes to waste
 
 Metal bits and nuggets can now be smithed directly — heat them in a crucible and add them to an anvil mid-project alongside rods, instead of needing a full ingot. Broken tools no longer just vanish: they drop a repairable tool head you can fix on an anvil, or chisel down into bits in the crafting grid.
 
 Bits are recoverable from more places than vanilla: splitting work on an anvil, arrows breaking, scraping a cold crucible with a chisel (the amount depends on the metal tier), and items shattering during quenching. Watch the anvil's temperature glow — green means the metal is workable — and it now shows current vs. required voxel counts for the recipe directly. The hammer gained a tool mode to flip the work item. Iron blooms are guaranteed to yield enough voxels for a full ingot when bit recovery is on, so a bad bloom run isn't a wasted one.
+
+## Toolsmith: tools as parts, not one durability bar
+
+A deeper rework than most of this list — worth knowing about even if you never touch its crafting menus. Tools are now assembled from a **head**, a **handle**, and (optionally) a **binding**, each with its own durability instead of one shared number. Heads get 5x vanilla durability; handles and bindings wear out first and get replaced individually instead of you tossing the whole tool. Choose handle material (stick, bone, crude, or carved/professional — better handles reduce binding wear) and binding (twine, rope, leather, glue, or metal) when assembling a **Tinkered Tool** at the **Workbench**.
+
+A separate **sharpness** stat (distinct from durability) affects speed — 5% faster at 98%+ sharp, 10% slower once dull — maintained with a **Grindstone** or a portable **Whetstone**. A worn head goes back to the Workbench for reforging with bits or ingots rather than being scrapped.
+
+Runs alongside SmithingPlus cleanly: Toolsmith turns off its own internal "Smithing with Bits" the moment it detects SmithingPlus, so you get one bit-recovery system, not two competing ones. Most QP's Chisel Tools tools are repairable the normal way; a handful are flagged "blunt" and barely wear at all. Stone Quarry's chisels and rubble hammer plug into the same head/handle system directly.
 
 ## Knapster: hold instead of click
 
@@ -48,4 +56,4 @@ Not a crafting mechanic, but genuinely changes how you interact with every recip
 
 ## Putting it together
 
-Knapster's hold-to-craft modes are worth turning on from your very first knapping session — there's no downside. Lean on Improved Handbook Recipes' auto-fill buttons once you're juggling this many new recipes. SmithingPlus changes how you think about failed smithing attempts — bits and broken tools are recoverable now, not wasted. Once you're doing serious stonework, Stone Quarry's plug-and-feather method is far more controlled than mining raw stone, and QP's Chisel Tools' Pantograph is what turns one good chiseled design into a whole building's worth of matching detail.
+Knapster's hold-to-craft modes are worth turning on from your very first knapping session — there's no downside. Lean on Improved Handbook Recipes' auto-fill buttons once you're juggling this many new recipes. SmithingPlus changes how you think about failed smithing attempts — bits and broken tools are recoverable now, not wasted — and Toolsmith builds directly on that: keep your tools sharp with a Whetstone in the field, and reforge a worn head at the Workbench instead of remaking the whole tool from scratch. Once you're doing serious stonework, Stone Quarry's plug-and-feather method is far more controlled than mining raw stone, and QP's Chisel Tools' Pantograph is what turns one good chiseled design into a whole building's worth of matching detail.

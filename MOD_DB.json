@@ -936,6 +936,24 @@
       ]
     },
     {
+      "modid": "toolsmith",
+      "name": "Toolsmith",
+      "installed": true,
+      "assetid": 22096,
+      "url": "https://mods.vintagestory.at/toolsmith",
+      "version": "1.2.19",
+      "author": "JonR",
+      "checked": [
+        {
+          "version": "1.2.19",
+          "date": "2026-09-03",
+          "downloads": 201497,
+          "known_incompatibilities": "Item Rarity mods (not installed) — grid-crafted tools won't display rarity properly. Combat Overhaul/weapon packs (not installed) unaffected, no mechanical benefit either way.",
+          "note": "Reworks tools into separate head/handle/binding components with independent durability (heads get 5x vanilla durability); adds a sharpness stat maintained via Grindstones/portable Whetstones, and a Workbench for reforging/repairing worn parts instead of discarding whole tools. Recommended companion to SmithingPlus (installed) — Toolsmith disables its own internal \"Smithing with Bits\" when SmithingPlus is loaded so the two don't duplicate that system. Confirmed compatible with QP's Chisel Tools (installed): most of its tools are repairable \"Smithed Tools\", others are registered \"blunt\" and take minimal wear. Stone Quarry's (installed) chisels and rubble hammer are integrated directly. A meaningful gameplay/mechanics change, not just a QoL layer — user made the call after being told this explicitly. Release tags stop at 1.22.6 (same pattern as several other installed mods that lag one game-patch behind on tagging); no reported issues on 1.22.7."
+        }
+      ]
+    },
+    {
       "modid": "temporalsreformed",
       "name": "Temporals Reformed - An Enemy Behavior Overhaul",
       "installed": true,
