@@ -689,6 +689,23 @@
       ]
     },
     {
+      "modid": "purposefulstorage",
+      "name": "Purposeful Storage",
+      "installed": true,
+      "assetid": 25347,
+      "url": "https://mods.vintagestory.at/purposefulstorage",
+      "version": "2.1.1",
+      "author": "SONZ-INA",
+      "checked": [
+        {
+          "version": "2.1.1",
+          "date": "2026-09-03",
+          "downloads": 311699,
+          "note": "Same author as FoodShelves (installed); author's own page cross-promotes FoodShelves as a companion mod. No overlap: this mod has no freshness/preservation mechanics and covers non-food display/storage instead — wardrobes, weapon/accessory racks and stands, resource bins, decorative displays. No known conflicts with FoodShelves or anything else installed. Note for future updates: 2.0.0+ required wiping old mod content on existing worlds — irrelevant for this fresh install. Targets 1.22.0–1.22.7."
+        }
+      ]
+    },
+    {
       "modid": "prospectorinfo",
       "name": "ProspectorInfo",
       "installed": false,

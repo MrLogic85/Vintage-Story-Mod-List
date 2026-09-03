@@ -1,6 +1,6 @@
 # Quality of Life
 
-**Mods:** HUD Clock, MoreHudBars, Extra Info, Extra Overlays, Dana Tweaks, Xandu's Inventory Tweaks Fork, Carry On, Place on slabs, Terrain Slabs, Player Corpse
+**Mods:** HUD Clock, MoreHudBars, Extra Info, Extra Overlays, Dana Tweaks, Xandu's Inventory Tweaks Fork, Carry On, Place on slabs, Terrain Slabs, Player Corpse, Purposeful Storage
 
 ## Information on screen
 
@@ -50,10 +50,14 @@ A few real consequences: you can't sprint while hand-carrying something, movemen
 
 **Terrain Slabs** works automatically during world generation, replacing jagged single-block terrain edges with slab variants so you're not constantly hopping up and down 1-block ledges. It runs in one of two modes: Column (the default — scans the full chunk column and affects caves too) or Surface (heightmap-only, faster, no cave effect). To smooth terrain you've already generated, run `/ts s c <range>` — e.g. `/ts s c 500`. Slabs drop as regular blocks when harvested, so they don't bloat your inventory, and can be hand-crafted directly too. It needs Place on slabs installed to actually place objects on the resulting slabs correctly.
 
+## Purposeful Storage: display instead of dump
+
+A companion mod to FoodShelves, from the same author, but for everything that isn't food: **Wardrobes** and **Hat/Glove/Pants Racks** for clothing, **Spear Racks**, **Sword Pedestals/Plaques**, and general **Weapon Racks**, **Necklace/Medallion/Saddle Stands**, **Resource Bins** for bulk stone/ore/crafting materials, **Rope/Cloth Racks**, and decorative pieces like **Butterfly Display Panels** and **Schematic Racks**. No freshness or preservation mechanics — purely visual organization, an alternative to piling everything into generic chests and trunks.
+
 ## Player Corpse: dying doesn't lose everything
 
 On death, a skeleton corpse spawns at the death location holding your full inventory, and a waypoint gets created there automatically. Only you (or a creative-mode player) can loot it for a configurable window — 240 in-game hours (about 10 days) by default — after which it opens up to anyone. Hold right-click on the corpse to retrieve your items. Craft a **compass item** to search a 7×7 chunk area for nearby corpses if you've lost track of one. As a last resort, `/returnthings` recovers items from up to your last 10 deaths, even if a corpse failed to spawn or got lost entirely.
 
 ## Putting it together
 
-Turn on whichever HUD/info mods you actually want cluttering your screen — they're all independent. Learn Xandu's Inventory Tweaks' Z-key sorting early; it's the single biggest time-saver in this category once you're managing a real base's worth of storage. Carry On changes how you move loot around entirely — use it as your default instead of breaking things down first. Don't panic about death: Player Corpse means you'll get your gear back if you can make it to the waypoint within the retrieval window.
+Turn on whichever HUD/info mods you actually want cluttering your screen — they're all independent. Learn Xandu's Inventory Tweaks' Z-key sorting early; it's the single biggest time-saver in this category once you're managing a real base's worth of storage. Carry On changes how you move loot around entirely — use it as your default instead of breaking things down first. Use Purposeful Storage alongside FoodShelves once you've got a real base going — food in the shelves, everything else (gear, weapons, materials) in Purposeful Storage's racks and bins, instead of undifferentiated chests. Don't panic about death: Player Corpse means you'll get your gear back if you can make it to the waypoint within the retrieval window.

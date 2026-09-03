@@ -71,7 +71,7 @@ Each category links to a page explaining what its mods add, how they interact wi
 | [Companions](docs/companions.md) | Pet AI, Wolf taming, Pet Map Markers, BedSpawn |
 | [Exploration & World](docs/exploration-and-world.md) | BetterRuins, Plains and Valleys, Farseer, More Lanterns, Shipwright, Auto Map Markers, Cartographer |
 | [Danger & Wildlife](docs/danger-and-wildlife.md) | Temporals Reformed, BloodTrail |
-| [Quality of Life](docs/quality-of-life.md) | HUD Clock, MoreHudBars, Extra Info, Extra Overlays, Dana Tweaks, Xandu's Inventory Tweaks Fork, Carry On, Place on slabs, Terrain Slabs, Player Corpse |
+| [Quality of Life](docs/quality-of-life.md) | HUD Clock, MoreHudBars, Extra Info, Extra Overlays, Dana Tweaks, Xandu's Inventory Tweaks Fork, Carry On, Place on slabs, Terrain Slabs, Player Corpse, Purposeful Storage |
 | [Foundation (libraries)](docs/foundation-libraries.md) | Config lib, Dear ImGui, Anvil Performance Optimization |
 
 Full mod details, versions, fork/patch reasoning, and known incompatibilities are tracked in [`MOD_DB.json`](MOD_DB.json) (schema in [`MOD_DB.schema.json`](MOD_DB.schema.json)). Change history lives in [`AgentLogs/`](AgentLogs/).
@@ -81,7 +81,7 @@ Full mod details, versions, fork/patch reasoning, and known incompatibilities ar
 Game version: **1.22.7**
 
 <details>
-<summary>Installed mods (45)</summary>
+<summary>Installed mods (46)</summary>
 
 | Mod ID | Version |
 |---|---|
@@ -117,6 +117,7 @@ Game version: **1.22.7**
 | plainsandvalleys | 1.0.13 |
 | playercorpseforkedazu | 1.15.1 |
 | prospecttogether | 2.2.1 |
+| purposefulstorage | 2.1.1 |
 | realsmoke | 1.3.1 |
 | shipwright | 1.4.1 |
 | smithingplus | 1.9.0-rc.1 |
