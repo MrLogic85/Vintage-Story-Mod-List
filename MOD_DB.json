@@ -834,6 +834,11 @@
           "version": "1.9.0-rc.1",
           "date": "2026-09-01",
           "note": "This RC has a known bug causing lag spikes/crashes when looking at an anvil, plus a chisel-drag delay and iron bloom stutter. Installed smithingplusbugfix as a hotfix patch for these (see that entry's patch_for). Revisit once SmithingPlus ships a stable release that absorbs the fix — the patch should then be removable per AGENTS.md line 4."
+        },
+        {
+          "version": "1.9.0-rc.1",
+          "date": "2026-09-03",
+          "note": "xSkills Fork (xskillsfork) is now installed — the previously-hypothetical recommendation above is now a real to-do: disable xSkills' own metal-bits smithing feature in its config so it doesn't duplicate SmithingPlus' bit-smithing. Not done automatically since it's an in-game config change, not a MOD_DB/file change — flagging here so it isn't forgotten."
         }
       ]
     },
@@ -974,7 +979,7 @@
     {
       "modid": "temporalsreformed",
       "name": "Temporals Reformed - An Enemy Behavior Overhaul",
-      "installed": true,
+      "installed": false,
       "assetid": 28176,
       "url": "https://mods.vintagestory.at/show/mod/28176",
       "version": "0.2.0",
@@ -982,10 +987,10 @@
       "checked": [
         {
           "version": "0.2.0",
-          "date": "2026-09-01",
-          "downloads": 13906,
-          "known_incompatibilities": "Not recommended alongside Combat Overhaul (not installed, not tracked here) — main version changes mob health/damage in ways that clash with CO's combat rebalance; console warnings appear if both run. A separate 'Temporals Lite' mod (modid temporalslite, not installed) exists specifically for CO pairing (behavior-only, no stat changes) if that's ever revisited. Potential conflict with xskills (not installed) around temporal mob AI during storms. Compatible with Dana Tweaks (installed); works with Rust Creatures Can Destroy Obstacles and Creature Footsteps (config adjustments recommended, neither installed).",
-          "note": "Self-described as \"very experimental and prone to drastic changes.\" Recent releases show active bugfixing (fixed a bell-spawning bug, improved Shiver hitboxes in v0.1.9/v0.2.0). Only touches vanilla entity JSON (health/damage/spawn rate/behavior) via assets/survival/entities/lore, no worldgen or custom persistent data — should be safe to add/remove from an existing save, though the author gives no explicit guarantee and no comments confirm it either way. Backed up the save to AgentBackupSaves/2026-09-01/ before installing as a precaution."
+          "date": "2026-09-03",
+          "known_incompatibilities": "Potential conflict with xSkills Fork around temporal mob AI during storms remains unresolved as of xSkills Fork 1.0.99 — searched its full changelog, no mention of Temporals Reformed or its author (Darthzz) at all; xSkills' own \"Temporal Adaptation\" skill tree is an unrelated internal feature (player-side temporal-stability perks, not enemy AI).",
+          "fork_decision": "Removed (user call) as a preventative measure ahead of installing xSkills Fork — a much larger, more heavily-integrated mod (174k downloads with explicit compat patches for most of this list) — rather than keep an unverified conflict live between it and a comparatively young, self-described \"very experimental\" mod (13.9k downloads, only installed 2026-09-01). Only touches vanilla entity JSON (health/damage/spawn/behavior), no worldgen or persistent save data, so this and any future reinstall should be safe either direction. Kept tracked here (installed: false) in case the xSkills conflict question ever gets a real answer and it's worth revisiting.",
+          "note": "Self-described as \"very experimental and prone to drastic changes.\" Not recommended alongside Combat Overhaul either (not installed) — main version changes mob health/damage in ways clash with CO's rebalance; a 'Temporals Lite' variant (temporalslite, not installed) exists for that pairing if ever revisited."
         }
       ]
     },
@@ -1078,6 +1083,83 @@
           "date": "2026-09-01",
           "downloads": 12839,
           "fork_decision": "Keep the fork — the duplication-bug fix is the entire reason it exists, and there's no evidence the original has caught up."
+        }
+      ]
+    },
+    {
+      "modid": "xlib",
+      "name": "XLib",
+      "installed": false,
+      "assetid": 244,
+      "url": "https://mods.vintagestory.at/api/mod/xlib",
+      "version": "1.21.0",
+      "author": "Xandu",
+      "forked_by": [
+        "xlibfork"
+      ],
+      "checked": [
+        {
+          "version": "1.21.0",
+          "date": "2026-09-03",
+          "note": "Not maintained for game 1.22.x — last release only targets up to 1.21.0, dated 2025-09-09. xLib Fork (xlibfork) is the actively maintained continuation, required by xSkills Fork (installed)."
+        }
+      ]
+    },
+    {
+      "modid": "xlibfork",
+      "name": "xLib Fork",
+      "installed": true,
+      "assetid": 44133,
+      "url": "https://mods.vintagestory.at/show/mod/44133",
+      "version": "1.0.37",
+      "author": "El_Neuman",
+      "fork_of": "xlib",
+      "checked": [
+        {
+          "version": "1.0.37",
+          "date": "2026-09-03",
+          "downloads": 153438,
+          "fork_decision": "Keep the fork — the original stalled on 1.21.0 over a year ago; this fork targets 1.22.0-pre.1 through 1.22.7 and is xSkills Fork's actual required dependency.",
+          "note": "Pure backend library (skill/ability/effect framework, client-server sync, save/load) — no visible content on its own. Installed solely because xSkills Fork requires it."
+        }
+      ]
+    },
+    {
+      "modid": "xskills",
+      "name": "XSkills",
+      "installed": false,
+      "assetid": 247,
+      "url": "https://mods.vintagestory.at/api/mod/xskills",
+      "version": "1.21.0",
+      "author": "Xandu",
+      "forked_by": [
+        "xskillsfork"
+      ],
+      "checked": [
+        {
+          "version": "1.21.0",
+          "date": "2026-09-03",
+          "note": "Not maintained for game 1.22.x — last release 0.9.0-pre.2 dated 2025-09-09. xSkills Fork (xskillsfork) is the actively maintained continuation, same author (El_Neuman) as xLib Fork."
+        }
+      ]
+    },
+    {
+      "modid": "xskillsfork",
+      "name": "xSkills Fork",
+      "installed": true,
+      "assetid": 44074,
+      "url": "https://mods.vintagestory.at/show/mod/44074",
+      "version": "1.0.99",
+      "author": "El_Neuman",
+      "fork_of": "xskills",
+      "checked": [
+        {
+          "version": "1.0.99",
+          "date": "2026-09-03",
+          "downloads": 174422,
+          "known_incompatibilities": "Item Rarity + Toolsmith together is flagged as a conflict by xSkills' own changelog (neither installed, not relevant here). Electrical Progressive cooking-XP ambiguous-match warning with multiplayer ACA saucepan use (Electrical Progressive not installed). No mention anywhere of Temporals Reformed (removed, see that entry) — the earlier flagged watch-item with it was never addressed by either mod and stays unresolved/moot now that it's uninstalled.",
+          "fork_decision": "Keep the fork — same reasoning as xLib Fork: original (xskills) stalled on 1.21.0, this is the actively maintained 1.22.x continuation by the same author as xLib Fork.",
+          "note": "RPG progression system: 12 skill trees (Survival, Combat, Mining, Digging, Forestry, Farming, Fishing, Husbandry, Metalworking, Pottery, Cooking, Temporal Adaptation) plus Tailoring, Sailing, Riding, and a WIP Alchemy tree. Requires xLib Fork (installed) and Dear ImGui (vsimgui, installed). Has explicit, confirmed compatibility patches for a large chunk of this modlist: SmithingPlus (can disable xSkills' own bit-smithing to avoid duplicating SmithingPlus' — see that entry's updated note), Toolsmith (Metalbits Forging perk conflict fixed), A Culinary Artillery + Expanded Foods (cauldron/pot/liquid-recipe support), Butchering (dedicated Hunter Bag perk slot), Better Prospecting/ProspectTogether (panning yield bonuses), Knapster, Stone Bake Oven (full compat), and Alchemy (WIP compat). Cooking perks touch NutritionProps/NutritionPropsPerLitre/nutritionPropsWhenInMeal directly — worth watching if any other food mod ever overrides those same attributes, though nothing currently installed is flagged as doing so. Targets 1.22.0-pre.1 through 1.22.7 exactly."
         }
       ]
     }

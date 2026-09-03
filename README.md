@@ -51,13 +51,15 @@ This is vanilla-plus, not a total conversion: nothing here replaces Vintage Stor
 
 **Smithing and crafting go deeper than vanilla.** SmithingPlus adds tool repair and quality-of-life to the anvil (with a hotfix for its worst rough edge), Knapster speeds up the fiddly parts of early tool progression, and QP's Chisel Tools rewards detail work. Stone Quarry adds a proper quarrying loop, and Durable Better Prospecting plus ProspectTogether make ore-hunting less of a guessing game — especially with others.
 
-**Danger is deliberate, not constant.** Temporals Reformed makes temporal enemies individually threatening but rarer — the goal is a world where you avoid fights because they're genuinely risky, not because you're swarmed. BloodTrail makes wounded prey trackable, rewarding a hunt over a chase.
+**Danger, and tracking what you hunt.** BloodTrail makes wounded prey trackable, rewarding a hunt over a chase. (Temporals Reformed briefly filled this category too — removed 2026-09-03 over an unresolved compatibility question with xSkills Fork, see [Danger & Wildlife](docs/danger-and-wildlife.md).)
 
 **Companions matter.** Pet AI and Wolf taming turn animals into long-term allies rather than mobile resources, with Pet Map Markers keeping track of where they've wandered off to.
 
 **The world rewards exploring it.** BetterRuins and Plains and Valleys change what you find and where, Farseer lets you actually see the terrain you're heading toward, More Lanterns keeps it lit, and Shipwright adds a full range of boats — from inventory-sized coracles to a twelve-seat Drakkar — for getting there by water. Auto Map Markers and Cartographer keep track of it all, solo or shared with a group.
 
 **Alchemy adds a consumable buff track, not a magic system takeover.** Brew potions from a mortar & pestle up through a full cauldron setup for combat, gathering, mobility, and utility effects — drunk, thrown, or used as weapon coatings. It's there to be dipped into for something demanding (a boss fight, a long expedition), not a parallel progression you're required to run.
+
+**Progression rewards playing normally.** xSkills Fork turns everything you're already doing — fighting, mining, farming, fishing, smithing, cooking, and more — into XP toward perks in that same activity. It has explicit compatibility work for most of this list; the one manual step is disabling its own metal-bits smithing in config so it doesn't duplicate SmithingPlus.
 
 **Everything else stays out of your way.** HUD Clock, MoreHudBars, Extra Info, and Extra Overlays surface information vanilla hides; Carry On, Place on slabs, Terrain Slabs, and Xandu's Inventory Tweaks Fork remove friction from building and hauling; Player Corpse means death costs you a walk back, not your whole inventory.
 
@@ -73,9 +75,10 @@ Each category links to a page explaining what its mods add, how they interact wi
 | [Prospecting & Mining](docs/prospecting-and-mining.md) | Durable Better Prospecting, ProspectTogether, Visible Ore |
 | [Companions](docs/companions.md) | Pet AI, Wolf taming, Pet Map Markers, BedSpawn |
 | [Exploration & World](docs/exploration-and-world.md) | BetterRuins, Plains and Valleys, Farseer, More Lanterns, Shipwright, Auto Map Markers, Cartographer, Translocator Engineering - Redux |
-| [Danger & Wildlife](docs/danger-and-wildlife.md) | Temporals Reformed, BloodTrail |
+| [Danger & Wildlife](docs/danger-and-wildlife.md) | BloodTrail |
+| [Progression](docs/progression.md) | xSkills Fork |
 | [Quality of Life](docs/quality-of-life.md) | HUD Clock, MoreHudBars, Extra Info, Extra Overlays, Dana Tweaks, Xandu's Inventory Tweaks Fork, Carry On, Place on slabs, Terrain Slabs, Player Corpse, Purposeful Storage |
-| [Foundation (libraries)](docs/foundation-libraries.md) | Config lib, Dear ImGui, Anvil Performance Optimization |
+| [Foundation (libraries)](docs/foundation-libraries.md) | Config lib, Dear ImGui, Anvil Performance Optimization, xLib Fork |
 
 Full mod details, versions, fork/patch reasoning, and known incompatibilities are tracked in [`MOD_DB.json`](MOD_DB.json) (schema in [`MOD_DB.schema.json`](MOD_DB.schema.json)). Change history lives in [`AgentLogs/`](AgentLogs/).
 
@@ -84,7 +87,7 @@ Full mod details, versions, fork/patch reasoning, and known incompatibilities ar
 Game version: **1.22.7**
 
 <details>
-<summary>Installed mods (49)</summary>
+<summary>Installed mods (50)</summary>
 
 | Mod ID | Version |
 |---|---|
@@ -129,7 +132,6 @@ Game version: **1.22.7**
 | specialexpandedbags | 2.0.0 |
 | stonebakeoven | 1.3.8 |
 | stonequarryrepckfipil | 3.6.3 |
-| temporalsreformed | 0.2.0 |
 | terrainslabs | 1.0.17 |
 | toolsmith | 1.2.19 |
 | translocatorengineeringredux | 1.6.6 |
@@ -137,6 +139,8 @@ Game version: **1.22.7**
 | vsimgui | 1.2.7 |
 | wolftaming | 5.0.1 |
 | xinvtweaksfork | 1.9.1 |
+| xlibfork | 1.0.37 |
+| xskillsfork | 1.0.99 |
 
 </details>
 
