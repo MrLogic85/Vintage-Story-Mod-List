@@ -217,7 +217,7 @@
     },
     {
       "modid": "chiseltools",
-      "name": "chiseltools (QP's Chisel Tools)",
+      "name": "QP's Chisel Tools",
       "installed": true,
       "assetid": 2751,
       "url": "https://mods.vintagestory.at/chiseltools",
@@ -343,21 +343,19 @@
       ]
     },
     {
-      "modid": "betterprospecting",
+      "modid": "durablebetterprospecting",
       "name": "Durable Better Prospecting",
       "installed": true,
-      "assetid": 16293,
-      "url": "https://mods.vintagestory.at/betterprospecting",
+      "assetid": 29429,
+      "url": "https://mods.vintagestory.at/durablebetterprospecting",
       "version": "22.0.0-rc.1",
       "author": "DetPikachu",
       "checked": [
         {
           "version": "22.0.0-rc.1",
-          "date": "2026-09-01",
-          "downloads": 50944,
-          "known_incompatibilities": "**its own page warns it may conflict with any mod that modifies the prospecting pickaxe in any way** — see the ProspectTogether entry above for the cross-check (likely fine, not fully confirmed).",
-          "fork_decision": "Keep — this is effectively the actively maintained continuation published under the original mod ID with the original author's blessing, not a competing parallel fork.",
-          "note": "BetterProspecting by JohnVintageStory — page states it's \"identical to DurableBetterProspecting, but preserving the original mod ID betterprospecting\" (JohnVintageStory is credited as contributor/original creator and allowed reuse of the mod page/ID)."
+          "date": "2026-09-06",
+          "known_incompatibilities": "**its own page warns it may conflict with any mod that modifies the prospecting pickaxe in any way** — see the ProspectTogether entry (below) for the cross-check (likely fine, not fully confirmed).",
+          "note": "Switched from the betterprospecting-page build (same author, same 22.0.0-rc.1, not a separate fork — just a second release page preserving the legacy modid) to this durablebetterprospecting-page build. Cause: both release zips ship a byte-identical assets/ tree, but the betterprospecting-page DLL hardcodes its Lang/asset domain constant as \"BetterProspecting\" while the shipped folder is assets/durablebetterprospecting/ — a packaging mismatch that breaks in-game translation strings (raw \"BetterProspecting:key\" text shown) and mode icons (blank placeholder). This build's DLL correctly uses domain \"durablebetterprospecting\", matching its assets folder. Verified by extracting and diffing both zips: assets/ identical (checksum match), only DurableBetterProspecting.dll differs. Upstream bug: https://github.com/devpikachu/DurableBetterProspecting/issues/1 (already commented on with these findings)."
         }
       ]
     },
@@ -437,7 +435,7 @@
       "name": "Extra Overlays",
       "installed": true,
       "assetid": 48190,
-      "url": "https://mods.vintagestory.at/48190 (no urlalias set)",
+      "url": "https://mods.vintagestory.at/show/mod/48190",
       "version": "1.8.1",
       "author": "Mintir4",
       "checked": [
@@ -529,7 +527,7 @@
       "name": "Improved Handbook Recipes (Fork)",
       "installed": true,
       "assetid": 47215,
-      "url": "https://mods.vintagestory.at/improvedhandbookrecipesfork (urlalias not resolved on API; page reachable via search)",
+      "url": "https://mods.vintagestory.at/show/mod/47215",
       "version": "1227.0.5",
       "author": "Bannta",
       "fork_of": "improvedhandbookrecipes",
@@ -637,7 +635,7 @@
       "name": "Place on slabs",
       "installed": true,
       "assetid": 38090,
-      "url": "https://mods.vintagestory.at/placeonslabs (urlalias not resolved on API; page reachable via search)",
+      "url": "https://mods.vintagestory.at/show/mod/38090",
       "version": "1.2.0",
       "author": "BeloMaximka",
       "checked": [
