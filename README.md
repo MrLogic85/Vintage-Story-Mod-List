@@ -87,7 +87,7 @@ Full mod details, versions, fork/patch reasoning, and known incompatibilities ar
 Game version: **1.22.7**
 
 <details>
-<summary>Installed mods (50)</summary>
+<summary>Installed mods (51)</summary>
 
 | Mod ID | Version |
 |---|---|
@@ -126,6 +126,7 @@ Game version: **1.22.7**
 | prospecttogether | 2.2.1 |
 | purposefulstorage | 2.1.1 |
 | realsmoke | 1.3.1 |
+| rivers | 5.0.3 |
 | shipwright | 1.4.1 |
 | smithingplus | 1.9.0-rc.1 |
 | smithingplusbugfix | 2.0.1 |

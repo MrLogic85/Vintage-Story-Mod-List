@@ -798,6 +798,43 @@
       ]
     },
     {
+      "modid": "rivers",
+      "name": "Rivers",
+      "installed": true,
+      "assetid": 9360,
+      "url": "https://mods.vintagestory.at/rivers",
+      "version": "5.0.3",
+      "author": "sneezerstein",
+      "forked_by": ["rivergen"],
+      "checked": [
+        {
+          "version": "5.0.3",
+          "date": "2026-09-05",
+          "downloads": 426438,
+          "known_incompatibilities": "Incompatible with Terra Prety unless Algernon's Watersheds is also installed (Watersheds implements rivers itself and is compatible); neither is installed here. Confirmed fix for chunk-border terrain glitches when combined with BetterRuins (installed) on an existing world, unlike its fork RiverGen — see betterruins entry. Updating the mod's own version mid-save (not just adding it fresh to a world) has caused worldgen corruption for some users; stick with the version used to create a given world once installed.",
+          "note": "Chosen over its fork RiverGen: far more downloads (426k vs 50k), actively maintained (latest release 2026-08-02), client+server vs RiverGen's server-only, and adds flowing water/currents plus waterwheel support that RiverGen lacks. Installed to test in a newly generated world, not added to the existing save."
+        }
+      ]
+    },
+    {
+      "modid": "rivergen",
+      "name": "RiverGen",
+      "installed": false,
+      "assetid": 16453,
+      "url": "https://mods.vintagestory.at/rivergen",
+      "version": "1.0.2",
+      "author": "Nyuhnyash",
+      "fork_of": "rivers",
+      "checked": [
+        {
+          "version": "1.0.2",
+          "date": "2026-09-05",
+          "downloads": 49817,
+          "fork_decision": "Not installed — original Rivers chosen instead. RiverGen is server-only, lighter (no water flow/currents/waterwheels; adds boulders/fallen logs/clay deposits instead), less actively maintained (latest release v1.0.2 created 2026-03-14, none since), and its own description warns it 'could cause chunk borders when updating game version while keeping old world' — it lacks the chunk-border fix the original Rivers mod has."
+        }
+      ]
+    },
+    {
       "modid": "shipwright",
       "name": "Shipwright: Vessels of Distant Shores",
       "installed": true,
