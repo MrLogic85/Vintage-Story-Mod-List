@@ -87,7 +87,7 @@ Full mod details, versions, fork/patch reasoning, and known incompatibilities ar
 Game version: **1.22.7**
 
 <details>
-<summary>Installed mods (51)</summary>
+<summary>Installed mods (52)</summary>
 
 | Name | Version | Link |
 |---|---|---|
@@ -99,6 +99,7 @@ Game version: **1.22.7**
 | BetterRuins | 0.6.3 | [link](https://mods.vintagestory.at/betterruins) |
 | BetterTraders | 0.2.1 | [link](https://mods.vintagestory.at/bettertraders) |
 | BloodTrail | 1.2.5 | [link](https://mods.vintagestory.at/bloodtrail) |
+| Boat Autopilot | 1.6.4 | [link](https://mods.vintagestory.at/show/mod/59733) |
 | Butchering | 1.14.3 | [link](https://mods.vintagestory.at/butchering) |
 | Carry On | 1.14.3 | [link](https://mods.vintagestory.at/carryon) |
 | QP's Chisel Tools | 1.17.7 | [link](https://mods.vintagestory.at/chiseltools) |

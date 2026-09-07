@@ -1,6 +1,6 @@
 # Exploration & World
 
-**Mods:** BetterRuins, Plains and Valleys, Farseer, More Lanterns, Shipwright, Auto Map Markers, Cartographer, Translocator Engineering - Redux
+**Mods:** BetterRuins, Plains and Valleys, Farseer, More Lanterns, Shipwright, Boat Autopilot, Auto Map Markers, Cartographer, Translocator Engineering - Redux
 
 ## BetterRuins: things worth finding
 
@@ -34,6 +34,10 @@ All 8 boats are built in-world with a construction item, not crafted at a workbe
 - **Papyrus Sailer** (hybrid) — papyrus-only, combines sailing and rowing in one boat
 
 All of them have speed, acceleration, and turning tunable via Config lib, and sails can be recolored.
+
+## Boat Autopilot: let it steer long trips
+
+Client-side only, no server install needed — works with Shipwright boats and vanilla small boats/canoes/kayaks alike. Plan a route on the world map, then press **J** while in the boat to engage it; it steers point to point and slows down reactively near obstacles, though it's not full pathfinding, so route around large landmasses yourself. Touch WASD at any time to take over instantly, and press **J** again to disengage. If you adjust a sail/mast manually mid-route, that change sticks for the rest of the trip — the autopilot won't re-hoist or re-furl it. Not tested against wind-based sailing mods (e.g. Joy of Sailing) that replace the vanilla sailboat's simple forward-key control with wind-angle sail trimming.
 
 ## Auto Map Markers: turn it on first
 

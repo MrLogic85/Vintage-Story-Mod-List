@@ -147,6 +147,24 @@
       ]
     },
     {
+      "modid": "boatautopilot",
+      "name": "Boat Autopilot",
+      "installed": true,
+      "assetid": 59733,
+      "url": "https://mods.vintagestory.at/show/mod/59733",
+      "version": "1.6.4",
+      "author": "Majke",
+      "checked": [
+        {
+          "version": "1.6.4",
+          "date": "2026-09-07",
+          "downloads": 1792,
+          "known_incompatibilities": "Compatible with Shipwright (installed) and vanilla small boats/canoes/kayaks per own docs. Compatibility with wind-based sailing mods like Joy of Sailing remains unconfirmed (own docs/comments don't mention wind mechanics), but no longer an active concern — Joy of Sailing is outdated and won't be added for a while.",
+          "note": "Client-side only, no server install needed. Plan routes on the world map, press J in a boat to engage/disengage; touching WASD takes over instantly. Manual sail/mast changes made mid-route stay yours for the rest of that route (autopilot won't re-hoist/furl). Reactive obstacle avoidance only, not full pathfinding — route around large landmasses yourself. User confirmed after testing: works great."
+        }
+      ]
+    },
+    {
       "modid": "butchering",
       "name": "Butchering",
       "installed": true,

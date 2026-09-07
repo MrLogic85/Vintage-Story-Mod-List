@@ -6,6 +6,7 @@ Each work session gets its own file under `AgentLogs/` (not `logs/` or `Logs/` �
 - [2026-09-01](AgentLogs/2026-09-01.md) — updated carrycapacity to 1.9.3 for 1.20.4 compatibility
 -->
 
+- [2026-09-07 (session 2)](AgentLogs/2026-09-07-2.md) — backed up saves; installed Boat Autopilot (52 mods now installed); diagnosed a missing-translation bug in shipwright's slot names (FrontDecoAP, LPlaqueAP, Large Junker passenger seats) and drafted a bug report for the user
 - [2026-09-07](AgentLogs/2026-09-07.md) — checked all 51 installed mods for updates; applied 5 patch-level bumps (A Culinary Artillery, QP's Chisel Tools, Config lib — security fix, Knapster, xSkills Fork); fixed a data-entry bug in xlib/xskills version fields
 - [2026-09-06](AgentLogs/2026-09-06.md) — switched Durable Better Prospecting from the betterprospecting mod page to the durablebetterprospecting page (same version, fixes a packaging bug causing untranslated text and blank icons)
 - [2026-09-05](AgentLogs/2026-09-05.md) — installed Rivers (chose over its fork RiverGen); not yet pushed, pending user's test in a new world
