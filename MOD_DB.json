@@ -8,9 +8,15 @@
       "installed": true,
       "assetid": 4151,
       "url": "https://mods.vintagestory.at/aculinaryartillery",
-      "version": "2.0.0-dev.22",
+      "version": "2.0.0-dev.23",
       "author": "l33tmaan",
       "checked": [
+        {
+          "version": "2.0.0-dev.23",
+          "date": "2026-09-07",
+          "downloads": 745883,
+          "note": "Bugfix release: trader prices +25% (reflects ability to deconstruct bottle racks/cauldrons), egg yolk text fix in stew, bottle rack recipe no longer conflicts with gates, egg liquids get pie mixing codes, fixed crash creating cached meal recipe stacks with no handbook stacks, corked bottles can no longer be drunk from directly, oak bark usable for vanilla tannins."
+        },
         {
           "version": "2.0.0-dev.22",
           "date": "2026-09-01",
@@ -221,9 +227,14 @@
       "installed": true,
       "assetid": 2751,
       "url": "https://mods.vintagestory.at/chiseltools",
-      "version": "1.17.6",
+      "version": "1.17.7",
       "author": "QPTech",
       "checked": [
+        {
+          "version": "1.17.7",
+          "date": "2026-09-07",
+          "note": "Adds next/prev sound page buttons for chiseled door sounds (needs adddoorsound privilege on server to set), shortened sound filenames, doors can be opened while holding most items, chiseled door access now uses the Traverse permission instead of Use (matching regular doors), sneak-click note added for setting a transparent block, decorative pot no longer requires support."
+        },
         {
           "version": "1.17.6",
           "date": "2026-09-01",
@@ -295,9 +306,14 @@
       "installed": true,
       "assetid": 9551,
       "url": "https://mods.vintagestory.at/configlib",
-      "version": "1.13.1",
+      "version": "1.13.2",
       "author": "Maltiez",
       "checked": [
+        {
+          "version": "1.13.2",
+          "date": "2026-09-07",
+          "note": "Security fix: added scope and permission validation to client->server event logic, addressing a vulnerability reported by a community member (Venah). Recommended update, applied promptly."
+        },
         {
           "version": "1.13.1",
           "date": "2026-09-01",
@@ -547,9 +563,14 @@
       "installed": true,
       "assetid": 4046,
       "url": "https://mods.vintagestory.at/knapster",
-      "version": "4.0.0",
+      "version": "4.1.0",
       "author": "Apache (ApacheTech Solutions)",
       "checked": [
+        {
+          "version": "4.1.0",
+          "date": "2026-09-07",
+          "note": "Release page's changelog field for this version is the author's personal note about a 2026 identity-theft/RAT incident, not functional release notes — no specific code changes could be confirmed from it. Installed as the current release anyway; no reported regressions."
+        },
         {
           "version": "4.0.0",
           "date": "2026-09-01",
@@ -1127,7 +1148,7 @@
       "installed": false,
       "assetid": 244,
       "url": "https://mods.vintagestory.at/api/mod/xlib",
-      "version": "1.21.0",
+      "version": "0.9.0-pre.2",
       "author": "Xandu",
       "forked_by": [
         "xlibfork"
@@ -1165,7 +1186,7 @@
       "installed": false,
       "assetid": 247,
       "url": "https://mods.vintagestory.at/api/mod/xskills",
-      "version": "1.21.0",
+      "version": "0.9.0-pre.2",
       "author": "Xandu",
       "forked_by": [
         "xskillsfork"
@@ -1184,10 +1205,15 @@
       "installed": true,
       "assetid": 44074,
       "url": "https://mods.vintagestory.at/show/mod/44074",
-      "version": "1.0.99",
+      "version": "1.1.1",
       "author": "El_Neuman",
       "fork_of": "xskills",
       "checked": [
+        {
+          "version": "1.1.1",
+          "date": "2026-09-07",
+          "note": "New \"Knapping\" skill branch (author notes it's a work in progress), Powered Mixing Bowl compatibility (community patch), fixed level-up menu incorrectly showing on world start, \"Light Step\" perk compatibility with Gloome Classes, minor localization fixes, new \"Travel\" category for sailing/riding, fixed a crash when a player selects the \"Diver\" perk."
+        },
         {
           "version": "1.0.99",
           "date": "2026-09-03",

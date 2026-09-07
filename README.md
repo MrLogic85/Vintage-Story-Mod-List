@@ -91,7 +91,7 @@ Game version: **1.22.7**
 
 | Name | Version | Link |
 |---|---|---|
-| A Culinary Artillery | 2.0.0-dev.22 | [link](https://mods.vintagestory.at/aculinaryartillery) |
+| A Culinary Artillery | 2.0.0-dev.23 | [link](https://mods.vintagestory.at/aculinaryartillery) |
 | Alchemy | 2.1.22 | [link](https://mods.vintagestory.at/alchemy) |
 | Anvil Performance Optimization | 1.0.0 | [link](https://mods.vintagestory.at/show/mod/50265) |
 | More Lanterns | 1.4.3 | [link](https://mods.vintagestory.at/apelanterns) |
@@ -101,8 +101,8 @@ Game version: **1.22.7**
 | BloodTrail | 1.2.5 | [link](https://mods.vintagestory.at/bloodtrail) |
 | Butchering | 1.14.3 | [link](https://mods.vintagestory.at/butchering) |
 | Carry On | 1.14.3 | [link](https://mods.vintagestory.at/carryon) |
-| QP's Chisel Tools | 1.17.6 | [link](https://mods.vintagestory.at/chiseltools) |
-| Config lib | 1.13.1 | [link](https://mods.vintagestory.at/configlib) |
+| QP's Chisel Tools | 1.17.7 | [link](https://mods.vintagestory.at/chiseltools) |
+| Config lib | 1.13.2 | [link](https://mods.vintagestory.at/configlib) |
 | Dana Tweaks | 4.1.0 | [link](https://mods.vintagestory.at/danatweaks) |
 | Durable Better Prospecting | 22.0.0-rc.1 | [link](https://mods.vintagestory.at/durablebetterprospecting) |
 | Expanded Foods: Chef's Tricks | 1.0.0-dev.4 | [link](https://mods.vintagestory.at/efchefstricks) |
@@ -115,7 +115,7 @@ Game version: **1.22.7**
 | FoodShelves | 3.0.5 | [link](https://mods.vintagestory.at/foodshelves) |
 | HUD Clock | 4.4.1 | [link](https://mods.vintagestory.at/hudclock) |
 | Improved Handbook Recipes (Fork) | 1227.0.5 | [link](https://mods.vintagestory.at/show/mod/47215) |
-| Knapster | 4.0.0 | [link](https://mods.vintagestory.at/knapster) |
+| Knapster | 4.1.0 | [link](https://mods.vintagestory.at/knapster) |
 | MoreHudBars | 1.2.0 | [link](https://mods.vintagestory.at/morehudbars) |
 | Cartographer | 2.3.0 | [link](https://mods.vintagestory.at/nbcartographer) |
 | Pet AI | 5.1.1 | [link](https://mods.vintagestory.at/petai) |
@@ -141,7 +141,7 @@ Game version: **1.22.7**
 | Wolf taming | 5.0.1 | [link](https://mods.vintagestory.at/wolftaming) |
 | Xandus Inventory Tweaks Fork | 1.9.1 | [link](https://mods.vintagestory.at/xinvtweaksfork) |
 | xLib Fork | 1.0.37 | [link](https://mods.vintagestory.at/show/mod/44133) |
-| xSkills Fork | 1.0.99 | [link](https://mods.vintagestory.at/show/mod/44074) |
+| xSkills Fork | 1.1.1 | [link](https://mods.vintagestory.at/show/mod/44074) |
 
 </details>
 
