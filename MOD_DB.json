@@ -1061,6 +1061,11 @@
         {
           "version": "1.2.19",
           "date": "2026-09-12",
+          "note": "User reported getting no repairable head at all when a Tinkered Tool broke, after the same-day `EnableToolRecovery: false` fix (see entry below). Decompiled-strings check of `Toolsmith.dll` confirmed `HandleBrokenTinkeredTool` (Toolsmith's own break handler) contains no reference to `EnableToolRecovery`/`ToolHeadSelector`/`DontRepairBrokenToolHeads` — so that fix isn't the cause here. Likely explanation: `ShouldHoningDamageHead: true` (default) means sharpening at a Grindstone/Whetstone adds wear to the head on top of use-wear, via `HoningDamageMult`; combined with continuous sharpening during use, this can push a head's accumulated damage past whatever ceiling `PercentDamageForReforge` (1.0) allows for a reforge-eligible head to survive breakage, destroying it outright instead of leaving a repairable head. Not confirmed against decompiled logic (only Toolsmith's own break-handler was checked, not the reforge-threshold math itself) — a plausible mechanism, not a verified root cause. Remedy applied at user's request: `ShouldHoningDamageHead` → `false` in `ModConfig/Toolsmith.json`, so sharpening itself no longer contributes to head wear/destruction."
+        },
+        {
+          "version": "1.2.19",
+          "date": "2026-09-12",
           "note": "See open_flags: Toolsmith's own mod page confirms it's designed to reforge broken tool heads via SmithingPlus recipes at its Workbench, and recommends lowering SmithingPlus's `BrokenToolVoxelPercent` to 0.4 (installed config has 0.8) for accurate head-breakage penalties. Separately, SmithingPlus's page has confirmed user reports of a duplication bug when paired with Toolsmith (\"ended up with six broken copper axe heads\"), matching what our user saw — root cause is Toolsmith's shared `toolsmith:tinkertoolparts` code matching SmithingPlus's ToolHeadSelector regex and triggering its `EnableToolRecovery` feature repeatedly. Moderator-recommended fix: `EnableToolRecovery: false` in SmithingPlus.json (does not affect Toolsmith's own Workbench reforging, which uses a separate SmithingPlus anvil-recipe path). Applied 2026-09-12 at user's request."
         },
         {

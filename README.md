@@ -80,7 +80,7 @@ Each category links to a page explaining what its mods add, how they interact wi
 | [Quality of Life](docs/quality-of-life.md) | HUD Clock, MoreHudBars, Extra Info, Extra Overlays, Dana Tweaks, Xandu's Inventory Tweaks Fork, Carry On, Place on slabs, Terrain Slabs, Player Corpse, Purposeful Storage |
 | [Foundation (libraries)](docs/foundation-libraries.md) | Config lib, Dear ImGui, Anvil Performance Optimization, xLib Fork |
 
-Full mod details, versions, fork/patch reasoning, and known incompatibilities are tracked in [`MOD_DB.json`](MOD_DB.json) (schema in [`MOD_DB.schema.json`](MOD_DB.schema.json)). Change history lives in [`AgentLogs/`](AgentLogs/).
+Full mod details, versions, fork/patch reasoning, and known incompatibilities are tracked in [`MOD_DB.json`](MOD_DB.json) (schema in [`MOD_DB.schema.json`](MOD_DB.schema.json)). Change history lives in [`AgentLogs/`](AgentLogs/). Config values worth changing from their mod defaults (cross-mod fixes and mechanic tuning) are listed in [Recommended Settings](docs/recommended-settings.md).
 
 ## Current Versions
 
