@@ -26,6 +26,7 @@ This is the one mod in the list that touches nearly every other category, and it
 - **Durable Better Prospecting / ProspectTogether** ([Prospecting & Mining](prospecting-and-mining.md)): panning yield perks apply correctly.
 - **Knapster, Stone Bake Oven**: full compatibility, nothing to configure.
 - **Alchemy**: compatibility exists but is marked work-in-progress upstream — treat any Alchemy-tree perk as less battle-tested than the rest.
+- **HUD Clock** ([Quality of Life](quality-of-life.md)): both mods default their on-screen HUD elements to the top-left corner, so xSkills' effect box (buff icons) can overlap HUD Clock's panel. Fix: set `effectBoxOriginX`/`effectBoxOriginY` in `ModConfig/XLeveling/gui/xSkillsGilded.json` (default `8`/`8`) to move the box clear of HUD Clock's panel — `13`/`122` is confirmed to work at **2560×1440**. These are raw pixel coordinates rather than resolution/UI-scale-relative, so other resolutions or UI scales may need a different value; nudge it until the overlap clears.
 
 ## The one open question
 
