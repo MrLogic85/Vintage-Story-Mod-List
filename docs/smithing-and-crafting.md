@@ -14,7 +14,9 @@ A deeper rework than most of this list — worth knowing about even if you never
 
 A separate **sharpness** stat (distinct from durability) affects speed — 5% faster at 98%+ sharp, 10% slower once dull — maintained with a **Grindstone** or a portable **Whetstone**. A worn head goes back to the Workbench for reforging with bits or ingots rather than being scrapped.
 
-Runs alongside SmithingPlus cleanly: Toolsmith turns off its own internal "Smithing with Bits" the moment it detects SmithingPlus, so you get one bit-recovery system, not two competing ones. Most QP's Chisel Tools tools are repairable the normal way; a handful are flagged "blunt" and barely wear at all. Stone Quarry's chisels and rubble hammer plug into the same head/handle system directly.
+Runs alongside SmithingPlus cleanly on bit-recovery: Toolsmith turns off its own internal "Smithing with Bits" the moment it detects SmithingPlus, so you get one bit-recovery system, not two competing ones. Most QP's Chisel Tools tools are repairable the normal way; a handful are flagged "blunt" and barely wear at all. Stone Quarry's chisels and rubble hammer plug into the same head/handle system directly.
+
+**Known issue with default settings:** SmithingPlus's own broken-tool-head recovery feature (`EnableToolRecovery`) matches Toolsmith's tool heads too — they all share one generic item code (`toolsmith:tinkertoolparts`) that happens to fit SmithingPlus's tool-head pattern. With `EnableToolRecovery` left on, breaking one Toolsmith tool head can leave you with several duplicate broken heads in your inventory instead of one (confirmed by other users on SmithingPlus's mod page, with a moderator-recommended fix). Set `EnableToolRecovery: false` in `ModConfig/SmithingPlus.json` to avoid it — Toolsmith's own Workbench reforging (which uses separate SmithingPlus anvil recipes) is unaffected. Toolsmith's page also recommends lowering `BrokenToolVoxelPercent` from its default 0.8 to around 0.4, so a broken head still loses a fair chunk of material but stays realistically salvageable.
 
 ## Knapster: hold instead of click
 

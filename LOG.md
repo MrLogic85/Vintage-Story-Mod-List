@@ -6,6 +6,9 @@ Each work session gets its own file under `AgentLogs/` (not `logs/` or `Logs/` �
 - [2026-09-01](AgentLogs/2026-09-01.md) — updated carrycapacity to 1.9.3 for 1.20.4 compatibility
 -->
 
+- [2026-09-12](AgentLogs/2026-09-12.md) — investigated SmithingPlus/Toolsmith "several tool heads to repair" report; found a likely regex/item-code overlap between SmithingPlus's ToolHeadSelector and Toolsmith's shared `tinkertoolparts` code, documented as an open flag (no fix applied)
+- [2026-09-10](AgentLogs/2026-09-10.md) — fixed HudClock/xSkills Fork HUD overlap by pixel-measuring HudClock's panel from screenshots and repositioning xSkills' effect box in ModConfig; documented in MOD_DB.json
+- [2026-09-08](AgentLogs/2026-09-08.md) — logged refined Boat Autopilot crash theory (its persistent map layer, not the gated steering logic); found the real likely culprit is unrelated — a worsening pattern of whole-system BSODs (24 queued kernel crash reports since Jan 2025, 3 in the last 22 hours with different bugcheck codes) pointing to failing hardware, not the game
 - [2026-09-07 (session 2)](AgentLogs/2026-09-07-2.md) — backed up saves; installed Boat Autopilot (52 mods now installed); diagnosed a missing-translation bug in shipwright's slot names (FrontDecoAP, LPlaqueAP, Large Junker passenger seats) and drafted a bug report for the user
 - [2026-09-07](AgentLogs/2026-09-07.md) — checked all 51 installed mods for updates; applied 5 patch-level bumps (A Culinary Artillery, QP's Chisel Tools, Config lib — security fix, Knapster, xSkills Fork); fixed a data-entry bug in xlib/xskills version fields
 - [2026-09-06](AgentLogs/2026-09-06.md) — switched Durable Better Prospecting from the betterprospecting mod page to the durablebetterprospecting page (same version, fixes a packaging bug causing untranslated text and blank icons)

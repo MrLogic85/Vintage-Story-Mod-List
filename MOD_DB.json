@@ -161,6 +161,12 @@
           "downloads": 1792,
           "known_incompatibilities": "Compatible with Shipwright (installed) and vanilla small boats/canoes/kayaks per own docs. Compatibility with wind-based sailing mods like Joy of Sailing remains unconfirmed (own docs/comments don't mention wind mechanics), but no longer an active concern — Joy of Sailing is outdated and won't be added for a while.",
           "note": "Client-side only, no server install needed. Plan routes on the world map, press J in a boat to engage/disengage; touching WASD takes over instantly. Manual sail/mast changes made mid-route stay yours for the rest of that route (autopilot won't re-hoist/furl). Reactive obstacle avoidance only, not full pathfinding — route around large landmasses yourself. User confirmed after testing: works great."
+        },
+        {
+          "version": "1.6.4",
+          "date": "2026-09-08",
+          "known_incompatibilities": "Suspected (unproven) link to two crashes on 2026-09-07, 34m51s apart (21:55:35 NullReferenceException in vanilla BlockGroundStorage.GetRandomColor during ChunkMapLayer/WorldMapManager chunk-image generation; 22:30:26 access-violation crash inside coreclr.dll itself). Both crashes happened while the user was NOT piloting a boat.",
+          "note": "String-inspected boatautopilot.dll (no decompiler available) and confirmed it registers its own persistent map layer (RouteMapLayer via RegisterMapLayer/IWorldMapManager) alongside vanilla's ChunkMapLayer — this layer lives for the mod's whole lifetime and renders/updates continuously regardless of whether a boat trip is active, unlike the tick-based steering/obstacle-probe code (OnClientTick, ShouldSteerThisTick, IsPilotingSeat/get_Engaged), which is clearly gated on actually piloting a boat. So the user boating or not doesn't clear the mod — if anything it narrows suspicion to RouteMapLayer specifically rather than the steering logic, since crash #1 was literally inside the map-layer chunk-image pipeline. Mod's own comments mention known 'performance stuttering when the map is open' but no reported crashes from other users. Crash frequency is too low to confirm/deny by temporarily removing the mod; decision was to keep it installed and keep logging future crash timestamps + whether a boat was in use, rather than remove now. No known incompatibilities found on this recheck beyond this open stability question."
         }
       ]
     },
@@ -533,6 +539,12 @@
           "known_incompatibilities": "none found; confirmed compatible with Status HUD Continued and Extended HUD Info (neither installed).",
           "fork_decision": "Keep — it's the actively maintained continuation; the original is defunct.",
           "note": "Client-side only. Targets 1.22.0–1.22.3. Originated as a community patch of \"Simple HUD Clock\" by Rhonen after that mod stopped receiving updates; author later did a full rewrite for VS 1.22 (v4.0) and now maintains it as its own project under modid `hudclockpatch`."
+        },
+        {
+          "version": "4.4.1",
+          "date": "2026-09-10",
+          "known_incompatibilities": "Cosmetic-only HUD overlap with xSkills Fork's effect box (both default to the top-left corner). HudClock's own top-left panel (Display.Anchor: 0, ModConfig/hudclock/settings.json) occupies screen pixels (13,13) to roughly (400,109) at 2560x1440 — measured directly from screenshots (text/background transitions confirmed at x=13 and y=13 on the top/left edges, and y=108→109 on the bottom edge, consistent across multiple columns). No functional conflict, just visual stacking if both mods are left at their defaults.",
+          "note": "Fix applied 2026-09-10: moved xSkills Fork's effect box (ModConfig/XLeveling/gui/xSkillsGilded.json, effectBoxOriginX/Y) to (13, 122) — same left margin as HudClock (13px) and a 13px gap below HudClock's measured bottom edge (109px). See xskillsfork's matching checked entry."
         }
       ]
     },
@@ -900,6 +912,11 @@
       "checked": [
         {
           "version": "1.9.0-rc.1",
+          "date": "2026-09-12",
+          "known_incompatibilities": "See open_flags: confirmed via SmithingPlus's own mod-page comments — other users report \"Broke a copper axe head, ended up with six broken copper axe heads in inventory\" when paired with Toolsmith, matching what our user saw. Moderator's fix: set `EnableToolRecovery: false` in ModConfig/SmithingPlus.json. Cause: ToolHeadSelector regex matches Toolsmith's shared `toolsmith:tinkertoolparts` item code (contains \"part\"), triggering SmithingPlus's Tool Recovery duplication on every Toolsmith head. Toolsmith's Workbench reforging uses separate SmithingPlus anvil recipes, unaffected by disabling Tool Recovery. Applied 2026-09-12 at user's request (EnableToolRecovery: false, BrokenToolVoxelPercent: 0.4)."
+        },
+        {
+          "version": "1.9.0-rc.1",
           "date": "2026-09-01",
           "downloads": 337697,
           "known_incompatibilities": "redundant with \"Thrifty Smithing\" (incompatible after v1.6.7, not installed) and with Anvil Metal Recovery (tool/bits-recovery overlap, not installed — also flagged as a lag source on Knapster's page). Recommends disabling XSkills bits-recovery for balance if XSkills is installed (not installed here). Compatible with Toolsmith and Salty's Manual Tool Crafting (neither confirmed installed)."
@@ -1041,6 +1058,11 @@
       "version": "1.2.19",
       "author": "JonR",
       "checked": [
+        {
+          "version": "1.2.19",
+          "date": "2026-09-12",
+          "note": "See open_flags: Toolsmith's own mod page confirms it's designed to reforge broken tool heads via SmithingPlus recipes at its Workbench, and recommends lowering SmithingPlus's `BrokenToolVoxelPercent` to 0.4 (installed config has 0.8) for accurate head-breakage penalties. Separately, SmithingPlus's page has confirmed user reports of a duplication bug when paired with Toolsmith (\"ended up with six broken copper axe heads\"), matching what our user saw — root cause is Toolsmith's shared `toolsmith:tinkertoolparts` code matching SmithingPlus's ToolHeadSelector regex and triggering its `EnableToolRecovery` feature repeatedly. Moderator-recommended fix: `EnableToolRecovery: false` in SmithingPlus.json (does not affect Toolsmith's own Workbench reforging, which uses a separate SmithingPlus anvil-recipe path). Applied 2026-09-12 at user's request."
+        },
         {
           "version": "1.2.19",
           "date": "2026-09-03",
@@ -1229,6 +1251,12 @@
       "checked": [
         {
           "version": "1.1.1",
+          "date": "2026-09-10",
+          "known_incompatibilities": "Cosmetic-only HUD overlap with HudClock (installed) — see hudclockpatch's matching checked entry for the measured pixel details. Both mods' HUD elements default to the top-left corner of the screen.",
+          "note": "Fix applied 2026-09-10: moved the xSkills Gilded GUI's effect box (buff icons, e.g. \"Well Rested\") from its default (8,8) to (13,122) via ModConfig/XLeveling/gui/xSkillsGilded.json's effectBoxOriginX/effectBoxOriginY, so it sits 13px below HudClock's panel with matching left margin instead of overlapping it."
+        },
+        {
+          "version": "1.1.1",
           "date": "2026-09-07",
           "note": "New \"Knapping\" skill branch (author notes it's a work in progress), Powered Mixing Bowl compatibility (community patch), fixed level-up menu incorrectly showing on world start, \"Light Step\" perk compatibility with Gloome Classes, minor localization fixes, new \"Travel\" category for sailing/riding, fixed a crash when a player selects the \"Diver\" perk."
         },
@@ -1245,6 +1273,7 @@
   ],
   "open_flags": [
     "Cartographer vs. Pet Map Markers, both installed. Not a hard conflict — both mods explicitly say they can run together — but sharing pet waypoints *through* Cartographer is called out by Pet Map Markers' own page as causing \"Weird Stuff.\" No action taken; just avoid using Cartographer's sharing feature for pet waypoints if that matters to you.",
-    "Durable Better Prospecting vs. ProspectTogether, both installed. Durable Better Prospecting warns generically against any mod that alters the prospecting pickaxe; ProspectTogether's own description doesn't claim to touch the pickaxe (it shares/stores prospecting data instead), so they're likely compatible, but neither page explicitly confirms the pairing. Flagging so you're aware, no changes made."
+    "Durable Better Prospecting vs. ProspectTogether, both installed. Durable Better Prospecting warns generically against any mod that alters the prospecting pickaxe; ProspectTogether's own description doesn't claim to touch the pickaxe (it shares/stores prospecting data instead), so they're likely compatible, but neither page explicitly confirms the pairing. Flagging so you're aware, no changes made.",
+    "SmithingPlus vs. Toolsmith, both installed: user-reported symptom is that breaking one metal tool leaves several tool heads flagged as needing repair. CONFIRMED as a known issue, not just a local hypothesis: Toolsmith's own mod page says it's \"designed from the ground up to work alongside Smithing Plus\" and reforges tool heads via SmithingPlus recipes at its Workbench — recommends setting SmithingPlus's `BrokenToolVoxelPercent` down to 0.4 (installed config currently has 0.8) so head-breakage is penalized accurately. Separately, SmithingPlus's own mod page has user comments reporting the exact symptom: \"Broke a copper axe head, ended up with six broken copper axe heads in inventory,\" with a moderator reply: \"You have to disable Tool Recovery.\" Root mechanism: SmithingPlus's `EnableToolRecovery` feature (ModConfig/SmithingPlus.json) matches items via `ToolHeadSelector` regex `@(.*)(head|blade|boss|barrel|stirrup|part)(.*)` against item CODE; Toolsmith represents every tool head (any tool type/material) as one shared generic item code `toolsmith:tinkertoolparts` (assets/toolsmith/itemtypes/tinkertoolparts.json, distinguished only by attributes), which matches that regex via the \"part\" substring and triggers SmithingPlus's Tool Recovery duplication bug. Remedy applied 2026-09-12 at user's request: ModConfig/SmithingPlus.json now has `EnableToolRecovery: false` (moderator-recommended fix; separate from the reforging-at-Workbench path Toolsmith itself relies on, which uses SmithingPlus's anvil recipes, not the Tool Recovery feature) and `BrokenToolVoxelPercent: 0.4` (was 0.8) per Toolsmith's own recommendation. Flagged 2026-09-12, confirmed 2026-09-12 via mod page comments, fix applied same day."
   ]
 }
