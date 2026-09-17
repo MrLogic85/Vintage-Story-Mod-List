@@ -1078,6 +1078,22 @@
       ]
     },
     {
+      "modid": "toolsmithweapons",
+      "name": "Weaponsmith - a Toolsmith addon",
+      "installed": true,
+      "assetid": 122956,
+      "url": "https://mods.vintagestory.at/toolsmithweapons",
+      "version": "1.0.0",
+      "author": "MetaCalf",
+      "checked": [
+        {
+          "version": "1.0.0",
+          "date": "2026-09-17",
+          "note": "Self-authored Toolsmith addon (own repo: github.com/MrLogic85/Weaponsmith-a-Toolsmith-addon, not this one) extending Toolsmith's head/handle/binding tinkering system to vanilla spear and sword (`blade`). Built and playtested this session, published to mods.vintagestory.at, then added here. Requires toolsmith 1.2.19+ (dependency pin matches what it was built/decompiled against — see that repo's AGENTS.md). Four bugs fixed along the way, all specific to spear/sword being the first hold-to-charge/thrown items ever paired with Toolsmith: (1) a thrown tinkered spear that breaks left a duplicate behind, because EntityProjectile never re-checks Toolsmith's actual head/handle/binding state after impact; (2) finishing spear assembly sometimes auto-threw it or jumped to the aim pose, because Vintage Story's own ServerSystemInventory.HandleHandInteraction unconditionally fires a second, stale OnHeldUseStop after a catch-up loop already completed the hold-session legitimately; (3) sword never became tinkerable at all, silently, because vanilla's `blade-*` item code collides with the bare word \"blade\" already in Toolsmith's own ToolHeads config keyword (meant for unrelated loose head parts); (4) same shape of collision in Toolsmith's PartBlacklist (contains \"armory\") against any mod whose own domain name contains that substring (e.g. a Vanilla Armory install) - fixed but not currently exercised, since club was pulled back out (see below). Axe/knife/cleaver needed no changes - already in Toolsmith's own base TinkerableTools list. club (vanilla's plain wooden club) was tried and deliberately left out: it has no smithed head part in vanilla at all (single grid recipe, not smithing), so Toolsmith's part-tracking has nothing real to attach to. Full root-cause writeups and log evidence for all of this: that repo's docs/findings.md."
+        }
+      ]
+    },
+    {
       "modid": "temporalsreformed",
       "name": "Temporals Reformed - An Enemy Behavior Overhaul",
       "installed": false,

@@ -71,7 +71,7 @@ Each category links to a page explaining what its mods add, how they interact wi
 |---|---|
 | [Alchemy](docs/alchemy.md) | Alchemy |
 | [Cooking & Food](docs/cooking-and-food.md) | A Culinary Artillery, Expanded Foods (Core, Meals Module, Chef's Tricks), FoodShelves, Butchering, Stone Bake Oven, Real Smoke, SpecializedBags Revived, BetterTraders |
-| [Smithing & Crafting](docs/smithing-and-crafting.md) | SmithingPlus (+ Bug Fix), Toolsmith, Knapster, QP's Chisel Tools, Stone Quarry (Standalone Repack), Improved Handbook Recipes (Fork) |
+| [Smithing & Crafting](docs/smithing-and-crafting.md) | SmithingPlus (+ Bug Fix), Toolsmith, Weaponsmith (Toolsmith addon), Knapster, QP's Chisel Tools, Stone Quarry (Standalone Repack), Improved Handbook Recipes (Fork) |
 | [Prospecting & Mining](docs/prospecting-and-mining.md) | Durable Better Prospecting, ProspectTogether, Visible Ore |
 | [Companions](docs/companions.md) | Pet AI, Wolf taming, Pet Map Markers, BedSpawn |
 | [Exploration & World](docs/exploration-and-world.md) | BetterRuins, Plains and Valleys, Farseer, More Lanterns, Shipwright, Auto Map Markers, Cartographer, Translocator Engineering - Redux |
@@ -87,7 +87,7 @@ Full mod details, versions, fork/patch reasoning, and known incompatibilities ar
 Game version: **1.22.7**
 
 <details>
-<summary>Installed mods (52)</summary>
+<summary>Installed mods (53)</summary>
 
 | Name | Version | Link |
 |---|---|---|
@@ -136,6 +136,7 @@ Game version: **1.22.7**
 | Stone Quarry (Standalone Repack) | 3.6.3 | [link](https://mods.vintagestory.at/stonequarystandalonerepack) |
 | Terrain Slabs | 1.0.17 | [link](https://mods.vintagestory.at/terrainslabs) |
 | Toolsmith | 1.2.19 | [link](https://mods.vintagestory.at/toolsmith) |
+| Weaponsmith - a Toolsmith addon | 1.0.0 | [link](https://mods.vintagestory.at/toolsmithweapons) |
 | Translocator Engineering - Redux | 1.6.6 | [link](https://mods.vintagestory.at/translocatorengineeringredux) |
 | Visible Ore | 1.0.1 | [link](https://mods.vintagestory.at/visibleore) |
 | Dear ImGui | 1.2.7 | [link](https://mods.vintagestory.at/imgui) |

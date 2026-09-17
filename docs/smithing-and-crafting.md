@@ -1,6 +1,6 @@
 # Smithing & Crafting
 
-**Mods:** SmithingPlus (+ Bug Fix), Toolsmith, Knapster, QP's Chisel Tools, Stone Quarry (Standalone Repack), Improved Handbook Recipes (Fork)
+**Mods:** SmithingPlus (+ Bug Fix), Toolsmith, Weaponsmith (Toolsmith addon), Knapster, QP's Chisel Tools, Stone Quarry (Standalone Repack), Improved Handbook Recipes (Fork)
 
 ## SmithingPlus: nothing goes to waste
 
@@ -17,6 +17,19 @@ A separate **sharpness** stat (distinct from durability) affects speed — 5% fa
 Runs alongside SmithingPlus cleanly on bit-recovery: Toolsmith turns off its own internal "Smithing with Bits" the moment it detects SmithingPlus, so you get one bit-recovery system, not two competing ones. Most QP's Chisel Tools tools are repairable the normal way; a handful are flagged "blunt" and barely wear at all. Stone Quarry's chisels and rubble hammer plug into the same head/handle system directly.
 
 **Known issue with default settings:** SmithingPlus's own broken-tool-head recovery feature (`EnableToolRecovery`) matches Toolsmith's tool heads too — they all share one generic item code (`toolsmith:tinkertoolparts`) that happens to fit SmithingPlus's tool-head pattern. With `EnableToolRecovery` left on, breaking one Toolsmith tool head can leave you with several duplicate broken heads in your inventory instead of one (confirmed by other users on SmithingPlus's mod page, with a moderator-recommended fix). Set `EnableToolRecovery: false` in `ModConfig/SmithingPlus.json` to avoid it — Toolsmith's own Workbench reforging (which uses separate SmithingPlus anvil recipes) is unaffected. Toolsmith's page also recommends lowering `BrokenToolVoxelPercent` from its default 0.8 to around 0.4, so a broken head still loses a fair chunk of material but stays realistically salvageable.
+
+## Weaponsmith: spear and sword join the head/handle system
+
+A self-authored Toolsmith addon (github.com/MrLogic85/Weaponsmith-a-Toolsmith-addon, published as
+"toolsmithweapons") extending the head/handle/binding system above to the vanilla **spear** and
+**sword** (`blade` — falx, longsword, arming, claymore, gladius, sabre, etc.). Toolsmith alone
+never touches weapons; this adds them to the same regex hook other compat mods use, plus patches
+four bugs that only show up because these are the first hold-to-charge/thrown items Toolsmith's
+ever been paired with — a duplicated spear left behind when a thrown one breaks, the spear
+auto-throwing or auto-aiming right when assembly finishes, and the sword silently never becoming
+tinkerable at all (a naming collision with one of Toolsmith's own config keywords). Full
+root-cause writeups for each live in that repo's `docs/findings.md`. Cleaver and knife needed no
+patch at all — vanilla's `axe`/`knife`/`cleaver` were already in Toolsmith's own base list.
 
 ## Knapster: hold instead of click
 

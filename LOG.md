@@ -6,6 +6,7 @@ Each work session gets its own file under `AgentLogs/` (not `logs/` or `Logs/` �
 - [2026-09-01](AgentLogs/2026-09-01.md) — updated carrycapacity to 1.9.3 for 1.20.4 compatibility
 -->
 
+- [2026-09-17](AgentLogs/2026-09-17.md) — added toolsmithweapons (self-authored Toolsmith addon for spear/sword tinkering, published to mods.vintagestory.at) to MOD_DB.json; documented in docs/smithing-and-crafting.md
 - [2026-09-12](AgentLogs/2026-09-12.md) — investigated SmithingPlus/Toolsmith "several tool heads to repair" report; found a likely regex/item-code overlap between SmithingPlus's ToolHeadSelector and Toolsmith's shared `tinkertoolparts` code, documented as an open flag (no fix applied)
 - [2026-09-10](AgentLogs/2026-09-10.md) — fixed HudClock/xSkills Fork HUD overlap by pixel-measuring HudClock's panel from screenshots and repositioning xSkills' effect box in ModConfig; documented in MOD_DB.json
 - [2026-09-08](AgentLogs/2026-09-08.md) — logged refined Boat Autopilot crash theory (its persistent map layer, not the gated steering logic); found the real likely culprit is unrelated — a worsening pattern of whole-system BSODs (24 queued kernel crash reports since Jan 2025, 3 in the last 22 hours with different bugcheck codes) pointing to failing hardware, not the game
