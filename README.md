@@ -91,14 +91,14 @@ Game version: **1.22.7**
 
 | Name | Version | Link |
 |---|---|---|
-| A Culinary Artillery | 2.0.0-dev.23 | [link](https://mods.vintagestory.at/aculinaryartillery) |
+| A Culinary Artillery | 2.0.0-dev.24 | [link](https://mods.vintagestory.at/aculinaryartillery) |
 | Alchemy | 2.1.22 | [link](https://mods.vintagestory.at/alchemy) |
 | Anvil Performance Optimization | 1.0.0 | [link](https://mods.vintagestory.at/show/mod/50265) |
 | More Lanterns | 1.4.3 | [link](https://mods.vintagestory.at/apelanterns) |
 | BedSpawn | 1.7.1 | [link](https://mods.vintagestory.at/bedspawn) |
 | BetterRuins | 0.6.3 | [link](https://mods.vintagestory.at/betterruins) |
 | BetterTraders | 0.2.1 | [link](https://mods.vintagestory.at/bettertraders) |
-| BloodTrail | 1.2.5 | [link](https://mods.vintagestory.at/bloodtrail) |
+| BloodTrail | 1.2.7 | [link](https://mods.vintagestory.at/bloodtrail) |
 | Boat Autopilot | 1.6.4 | [link](https://mods.vintagestory.at/show/mod/59733) |
 | Butchering | 1.14.3 | [link](https://mods.vintagestory.at/butchering) |
 | Carry On | 1.14.3 | [link](https://mods.vintagestory.at/carryon) |
@@ -116,10 +116,10 @@ Game version: **1.22.7**
 | FoodShelves | 3.0.5 | [link](https://mods.vintagestory.at/foodshelves) |
 | HUD Clock | 4.4.1 | [link](https://mods.vintagestory.at/hudclock) |
 | Improved Handbook Recipes (Fork) | 1227.0.5 | [link](https://mods.vintagestory.at/show/mod/47215) |
-| Knapster | 4.1.0 | [link](https://mods.vintagestory.at/knapster) |
+| Knapster | 4.1.1 | [link](https://mods.vintagestory.at/knapster) |
 | MoreHudBars | 1.2.0 | [link](https://mods.vintagestory.at/morehudbars) |
 | Cartographer | 2.3.0 | [link](https://mods.vintagestory.at/nbcartographer) |
-| Pet AI | 5.1.1 | [link](https://mods.vintagestory.at/petai) |
+| Pet AI | 5.1.2 | [link](https://mods.vintagestory.at/petai) |
 | Pet Map Markers | 0.1.0 | [link](https://mods.vintagestory.at/petmapmarkers) |
 | Place on slabs | 1.2.0 | [link](https://mods.vintagestory.at/show/mod/38090) |
 | Plains and Valleys | 1.0.13 | [link](https://mods.vintagestory.at/plainsandvalleys) |
@@ -132,18 +132,18 @@ Game version: **1.22.7**
 | SmithingPlus | 1.9.0-rc.1 | [link](https://mods.vintagestory.at/smithingplus) |
 | SmithingPlus Bug Fix | 2.0.1 | [link](https://mods.vintagestory.at/show/mod/55511) |
 | SpecializedBags Revived | 2.0.0 | [link](https://mods.vintagestory.at/specializedbagsrevived) |
-| Stone Bake Oven | 1.3.8 | [link](https://mods.vintagestory.at/stonebakeoven) |
+| Stone Bake Oven | 1.4.0 | [link](https://mods.vintagestory.at/stonebakeoven) |
 | Stone Quarry (Standalone Repack) | 3.6.3 | [link](https://mods.vintagestory.at/stonequarystandalonerepack) |
 | Terrain Slabs | 1.0.17 | [link](https://mods.vintagestory.at/terrainslabs) |
 | Toolsmith | 1.2.19 | [link](https://mods.vintagestory.at/toolsmith) |
-| Weaponsmith - a Toolsmith addon | 1.0.0 | [link](https://mods.vintagestory.at/toolsmithweapons) |
+| Weaponsmith - a Toolsmith addon | 1.0.1 | [link](https://mods.vintagestory.at/toolsmithweapons) |
 | Translocator Engineering - Redux | 1.6.6 | [link](https://mods.vintagestory.at/translocatorengineeringredux) |
 | Visible Ore | 1.0.1 | [link](https://mods.vintagestory.at/visibleore) |
 | Dear ImGui | 1.2.7 | [link](https://mods.vintagestory.at/imgui) |
 | Wolf taming | 5.0.1 | [link](https://mods.vintagestory.at/wolftaming) |
 | Xandus Inventory Tweaks Fork | 1.9.1 | [link](https://mods.vintagestory.at/xinvtweaksfork) |
-| xLib Fork | 1.0.37 | [link](https://mods.vintagestory.at/show/mod/44133) |
-| xSkills Fork | 1.1.1 | [link](https://mods.vintagestory.at/show/mod/44074) |
+| xLib Fork | 1.0.38 | [link](https://mods.vintagestory.at/show/mod/44133) |
+| xSkills Fork | 1.1.5 | [link](https://mods.vintagestory.at/show/mod/44074) |
 
 </details>
 
