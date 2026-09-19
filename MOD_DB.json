@@ -1124,9 +1124,14 @@
       "installed": true,
       "assetid": 122956,
       "url": "https://mods.vintagestory.at/toolsmithweapons",
-      "version": "1.0.1",
+      "version": "1.1.4",
       "author": "MetaCalf",
       "checked": [
+        {
+          "version": "1.1.4",
+          "date": "2026-09-19",
+          "note": "Published to mods.vintagestory.at 2026-09-19, tagged compatible through 1.22.7. Adds Vanilla Armory maces (club-flanged/morningstar/spiked/warhammer, blunt = no sharpening) and blacklists Vanilla Armory's unrecipeable `*-relic0..5` blade/spear/club/axe/knife variants. Changes since 1.0.1: 1.1.1 fixed the head+handle bundle's rendering for vanilla spears (cosmetic); 1.1.2 lowered the game dependency to 1.22.0 (a user on 1.22.3 was blocked by the 1.22.7 pin) and added a diagnostic log; 1.1.3 fixed head+handle bundle rendering for Vanilla Armory spear heads; 1.1.4 extends that same bundle-rendering fix to Vanilla Armory mace heads. See the addon repo's docs/findings.md #10."
+        },
         {
           "version": "1.0.1",
           "date": "2026-09-17",
@@ -1190,6 +1195,28 @@
           "downloads": 186038,
           "known_incompatibilities": "conflicts with Translocator Relocator [BETA] (not installed) — both installed together blocks translocator deconstruction. A past fix (1.6.2) addressed a compatibility issue with Immersive Mining (not installed).",
           "note": "Adds what vanilla doesn't have: vanilla translocators (found pre-linked in ruins) can't be built, moved, or relinked. This mod adds a Pry Bar (smithed on an anvil from 1 steel ingot) to deconstruct existing translocators for parts, a craftable replacement translocator (3 steel, 2 gold, 1 rough diamond), and a Linker tool to connect any two translocators up to 8000 blocks apart, always bidirectional. Optional dependencies on Config lib and Dear ImGui (both installed) for an in-game config GUI. Not on Toolsmith's (installed) explicit compatibility list — the Pry Bar likely just behaves as a plain single-durability \"Smithed Tool\" there rather than getting Toolsmith's head/handle/binding breakdown; no reported issues either way. Targets 1.22.0-pre.1 through 1.22.7 (matches game version exactly, unusually current for this list)."
+        }
+      ]
+    },
+    {
+      "modid": "vanillaarmory",
+      "name": "Vanilla Armory",
+      "installed": true,
+      "assetid": 23204,
+      "url": "https://mods.vintagestory.at/show/mod/23204",
+      "version": "2.4.7",
+      "author": "WolfWarrior",
+      "checked": [
+        {
+          "version": "2.4.7",
+          "date": "2026-09-19",
+          "note": "Kept installed permanently — no longer just a test partner now that toolsmithweapons (which adds Vanilla Armory mace support) is published. Documented in docs/smithing-and-crafting.md."
+        },
+        {
+          "version": "2.4.7",
+          "date": "2026-09-19",
+          "downloads": 61404,
+          "note": "Installed 2026-09-19 as a test partner for the self-authored toolsmithweapons 1.1.0 (local build) - to exercise Vanilla Armory's club/mace items, which have real smithed heads unlike vanilla's club. Reuses vanilla item codes/classes (spear-*/blade-*/club-*/axe-*/knife-*), so Toolsmith + toolsmithweapons apply to them. Known collision: Toolsmith's PartBlacklist contains the bare word `armory` (partblacklist-armory.json), which matches this mod's `vanillaarmory:` domain and would blacklist every item it adds; toolsmithweapons works around that with a Harmony patch (WeaponNotBlacklistedPatch). Its bundled base-game compat patch `assets/game/patches/vanillaarmory.json` logged two non-fatal file-not-found errors against 2.4.6. Adds a lot beyond weapons (armor, quivers, bows, shields, relics from ruined weapons) - a bigger gameplay change than a test would need; user may want to remove it after testing."
         }
       ]
     },

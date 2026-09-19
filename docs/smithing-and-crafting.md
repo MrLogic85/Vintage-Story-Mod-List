@@ -1,6 +1,6 @@
 # Smithing & Crafting
 
-**Mods:** SmithingPlus (+ Bug Fix), Toolsmith, Weaponsmith (Toolsmith addon), Knapster, QP's Chisel Tools, Stone Quarry (Standalone Repack), Improved Handbook Recipes (Fork)
+**Mods:** SmithingPlus (+ Bug Fix), Toolsmith, Weaponsmith (Toolsmith addon), Vanilla Armory, Knapster, QP's Chisel Tools, Stone Quarry (Standalone Repack), Improved Handbook Recipes (Fork)
 
 ## SmithingPlus: nothing goes to waste
 
@@ -30,6 +30,12 @@ auto-throwing or auto-aiming right when assembly finishes, and the sword silentl
 tinkerable at all (a naming collision with one of Toolsmith's own config keywords). Full
 root-cause writeups for each live in that repo's `docs/findings.md`. Cleaver and knife needed no
 patch at all — vanilla's `axe`/`knife`/`cleaver` were already in Toolsmith's own base list.
+
+## Vanilla Armory: a bigger weapon and armor roster
+
+Adds armor, quivers, bows, shields, and a full extra weapon roster (including maces — club-flanged, morningstar, spiked, warhammer) plus relic variants recovered from ruined weapons. It's a much bigger gameplay change than just "more Toolsmith items" — expect it to affect combat balance and loot tables generally, not just smithing.
+
+Its maces have real smithed heads (unlike vanilla's plain club, which has none), so Weaponsmith extends the head/handle/binding system to them the same way it does spear and sword — blunt weapons don't sharpen. Reuses vanilla's own item code families (`spear-*`, `blade-*`, `club-*`, `axe-*`, `knife-*`), so Toolsmith and Weaponsmith apply to its items automatically. One collision worth knowing: Toolsmith's own `PartBlacklist` contains the bare word `armory`, which would match this mod's `vanillaarmory:` domain and blacklist everything it adds — Weaponsmith 1.1.0+ carries a Harmony patch (`WeaponNotBlacklistedPatch`) specifically to work around that.
 
 ## Knapster: hold instead of click
 
@@ -71,4 +77,4 @@ Not a crafting mechanic, but genuinely changes how you interact with every recip
 
 ## Putting it together
 
-Knapster's hold-to-craft modes are worth turning on from your very first knapping session — there's no downside. Lean on Improved Handbook Recipes' auto-fill buttons once you're juggling this many new recipes. SmithingPlus changes how you think about failed smithing attempts — bits and broken tools are recoverable now, not wasted — and Toolsmith builds directly on that: keep your tools sharp with a Whetstone in the field, and reforge a worn head at the Workbench instead of remaking the whole tool from scratch. Once you're doing serious stonework, Stone Quarry's plug-and-feather method is far more controlled than mining raw stone, and QP's Chisel Tools' Pantograph is what turns one good chiseled design into a whole building's worth of matching detail.
+Knapster's hold-to-craft modes are worth turning on from your very first knapping session — there's no downside. Lean on Improved Handbook Recipes' auto-fill buttons once you're juggling this many new recipes. SmithingPlus changes how you think about failed smithing attempts — bits and broken tools are recoverable now, not wasted — and Toolsmith builds directly on that: keep your tools sharp with a Whetstone in the field, and reforge a worn head at the Workbench instead of remaking the whole tool from scratch. Once you're doing serious stonework, Stone Quarry's plug-and-feather method is far more controlled than mining raw stone, and QP's Chisel Tools' Pantograph is what turns one good chiseled design into a whole building's worth of matching detail. If you install Vanilla Armory for its bigger weapon/armor roster, Weaponsmith already handles its maces through the same head/handle/binding workflow as spear and sword.
