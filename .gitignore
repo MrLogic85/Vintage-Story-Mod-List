@@ -27,3 +27,7 @@
 /WorldEdit/
 /Farseer/
 /Logs/
+
+# QP's Chisel Tools (chiseltools): saved/loaded chisel shapes, opened in-game
+# with P while holding a chisel tool. Personal data, not part of the modlist.
+/chiselportfolio/
