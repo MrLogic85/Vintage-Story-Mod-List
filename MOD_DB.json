@@ -554,6 +554,24 @@
       ]
     },
     {
+      "modid": "enhancedhandbook",
+      "name": "Enhanced Handbook",
+      "installed": true,
+      "assetid": 31745,
+      "url": "https://mods.vintagestory.at/enhancedhandbook",
+      "version": "1.8.2",
+      "author": "Interzoneism",
+      "checked": [
+        {
+          "version": "1.8.2",
+          "date": "2026-09-17",
+          "downloads": 10906,
+          "known_incompatibilities": "May conflict with Attribute Rendering Library (not installed). Some user reports of drag-and-drop/bookmarking bugs in recent versions; author investigating.",
+          "note": "Client-side only. Reworks the survival handbook's search (smart/partial matching, %mod and !exclude operators), adds drag-and-drop bookmarks/custom category tabs, and groups similar item variants. Complementary to Improved Handbook Recipes (Fork) — that one patches recipe content shown in the handbook, this one reworks the handbook's search/UI/organization; no overlap."
+        }
+      ]
+    },
+    {
       "modid": "improvedhandbookrecipes",
       "name": "Improved Handbook Recipes",
       "installed": false,
@@ -889,6 +907,24 @@
       ]
     },
     {
+      "modid": "roomtools",
+      "name": "Room Tools",
+      "installed": true,
+      "assetid": 23868,
+      "url": "https://mods.vintagestory.at/roomtools",
+      "version": "2.0.0",
+      "author": "Elocrypt",
+      "checked": [
+        {
+          "version": "2.0.0",
+          "date": "2026-09-19",
+          "downloads": 25090,
+          "known_incompatibilities": "No confirmed reports either way on 1.22.7; only tagged through 1.22.3. Low risk — it's a chat-command/render-overlay mod, no world-data or recipe changes.",
+          "note": "User had a room (and an adjacent one) stop being detected as enclosed, suspected a wall breach. This mod's `/rooms show` highlights the room at your position: yellow = enclosed room, blue = enclosed cellar, green = enclosed greenhouse, magenta = the exact gap block(s) breaking the seal, orange = glass/trapdoor sealing the room but leaking skylight. Also `/rooms list` (all rooms in the chunk), `/rooms info` (stats only), `/rooms hide`, `/rooms auto on|off`. Dual-side (client+server, same shared Mods/ folder here). 2.0.0 explicitly fixed chiseled/microblock blocks not being recognized as valid room seals — relevant given QP's Chisel Tools (installed). Same author as HUD Clock (installed, no issues there). Vanilla fallback exists too: `/debug rooms hi` highlights green/red valid/invalid but not the specific gap block."
+        }
+      ]
+    },
+    {
       "modid": "shipwright",
       "name": "Shipwright: Vessels of Distant Shores",
       "installed": true,
@@ -1154,6 +1190,29 @@
           "downloads": 186038,
           "known_incompatibilities": "conflicts with Translocator Relocator [BETA] (not installed) — both installed together blocks translocator deconstruction. A past fix (1.6.2) addressed a compatibility issue with Immersive Mining (not installed).",
           "note": "Adds what vanilla doesn't have: vanilla translocators (found pre-linked in ruins) can't be built, moved, or relinked. This mod adds a Pry Bar (smithed on an anvil from 1 steel ingot) to deconstruct existing translocators for parts, a craftable replacement translocator (3 steel, 2 gold, 1 rough diamond), and a Linker tool to connect any two translocators up to 8000 blocks apart, always bidirectional. Optional dependencies on Config lib and Dear ImGui (both installed) for an in-game config GUI. Not on Toolsmith's (installed) explicit compatibility list — the Pry Bar likely just behaves as a plain single-durability \"Smithed Tool\" there rather than getting Toolsmith's head/handle/binding breakdown; no reported issues either way. Targets 1.22.0-pre.1 through 1.22.7 (matches game version exactly, unusually current for this list)."
+        }
+      ]
+    },
+    {
+      "modid": "vcftemporalstabilizer",
+      "name": "Temporal Stabilizer",
+      "installed": true,
+      "assetid": 58281,
+      "url": "https://mods.vintagestory.at/show/mod/58281",
+      "version": "1.13.1",
+      "author": "VieLassiel",
+      "checked": [
+        {
+          "version": "1.13.1",
+          "date": "2026-09-19",
+          "note": "User built one in-game and confirmed it works as expected on 1.22.7 (previously only tagged for 1.22.3, no confirmation either way) — protects the area from temporal-stability drain as advertised. The radius-reset-on-reload and WIP-model issues noted below are cosmetic/convenience, not functional blockers."
+        },
+        {
+          "version": "1.13.1",
+          "date": "2026-09-19",
+          "downloads": 771,
+          "known_incompatibilities": "Side: both — must be installed server-side too (same shared Mods/ folder here, so already covered). No confirmed reports either way on 1.22.7; only tagged for 1.22.3.",
+          "note": "User's home sits in a ruin with a naturally low fixed area-stability value (per Vintage Story's own worldgen — random per-location, doesn't change, unrelated to being a ruin as such). This mod adds a craftable/placeable machine (tin bronze ingots + Temporal Gear + planks, 3x3 grid) that makes an area immune to temporal-stability drain while fueled (~20 days per Temporal Gear, default 50-block radius, adjustable 8-100 via Sneak+Right-Click). Installed to test as a fix. Young mod (771 downloads): 1.13.1 fixed a crash-on-touch/placement bug and flashy UI-text crash from earlier releases; an open bug remains where the radius setting resets on chunk/game reload (not yet fixed by the author); model/animations are acknowledged WIP by the author but functionality works. Considered alongside Chunk Stability Override (not installed — a `/stab X` command mod that permanently raises a chunk's baseline stability instead of adding a device) and the vanilla Rift Ward (blocks rifts specifically, doesn't touch baseline area stability)."
         }
       ]
     },

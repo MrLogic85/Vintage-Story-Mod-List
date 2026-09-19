@@ -16,6 +16,9 @@
 /serverconfig.json
 /servermagicnumbers.json
 /waypoints-names.json
+
+# Mod runtime data written directly to the data root instead of ModData/.
+/stabilizer_status.json
 /ModConfig/
 /ModData/
 /Playerdata/

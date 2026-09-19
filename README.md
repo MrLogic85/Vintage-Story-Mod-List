@@ -75,9 +75,9 @@ Each category links to a page explaining what its mods add, how they interact wi
 | [Prospecting & Mining](docs/prospecting-and-mining.md) | Durable Better Prospecting, ProspectTogether, Visible Ore |
 | [Companions](docs/companions.md) | Pet AI, Wolf taming, Pet Map Markers, BedSpawn |
 | [Exploration & World](docs/exploration-and-world.md) | BetterRuins, Plains and Valleys, Farseer, More Lanterns, Shipwright, Auto Map Markers, Cartographer, Translocator Engineering - Redux |
-| [Danger & Wildlife](docs/danger-and-wildlife.md) | BloodTrail |
+| [Danger & Wildlife](docs/danger-and-wildlife.md) | BloodTrail, Temporal Stabilizer |
 | [Progression](docs/progression.md) | xSkills Fork |
-| [Quality of Life](docs/quality-of-life.md) | HUD Clock, MoreHudBars, Extra Info, Extra Overlays, Dana Tweaks, Xandu's Inventory Tweaks Fork, Carry On, Place on slabs, Terrain Slabs, Player Corpse, Purposeful Storage |
+| [Quality of Life](docs/quality-of-life.md) | HUD Clock, MoreHudBars, Extra Info, Extra Overlays, Dana Tweaks, Xandu's Inventory Tweaks Fork, Carry On, Place on slabs, Terrain Slabs, Player Corpse, Purposeful Storage, Enhanced Handbook, Room Tools |
 | [Foundation (libraries)](docs/foundation-libraries.md) | Config lib, Dear ImGui, Anvil Performance Optimization, xLib Fork |
 
 Full mod details, versions, fork/patch reasoning, and known incompatibilities are tracked in [`MOD_DB.json`](MOD_DB.json) (schema in [`MOD_DB.schema.json`](MOD_DB.schema.json)). Change history lives in [`AgentLogs/`](AgentLogs/). Config values worth changing from their mod defaults (cross-mod fixes and mechanic tuning) are listed in [Recommended Settings](docs/recommended-settings.md).
@@ -87,7 +87,7 @@ Full mod details, versions, fork/patch reasoning, and known incompatibilities ar
 Game version: **1.22.7**
 
 <details>
-<summary>Installed mods (53)</summary>
+<summary>Installed mods (56)</summary>
 
 | Name | Version | Link |
 |---|---|---|
@@ -109,6 +109,7 @@ Game version: **1.22.7**
 | Expanded Foods: Chef's Tricks | 1.0.0-dev.4 | [link](https://mods.vintagestory.at/efchefstricks) |
 | Expanded Foods: Meals Module | 1.0.0-dev.8 | [link](https://mods.vintagestory.at/efmealsmodule) |
 | Auto Map Markers | 5.0.3 | [link](https://mods.vintagestory.at/automapmarkers) |
+| Enhanced Handbook | 1.8.2 | [link](https://mods.vintagestory.at/enhancedhandbook) |
 | Expanded Foods: Core | 2.0.0-dev.14 | [link](https://mods.vintagestory.at/expandedfoods) |
 | Extra Info | 2.2.1 | [link](https://mods.vintagestory.at/extrainfo) |
 | Extra Overlays | 1.8.1 | [link](https://mods.vintagestory.at/show/mod/48190) |
@@ -128,6 +129,7 @@ Game version: **1.22.7**
 | Purposeful Storage | 2.1.1 | [link](https://mods.vintagestory.at/purposefulstorage) |
 | Real Smoke | 1.3.1 | [link](https://mods.vintagestory.at/realsmoke) |
 | Rivers | 5.0.3 | [link](https://mods.vintagestory.at/rivers) |
+| Room Tools | 2.0.0 | [link](https://mods.vintagestory.at/roomtools) |
 | Shipwright: Vessels of Distant Shores | 1.4.1 | [link](https://mods.vintagestory.at/shipwright) |
 | SmithingPlus | 1.9.0-rc.1 | [link](https://mods.vintagestory.at/smithingplus) |
 | SmithingPlus Bug Fix | 2.0.1 | [link](https://mods.vintagestory.at/show/mod/55511) |
@@ -138,6 +140,7 @@ Game version: **1.22.7**
 | Toolsmith | 1.2.19 | [link](https://mods.vintagestory.at/toolsmith) |
 | Weaponsmith - a Toolsmith addon | 1.0.1 | [link](https://mods.vintagestory.at/toolsmithweapons) |
 | Translocator Engineering - Redux | 1.6.6 | [link](https://mods.vintagestory.at/translocatorengineeringredux) |
+| Temporal Stabilizer | 1.13.1 | [link](https://mods.vintagestory.at/show/mod/58281) |
 | Visible Ore | 1.0.1 | [link](https://mods.vintagestory.at/visibleore) |
 | Dear ImGui | 1.2.7 | [link](https://mods.vintagestory.at/imgui) |
 | Wolf taming | 5.0.1 | [link](https://mods.vintagestory.at/wolftaming) |

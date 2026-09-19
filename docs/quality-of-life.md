@@ -1,6 +1,6 @@
 # Quality of Life
 
-**Mods:** HUD Clock, MoreHudBars, Extra Info, Extra Overlays, Dana Tweaks, Xandu's Inventory Tweaks Fork, Carry On, Place on slabs, Terrain Slabs, Player Corpse, Purposeful Storage
+**Mods:** HUD Clock, MoreHudBars, Extra Info, Extra Overlays, Dana Tweaks, Xandu's Inventory Tweaks Fork, Carry On, Place on slabs, Terrain Slabs, Player Corpse, Purposeful Storage, Enhanced Handbook, Room Tools
 
 ## Information on screen
 
@@ -13,6 +13,12 @@
 **Extra Info** adds real numbers to things vanilla only shows qualitatively: crafting and fuel progress bars with both real-time and in-game-time estimates, workstation temperature, break-time estimates, and stack counts on tooltips. In the handbook it adds animal diets, trader stock and prices, sapling growth timelines, and entity drops. Concretely, you'll see things like a crop's exact growth stage and hours until the next one, bloomery/furnace progress percentages, an animal's pregnancy/lactation status, quern grinding progress, and panning odds.
 
 **Extra Overlays** floats a colored health bar above nearby creatures automatically — no need to look directly at them. It fades from green to yellow to red as the creature loses health, defaults to showing up to 15 creatures within 10 blocks, and has no in-game menu — configuring it means editing `attr.json` in the mod folder and rejoining the world.
+
+**Enhanced Handbook** reworks the survival handbook itself: faster/smarter search (partial-word matching, `%modname` to filter by mod, `!term` to exclude), drag-and-drop bookmarks, custom category tabs you organize by hand, and an "Everything (Groups)" view that collapses similar item variants (wood/stone types etc.) into one entry so there's less to scroll through. Open its setup dialog with `.setupbook`. Client-side only. Complements rather than overlaps Improved Handbook Recipes (Fork) (see [Smithing & Crafting](smithing-and-crafting.md)) — that one resolves which recipe you get when a grid pattern matches several; this one is purely search/organization.
+
+## Finding a broken room seal
+
+**Room Tools** diagnoses why a space stopped counting as an enclosed room (cellar, greenhouse, or generic room) — useful when a wall breach isn't obvious by eye. `/rooms show` highlights your current room: yellow for a valid generic room, blue for a cellar, green for a greenhouse, and — the useful part — **magenta on the exact gap block(s)** breaking the seal. Orange marks glass/trapdoors that seal the room but still leak skylight (relevant for cellar cooling and greenhouse eligibility). Other commands: `/rooms list` (every room in the current chunk), `/rooms info` (stats without the overlay), `/rooms auto on` (refreshes every 5 seconds while you stand still), `/rooms hide`. Needs installing on both client and server. If you'd rather not install a mod for an occasional check, vanilla has a blunter built-in option: `/debug rooms hi` highlights the room green (valid) or red (invalid) but won't point at the specific gap.
 
 ## Dana Tweaks: a long list of small fixes
 
