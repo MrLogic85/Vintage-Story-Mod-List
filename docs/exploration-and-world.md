@@ -4,7 +4,7 @@
 
 ## BetterRuins: things worth finding
 
-Adds over 600 structures across several categories: small ruins and graves (including waystones), underground passages, dungeons, and mine excavations, full villages (multiple distinct tilesets, including Forest Village and Clay Villages), megastructures (castles, mansions, aqueducts, bathhouses), Forlorn Hope towers and their variants, named story locations (Huaca, The Panopticon, Coal Mine, University, Sunrift Experiment), surface and underground translocators, churches and religious sites, and trading posts.
+Adds over 600 structures across several categories: small ruins and graves (including waystones), underground passages, dungeons, and mine excavations, full villages (multiple distinct tilesets, including Forest Village and Clay Villages), megastructures (castles, mansions, aqueducts, bathhouses), Forlorn Hope towers and their variants, named story locations (Huaca, The Panopticon, Coal Mine, University, Sunrift Experiment), surface and underground translocators, churches and religious sites, and trading posts. Version 0.6.4 adds the Forgotten Village story location, the Mountain Castle and Underground Castle megastructures, and a new waystone. Like all new BetterRuins content, these only appear in chunks generated after the update.
 
 What's in them: collectible blueprints that unlock crafting for otherwise-unobtainable items, treasure maps that lead to further locations, an expanded loot pool, custom lore items, building materials, and unique items including temporal artifacts.
 
@@ -15,6 +15,8 @@ Not new content, a different shape to the world: flat lowlands, plains, and high
 ## Farseer: see further without doing anything
 
 Fully passive — nothing to craft or configure to get the benefit. Renders a simplified heightmap silhouette of terrain out to roughly 4,000 blocks as atmospheric fog: elevation only, no structures or vegetation shown at that range. Heightmaps build automatically as you explore and are cached server-side, so the first pass through unexplored terrain is slower than revisiting somewhere you've already been. Open its settings with **Ctrl+Shift+F** if you want to adjust view distance or visual preferences.
+
+**Watch for (BetterRuins 0.6.4 + Farseer):** one server admin reported the server hanging while loading chunks on BetterRuins 0.6.4, and later blamed Farseer. It's a single report and not a known bug upstream. If your game freezes while loading new terrain, turn Farseer off first. If that doesn't help, the fallback is BetterRuins 0.6.3.
 
 ## More Lanterns
 

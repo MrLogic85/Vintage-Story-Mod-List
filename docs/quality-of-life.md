@@ -64,7 +64,7 @@ A companion mod to FoodShelves, from the same author, but for everything that is
 
 ## Player Corpse: dying doesn't lose everything
 
-On death, a skeleton corpse spawns at the death location holding your full inventory, and a waypoint gets created there automatically. Only you (or a creative-mode player) can loot it for a configurable window — 240 in-game hours (about 10 days) by default — after which it opens up to anyone. Hold right-click on the corpse to retrieve your items. Craft a **compass item** to search a 7×7 chunk area for nearby corpses if you've lost track of one. As a last resort, `/returnthings` recovers items from up to your last 10 deaths, even if a corpse failed to spawn or got lost entirely.
+On death, a skeleton corpse spawns at the death location holding your full inventory, and a waypoint gets created there automatically. Only you (or a creative-mode player) can loot it for a configurable window — 240 in-game hours (about 10 days) by default — after which it opens up to anyone. Hold right-click on the corpse to retrieve your items. Craft a **compass item** to search a 7×7 chunk area for nearby corpses if you've lost track of one. As a last resort, `/returnthings` recovers items from up to your last 10 deaths, even if a corpse failed to spawn or got lost entirely. Since 1.16 the config can also hide the particles floating above a corpse and make the skeleton smaller.
 
 ## Putting it together
 

@@ -37,6 +37,12 @@ Adds armor, quivers, bows, shields, and a full extra weapon roster (including ma
 
 Its maces have real smithed heads (unlike vanilla's plain club, which has none), so Weaponsmith extends the head/handle/binding system to them the same way it does spear and sword — blunt weapons don't sharpen. Reuses vanilla's own item code families (`spear-*`, `blade-*`, `club-*`, `axe-*`, `knife-*`), so Toolsmith and Weaponsmith apply to its items automatically. One collision worth knowing: Toolsmith's own `PartBlacklist` contains the bare word `armory`, which would match this mod's `vanillaarmory:` domain and blacklist everything it adds — Weaponsmith 1.1.0+ carries a Harmony patch (`WeaponNotBlacklistedPatch`) specifically to work around that.
 
+A few more things worth knowing:
+
+- **Ornate gold/silver weapons are made the Vanilla Armory way.** Weaponsmith 1.1.7+ keeps VA's ornate gold/silver variants out of Toolsmith tinkering (before, a steel head could come out as the gold ornate weapon). Assemble ordinary heads with Toolsmith, and make ornate weapons with VA's own plate recipe.
+- **VA's axe-type weapons don't fell trees** (VA 2.4.8+). They still count as axes for tool purposes, but use a real axe for logging.
+- **The relic khanjar doesn't fit in the Hunter Bag.** SpecializedBags Revived's Vanilla Armory patch has a typo for that one item. You'll also see two harmless `Patch 7/19 in game:patches/vanillaarmory.json` errors and three missing-texture warnings for VA helmets in the log at startup; none of them affect play.
+
 ## Knapster: hold instead of click
 
 Adds "Easy" click-and-hold modes across most of the game's manual crafting systems, replacing repetitive single-clicking:
@@ -50,6 +56,8 @@ Adds "Easy" click-and-hold modes across most of the game's manual crafting syste
 - **Easy Harvesting / Easy Tilling** — speed multipliers for scythe and hoe work
 
 Everything's server-configurable, so a server admin can dial the speedup up or down.
+
+**Known bug (Knapster 4.1.1): restart the game before loading a second world.** If you load a world, leave to the main menu and load another one (or the same one again) without quitting the game, Knapster's admin menu fails to start and the game crashes while connecting, with `ProtoException: Invalid wire-type`. The first world after a fresh launch always loads fine, so just quit and relaunch the game between worlds. Reported upstream ([Knapster issue #56](https://github.com/ApacheTech-VintageStory-Mods/Knapster/issues/56)); no fix released yet.
 
 ## QP's Chisel Tools: copy-paste for chiseled work
 

@@ -74,7 +74,7 @@ Each category links to a page explaining what its mods add, how they interact wi
 | [Smithing & Crafting](docs/smithing-and-crafting.md) | SmithingPlus (+ Bug Fix), Toolsmith, Weaponsmith (Toolsmith addon), Vanilla Armory, Knapster, QP's Chisel Tools, Stone Quarry (Standalone Repack), Improved Handbook Recipes (Fork) |
 | [Prospecting & Mining](docs/prospecting-and-mining.md) | Durable Better Prospecting, ProspectTogether, Visible Ore |
 | [Companions](docs/companions.md) | Pet AI, Wolf taming, Pet Map Markers, BedSpawn |
-| [Exploration & World](docs/exploration-and-world.md) | BetterRuins, Plains and Valleys, Farseer, More Lanterns, Shipwright, Auto Map Markers, Cartographer, Translocator Engineering - Redux |
+| [Exploration & World](docs/exploration-and-world.md) | BetterRuins, Plains and Valleys, Farseer, More Lanterns, Shipwright, Boat Autopilot, Auto Map Markers, Cartographer, Translocator Engineering - Redux |
 | [Danger & Wildlife](docs/danger-and-wildlife.md) | BloodTrail, Temporal Stabilizer |
 | [Progression](docs/progression.md) | xSkills Fork |
 | [Quality of Life](docs/quality-of-life.md) | HUD Clock, MoreHudBars, Extra Info, Extra Overlays, Dana Tweaks, Xandu's Inventory Tweaks Fork, Carry On, Place on slabs, Terrain Slabs, Player Corpse, Purposeful Storage, Enhanced Handbook, Room Tools |
@@ -91,30 +91,30 @@ Game version: **1.22.7**
 
 | Name | Version | Link |
 |---|---|---|
-| A Culinary Artillery | 2.0.0-dev.24 | [link](https://mods.vintagestory.at/aculinaryartillery) |
-| Alchemy | 2.1.22 | [link](https://mods.vintagestory.at/alchemy) |
+| A Culinary Artillery | 2.0.0-dev.27 | [link](https://mods.vintagestory.at/aculinaryartillery) |
+| Alchemy | 2.1.24 | [link](https://mods.vintagestory.at/alchemy) |
 | Anvil Performance Optimization | 1.0.0 | [link](https://mods.vintagestory.at/show/mod/50265) |
-| More Lanterns | 1.4.3 | [link](https://mods.vintagestory.at/apelanterns) |
+| More Lanterns | 1.4.4 | [link](https://mods.vintagestory.at/apelanterns) |
 | BedSpawn | 1.7.1 | [link](https://mods.vintagestory.at/bedspawn) |
-| BetterRuins | 0.6.3 | [link](https://mods.vintagestory.at/betterruins) |
+| BetterRuins | 0.6.4 | [link](https://mods.vintagestory.at/betterruins) |
 | BetterTraders | 0.2.1 | [link](https://mods.vintagestory.at/bettertraders) |
-| BloodTrail | 1.2.7 | [link](https://mods.vintagestory.at/bloodtrail) |
+| BloodTrail | 1.2.11 | [link](https://mods.vintagestory.at/bloodtrail) |
 | Boat Autopilot | 1.6.4 | [link](https://mods.vintagestory.at/show/mod/59733) |
 | Butchering | 1.14.3 | [link](https://mods.vintagestory.at/butchering) |
 | Carry On | 1.14.3 | [link](https://mods.vintagestory.at/carryon) |
-| QP's Chisel Tools | 1.17.7 | [link](https://mods.vintagestory.at/chiseltools) |
+| QP's Chisel Tools | 1.17.9 | [link](https://mods.vintagestory.at/chiseltools) |
 | Config lib | 1.13.2 | [link](https://mods.vintagestory.at/configlib) |
 | Dana Tweaks | 4.1.0 | [link](https://mods.vintagestory.at/danatweaks) |
 | Durable Better Prospecting | 22.0.0-rc.1 | [link](https://mods.vintagestory.at/durablebetterprospecting) |
-| Expanded Foods: Chef's Tricks | 1.0.0-dev.4 | [link](https://mods.vintagestory.at/efchefstricks) |
-| Expanded Foods: Meals Module | 1.0.0-dev.8 | [link](https://mods.vintagestory.at/efmealsmodule) |
+| Expanded Foods: Chef's Tricks | 1.0.0-dev.6 | [link](https://mods.vintagestory.at/efchefstricks) |
+| Expanded Foods: Meals Module | 1.0.0-dev.9 | [link](https://mods.vintagestory.at/efmealsmodule) |
 | Auto Map Markers | 5.0.3 | [link](https://mods.vintagestory.at/automapmarkers) |
 | Enhanced Handbook | 1.8.2 | [link](https://mods.vintagestory.at/enhancedhandbook) |
-| Expanded Foods: Core | 2.0.0-dev.14 | [link](https://mods.vintagestory.at/expandedfoods) |
+| Expanded Foods: Core | 2.0.0-dev.16 | [link](https://mods.vintagestory.at/expandedfoods) |
 | Extra Info | 2.2.1 | [link](https://mods.vintagestory.at/extrainfo) |
 | Extra Overlays | 1.8.1 | [link](https://mods.vintagestory.at/show/mod/48190) |
 | Farseer | 1.4.0 | [link](https://mods.vintagestory.at/farseer) |
-| FoodShelves | 3.0.5 | [link](https://mods.vintagestory.at/foodshelves) |
+| FoodShelves | 3.1.1 | [link](https://mods.vintagestory.at/foodshelves) |
 | HUD Clock | 4.4.1 | [link](https://mods.vintagestory.at/hudclock) |
 | Improved Handbook Recipes (Fork) | 1227.0.5 | [link](https://mods.vintagestory.at/show/mod/47215) |
 | Knapster | 4.1.1 | [link](https://mods.vintagestory.at/knapster) |
@@ -124,7 +124,7 @@ Game version: **1.22.7**
 | Pet Map Markers | 0.1.0 | [link](https://mods.vintagestory.at/petmapmarkers) |
 | Place on slabs | 1.2.0 | [link](https://mods.vintagestory.at/show/mod/38090) |
 | Plains and Valleys | 1.0.13 | [link](https://mods.vintagestory.at/plainsandvalleys) |
-| Player Corpse | 1.15.1 | [link](https://mods.vintagestory.at/playercorpseforkedazu) |
+| Player Corpse | 1.16.0 | [link](https://mods.vintagestory.at/playercorpseforkedazu) |
 | ProspectTogether | 2.2.1 | [link](https://mods.vintagestory.at/prospecttogether) |
 | Purposeful Storage | 2.1.1 | [link](https://mods.vintagestory.at/purposefulstorage) |
 | Real Smoke | 1.3.1 | [link](https://mods.vintagestory.at/realsmoke) |
@@ -138,16 +138,16 @@ Game version: **1.22.7**
 | Stone Quarry (Standalone Repack) | 3.6.3 | [link](https://mods.vintagestory.at/stonequarystandalonerepack) |
 | Terrain Slabs | 1.0.17 | [link](https://mods.vintagestory.at/terrainslabs) |
 | Toolsmith | 1.2.19 | [link](https://mods.vintagestory.at/toolsmith) |
-| Weaponsmith - a Toolsmith addon | 1.1.4 | [link](https://mods.vintagestory.at/toolsmithweapons) |
-| Translocator Engineering - Redux | 1.6.6 | [link](https://mods.vintagestory.at/translocatorengineeringredux) |
+| Weaponsmith - a Toolsmith addon | 1.1.7 | [link](https://mods.vintagestory.at/toolsmithweapons) |
+| Translocator Engineering - Redux | 1.6.7 | [link](https://mods.vintagestory.at/translocatorengineeringredux) |
+| Vanilla Armory | 2.4.9 | [link](https://mods.vintagestory.at/show/mod/23204) |
 | Temporal Stabilizer | 1.13.1 | [link](https://mods.vintagestory.at/show/mod/58281) |
-| Vanilla Armory | 2.4.7 | [link](https://mods.vintagestory.at/show/mod/23204) |
 | Visible Ore | 1.0.1 | [link](https://mods.vintagestory.at/visibleore) |
 | Dear ImGui | 1.2.7 | [link](https://mods.vintagestory.at/imgui) |
 | Wolf taming | 5.0.1 | [link](https://mods.vintagestory.at/wolftaming) |
 | Xandus Inventory Tweaks Fork | 1.9.1 | [link](https://mods.vintagestory.at/xinvtweaksfork) |
-| xLib Fork | 1.0.38 | [link](https://mods.vintagestory.at/show/mod/44133) |
-| xSkills Fork | 1.1.5 | [link](https://mods.vintagestory.at/show/mod/44074) |
+| xLib Fork | 1.0.41 | [link](https://mods.vintagestory.at/show/mod/44133) |
+| xSkills Fork | 1.1.8 | [link](https://mods.vintagestory.at/show/mod/44074) |
 
 </details>
 

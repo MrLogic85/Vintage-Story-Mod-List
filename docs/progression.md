@@ -15,6 +15,10 @@ Gain experience by doing what you'd already be doing — fighting, mining, diggi
 
 Press **O** to open the skills dialog and see your progress and available perks.
 
+You can also hand your experience and levels over to another player (2-hour cooldown, the same as unlearning). Skill branches can be excluded from transfers in `xLeveling.json`. Details are in the mod's info window (the **(i)** in the top-left corner of the dialog).
+
+**No longer maintained:** xSkills Fork 1.1.8 and xLib Fork 1.0.41 (October 2026) are the fork author's final releases. The original xSkills/xLib stopped at game 1.21, so there is nothing to switch back to. Both work fine on 1.22.x for now, but a future game update will probably break them unless someone picks up the fork.
+
 ## How it plugs into everything else
 
 This is the one mod in the list that touches nearly every other category, and it ships explicit compatibility work for most of them:

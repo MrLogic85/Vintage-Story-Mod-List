@@ -8,9 +8,21 @@
       "installed": true,
       "assetid": 4151,
       "url": "https://mods.vintagestory.at/aculinaryartillery",
-      "version": "2.0.0-dev.24",
+      "version": "2.0.0-dev.27",
       "author": "l33tmaan",
       "checked": [
+        {
+          "version": "2.0.0-dev.27",
+          "date": "2026-10-12",
+          "downloads": 792048,
+          "note": "Updated from dev.24 together with the rest of the Expanded Foods family (user decision 2026-10-12). dev.25 fixes the dev.24 meathook InvalidCastException ('Fix crash caused by direct cast from IDictionary', 'Fix duplicate meathook transforms'); dev.25 also reworked meat racks/bottle racks into fewer block variants, dev.26 fixed handbook crashes, dev.27 fixed rack Z-fighting and mixing-recipe satiety. Known on dev.27 (mod-page comments 2026-10-11/12): (1) breaks Hydrate or Diedrate hydration via the new liquid heal-over-time patch, fix awaiting review; HoD is not installed here, so it does not apply; (2) one report that meat on hooks / bottles in racks are invisible but still interactable (cosmetic). Recheck for dev.28."
+        },
+        {
+          "version": "2.0.0-dev.24",
+          "date": "2026-09-20",
+          "downloads": 763769,
+          "note": "Known bug, no fix released yet (dev.24 is still the latest, published 2026-09-16): dev.24's new custom meathook shapes/transforms make BlockEntityMeatHooks.getOrCreateMesh throw InvalidCastException (TextureDictionary -> Dictionary<string, CompositeTexture>). Seen locally as a logged (non-fatal) tesselation error on a meat hook at 515802/111/511071 (that hook probably renders wrong), and reported on the mod page by another user as a hard crash when putting a small copper cauldron on a hook. Not the cause of the ProtoException-on-load crashes (2026-09-17/18/20). Recheck for dev.25; avoid hanging cauldrons/saucepans on meat hooks meanwhile. Staying on dev.24 for now: rolling back to dev.23 would avoid the meathook shapes but is untested against the current world."
+        },
         {
           "version": "2.0.0-dev.23",
           "date": "2026-09-07",
@@ -32,9 +44,15 @@
       "installed": true,
       "assetid": 487,
       "url": "https://mods.vintagestory.at/alchemy",
-      "version": "2.1.22",
+      "version": "2.1.24",
       "author": "llama3013",
       "checked": [
+        {
+          "version": "2.1.24",
+          "date": "2026-10-12",
+          "downloads": 540257,
+          "note": "Still on the stable 2.1.x line (2.1.23 player-size hotfix, 2.1.24 Floral Zones compat, potion bases no longer usable as fuel). The 2.2.0 RC track is at rc.12, which needs Effectlib 1.1.1 and wipes active effects/coatings once on upgrade. Keeping the 2026-09-17 decision to stay stable until 2.2.0 is released."
+        },
         {
           "version": "2.1.22",
           "date": "2026-09-17",
@@ -105,9 +123,15 @@
       "installed": true,
       "assetid": 3829,
       "url": "https://mods.vintagestory.at/betterruins",
-      "version": "0.6.3",
+      "version": "0.6.4",
       "author": "NiclAss",
       "checked": [
+        {
+          "version": "0.6.4",
+          "date": "2026-10-12",
+          "downloads": 1193826,
+          "note": "Updated to 0.6.4 for testing (user decision 2026-10-12). New content only appears in chunks generated after the update. The page's RiverGen chunk-border warning does not apply: it says Rivers (installed) already has the fix. Possible conflict: one mod-page report (2026-10-02) of a dedicated server deadlocking during chunk loading ('chunkdbthread' not suspended) on 0.6.4; the reporter later confirmed Farseer (installed here) was the cause. The author does not know of the bug. If the game hangs while loading chunks, roll back to 0.6.3 or disable Farseer."
+        },
         {
           "version": "0.6.3",
           "date": "2026-09-01",
@@ -140,7 +164,7 @@
       "installed": true,
       "assetid": 30331,
       "url": "https://mods.vintagestory.at/bloodtrail",
-      "version": "1.2.7",
+      "version": "1.2.11",
       "author": "Aylor",
       "checked": [
         {
@@ -256,7 +280,7 @@
       "installed": true,
       "assetid": 2751,
       "url": "https://mods.vintagestory.at/chiseltools",
-      "version": "1.17.7",
+      "version": "1.17.9",
       "author": "QPTech",
       "checked": [
         {
@@ -410,9 +434,15 @@
       "installed": true,
       "assetid": 28,
       "url": "https://mods.vintagestory.at/expandedfoods",
-      "version": "2.0.0-dev.14",
+      "version": "2.0.0-dev.16",
       "author": "l33tmaan",
       "checked": [
+        {
+          "version": "2.0.0-dev.16",
+          "date": "2026-10-12",
+          "downloads": 772166,
+          "note": "Updated from dev.14 with ACA dev.27 (user decision 2026-10-12). dev.15 'Piesplosion/Lardening': lard is now made from rendered fat, raw fat was removed from all EF recipes, and hardened lard bricks were removed (lard hardens into rendered fat). Any hardened lard already in the world may become an unknown item. Other mods' EF recipe patches that reference hardened lard can crash on craft (seen with aldiclasses, not installed). dev.16 adds roasted grains and fennel foods; fruit no longer dries on its own."
+        },
         {
           "version": "2.0.0-dev.14",
           "date": "2026-09-01",
@@ -428,7 +458,7 @@
       "installed": true,
       "assetid": 53694,
       "url": "https://mods.vintagestory.at/efmealsmodule",
-      "version": "1.0.0-dev.8",
+      "version": "1.0.0-dev.9",
       "author": "l33tmaan",
       "checked": [
         {
@@ -446,7 +476,7 @@
       "installed": true,
       "assetid": 55414,
       "url": "https://mods.vintagestory.at/efchefstricks",
-      "version": "1.0.0-dev.4",
+      "version": "1.0.0-dev.6",
       "author": "l33tmaan",
       "checked": [
         {
@@ -516,7 +546,7 @@
       "installed": true,
       "assetid": 13865,
       "url": "https://mods.vintagestory.at/foodshelves",
-      "version": "3.0.5",
+      "version": "3.1.1",
       "author": "SONZ-INA",
       "checked": [
         {
@@ -620,6 +650,11 @@
       "author": "Apache (ApacheTech Solutions)",
       "checked": [
         {
+          "version": "4.1.1",
+          "date": "2026-10-12",
+          "note": "Likely root cause of the recurring 'ProtoException: Invalid wire-type' crash on world load (2026-09-17/18/20 and 2026-10-12), matching open upstream issue github.com/ApacheTech-VintageStory-Mods/Knapster/issues/56 (2026-10-05). Bug: when a second world is loaded in the same game session (leave to main menu, load again), KnapsterAdminModMenu.StartServerSide throws a NullReferenceException (it uses Gantry's static G.Settings/G.T, which are stale after the first world). Its network packet registration is then skipped, and the client crashes on the connecting screen with the ProtoException. The first world after launching always works, and a full game restart avoids it. Confirmed locally on 2026-10-12: the Knapster error appears only in the 20:26 server log (second world of that game session, which crashed), not in any of today's five first-world loads (19:18-20:08). Also fits the 2026-09-20 note that each relaunch loaded fine. The first ProtoException crash (09-17 14:09) came on the day Knapster was bumped to 4.1.1; whether 4.1.0 has the bug is unverified. Workaround: fully restart the game before loading another world. 4.1.1 is still the latest release; recheck for a fix. The author said on 2026-09-15 that the mod menus are being reworked."
+        },
+        {
           "version": "4.1.0",
           "date": "2026-09-07",
           "note": "Release page's changelog field for this version is the author's personal note about a 2026 identity-theft/RAT incident, not functional release notes — no specific code changes could be confirmed from it. Installed as the current release anyway; no reported regressions."
@@ -639,7 +674,7 @@
       "installed": true,
       "assetid": 14471,
       "url": "https://mods.vintagestory.at/apelanterns",
-      "version": "1.4.3",
+      "version": "1.4.4",
       "author": "xXx_Ape_xXx",
       "checked": [
         {
@@ -746,7 +781,7 @@
       "installed": true,
       "assetid": 53420,
       "url": "https://mods.vintagestory.at/playercorpseforkedazu",
-      "version": "1.15.1",
+      "version": "1.16.0",
       "author": "azurempress",
       "fork_of": "playercorpse",
       "checked": [
@@ -861,6 +896,12 @@
       "version": "1.3.1",
       "author": "XyrVexus",
       "checked": [
+        {
+          "version": "1.3.1",
+          "date": "2026-10-12",
+          "downloads": 246446,
+          "note": "Not updated: the new 2.0.0 line (pre.4-pre.9, 2026-09-29 to 10-10) is prerelease-only. It is a rewrite (entity smoke replaced by a central 'parcel' controller, new particles/shaders, big performance claims). Staying on stable 1.3.1 per the prefer-stable rule; recheck when 2.0.0 is out of -pre."
+        },
         {
           "version": "1.3.1",
           "date": "2026-09-01",
@@ -1025,6 +1066,11 @@
       "checked": [
         {
           "version": "2.0.0",
+          "date": "2026-10-12",
+          "note": "Known harmless load error with Vanilla Armory (present since at least 2026-09-20, not caused by VA 2.4.9). Its compat patch assets/game/patches/vanillaarmory.json adds storageFlags 131073 (hunter-bag slots) to VA weapons, and 2 of its 22 entries point to files that don't exist. Patch 7 has a typo ('relic knives/relicrelickhanjartype' should be 'relickhanjartype'), so the relic khanjar can't go in the hunter bag. Patch 19 targets 'spear/speargenerictype', which VA no longer ships (VA now patches the vanilla spear instead), so it is dead and nothing is lost. No local fix: editing the zip would break the sync-mods.ps1 rule. Not reported on the mod page as of 2026-10-12; a bug report was drafted for the user to post. 2.0.0 (2026-03-12) is still the latest release."
+        },
+        {
+          "version": "2.0.0",
           "date": "2026-09-01",
           "downloads": 23149,
           "known_incompatibilities": "conflicts with \"Wildcraft: Trees and Shrubs\" (not installed) — both mods modify the same game files; author says a fix is in progress. Confirmed compatible with BetterRuins (installed).",
@@ -1124,9 +1170,14 @@
       "installed": true,
       "assetid": 122956,
       "url": "https://mods.vintagestory.at/toolsmithweapons",
-      "version": "1.1.4",
+      "version": "1.1.7",
       "author": "MetaCalf",
       "checked": [
+        {
+          "version": "1.1.7",
+          "date": "2026-10-12",
+          "note": "Published to mods.vintagestory.at and as a GitHub release (v1.1.7) on 2026-10-12, so sync-mods.ps1 can download it now and the earlier 'don't push' caveat for the local 1.1.5-1.1.7 test builds no longer applies. Fixes a mod-page report about Vanilla Armory: finished VA knives/axes rendered as Toolsmith's generic copper knife/axe (1.1.5), the head+handle bundle for VA knife/axe/sword heads rendered wrong (1.1.6), and a Toolsmith-assembled VA steel head came out as the gold ornate weapon (1.1.7). Fixed by blacklisting VA's gold/silver ornate variants from tinkering; they stay plain VA items, made with VA's plate recipe. All three fixes playtested. 1.1.5/1.1.6 were never published. See the addon repo's docs/findings.md #12."
+        },
         {
           "version": "1.1.4",
           "date": "2026-09-19",
@@ -1186,7 +1237,7 @@
       "installed": true,
       "assetid": 3246,
       "url": "https://mods.vintagestory.at/translocatorengineeringredux",
-      "version": "1.6.6",
+      "version": "1.6.7",
       "author": "SpearAndFang",
       "checked": [
         {
@@ -1204,9 +1255,20 @@
       "installed": true,
       "assetid": 23204,
       "url": "https://mods.vintagestory.at/show/mod/23204",
-      "version": "2.4.7",
+      "version": "2.4.9",
       "author": "WolfWarrior",
       "checked": [
+        {
+          "version": "2.4.9",
+          "date": "2026-10-12",
+          "note": "Load warnings from VA itself (present since at least 2026-09-20, not new in 2.4.9): the armor head shapes acolyte/head, bear2/head and tracker/head reference textures that aren't in the zip (textures/acolyte.png, textures/tracker.png, textures/entity/humanoid/serapharmor/hide/bear/bear-brown.png). Probably cosmetic: the item JSONs define their own textures, so this only matters if those helmets render with missing-texture spots. The other two VA errors in the log come from SpecializedBags Revived's patch (see specialexpandedbags). Not reported upstream; a bug report was drafted for the user."
+        },
+        {
+          "version": "2.4.9",
+          "date": "2026-10-12",
+          "downloads": 67942,
+          "note": "2.4.8 adds partial Weapon Animation Pack compatibility (not installed) and removes 'class: itemaxe' from VA's axe-type weapons (tool type axe kept; the author says the only effect should be that they no longer fell trees). 2.4.9 fixes an animation error. Updated per user decision 2026-10-12, on the condition that the user re-tests VA axes with toolsmithweapons (Toolsmith tinkering/rendering) in game, since the class change could affect how the addon handles them."
+        },
         {
           "version": "2.4.7",
           "date": "2026-09-19",
@@ -1324,10 +1386,16 @@
       "installed": true,
       "assetid": 44133,
       "url": "https://mods.vintagestory.at/show/mod/44133",
-      "version": "1.0.38",
+      "version": "1.0.41",
       "author": "El_Neuman",
       "fork_of": "xlib",
       "checked": [
+        {
+          "version": "1.0.41",
+          "date": "2026-10-12",
+          "downloads": 185554,
+          "note": "The fork's author (El_Neuman) says 1.0.41 is their final release ('This is my final release. Goodbye, everyone'). The original xLib is also unmaintained (last release 0.9.0-pre.2, game 1.21.0), so nothing is left to switch to. Keep using it while it works; it will break at some future game version. 1.0.39-1.0.41 add XP/level transfer between players (2 h cooldown, configurable per skill branch) and fix recipe trait checks (Trapper cage)."
+        },
         {
           "version": "1.0.37",
           "date": "2026-09-03",
@@ -1362,10 +1430,16 @@
       "installed": true,
       "assetid": 44074,
       "url": "https://mods.vintagestory.at/show/mod/44074",
-      "version": "1.1.5",
+      "version": "1.1.8",
       "author": "El_Neuman",
       "fork_of": "xskills",
       "checked": [
+        {
+          "version": "1.1.8",
+          "date": "2026-10-12",
+          "downloads": 209428,
+          "note": "Final release by the fork author (see xlibfork). Both the original xSkills and this fork are now unmaintained. The fork keeps working on 1.22.x for now; watch for a new community fork when a future game version breaks it. 1.1.6 fixed a client crash when opening a firepit while another player cooks in an ACA saucepan; 1.1.7 gives 2 ingots when smelting metal plates and adds more cooking XP."
+        },
         {
           "version": "1.1.1",
           "date": "2026-09-10",
